@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css?v=21">
+<link rel="stylesheet" href="./style.css?v=22">
 <script defer src="./site.js?v=11"></script>
 <script defer src="./routes.js?v=12"></script>
 <script defer src="./race-photos.js"></script>
@@ -25,10 +25,6 @@
 <section class="page-intro home-start" aria-labelledby="home-title">
   <h1 id="home-title">Велосипед для ваших дорог</h1>
   <p class="standfirst">Подберите сборку и спланируйте поездку по Кыргызстану.</p>
-  <article class="card home-featured">
-    <p class="meta">Seven Rivers Ultra · 26 июня 2027</p>
-    <h2><a href="./news.html#kollegin-seven-rivers">Антон Коллегин примет участие в Seven Rivers Ultra</a></h2>
-  </article>
   <div class="grid">
     <article class="card"><h2><a href="./selection.html">Подбор</a></h2><p>Сборка под ваш рост, покрытие и бюджет.</p></article>
     <article class="card"><h2><a href="./catalog.html">Рамы</a></h2><p>Модели для гравия, туринга и MTB.</p></article>
@@ -45,13 +41,24 @@
 </header>
 <div class="home-news-lead">
   <article class="home-story home-story-lead">
-    <p class="eyebrow">Silk Road Mountain Race</p>
-    <h2><a href="./news.html#vlad-podofedov">Владислав Подофёдов и Сергей Черепанов выиграли парный зачёт</a></h2>
-    <p>От Таласа до Чолпон-Аты за 10 дней, 12 часов и 14 минут.</p>
+    <p class="eyebrow">Seven Rivers Ultra · <time datetime="2027-06-26">26 июня 2027</time></p>
+    <h3><a href="./news.html#kollegin-seven-rivers">Антон Коллегин примет участие в Seven Rivers Ultra</a></h3>
+    <p>Старт в Алматы, финиш в Конаеве. На дистанции около 1075 км.</p>
   </article>
+
+</div>
+<ul class="home-stories">
+  <li><a href="./news.html#vlad-podofedov">Владислав Подофёдов и Сергей Черепанов выиграли парный зачёт</a></li>
+  <li><a href="./news.html#equipment">Новые велокомпьютеры, станки и снаряжение</a></li>
+  <li><a href="./news.html#upcoming">Ближайшие гонки и регистрация</a></li>
+  <li><a href="./news.html#anton-kollegin">Антон Коллегин взял бронзу на Tour of Orto-Sai</a></li>
+  <li><a href="./news.html#taurus-mountain-race">Taurus Mountain Race остановили из-за непогоды</a></li>
+</ul>
+<details class="home-race-archive">
+  <summary>Фото Silk Road Mountain Race 2026</summary>
   <section class="race-photos" aria-label="Фотографии Silk Road Mountain Race 2026" aria-roledescription="карусель">
     <figure class="race-photo">
-      <img class="home-news-cover" src="https://24kgr2.bemint.pro/files/media/466/466512.jpg" alt="Подофёдов и Черепанов у финишного баннера" width="602" height="563" fetchpriority="high">
+      <img class="home-news-cover" src="https://24kgr2.bemint.pro/files/media/466/466512.jpg" alt="Подофёдов и Черепанов у финишного баннера" width="602" height="563" loading="lazy">
       <figcaption>Победители парного зачёта у финишного баннера · <a href="https://24.kg/article/386724">24.kg</a></figcaption>
     </figure>
     <figure class="race-photo" hidden>
@@ -84,13 +91,7 @@
       <button type="button" class="outline" data-step="1" aria-label="Следующее фото">→</button>
     </div>
   </section>
-</div>
-<ul class="home-stories">
-  <li><a href="./news.html#equipment">Новые велокомпьютеры, станки и снаряжение</a></li>
-  <li><a href="./news.html#upcoming">Ближайшие гонки и регистрация</a></li>
-  <li><a href="./news.html#anton-kollegin">Антон Коллегин взял бронзу на Tour of Orto-Sai</a></li>
-  <li><a href="./news.html#taurus-mountain-race">Taurus Mountain Race остановили из-за непогоды</a></li>
-</ul>
+</details>
 <a class="solid home-news-all" href="./news.html">Все новости</a>
 </section>
 <aside aria-labelledby="builds-title" class="builds" id="builds">
