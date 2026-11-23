@@ -1,14 +1,92 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>new-project</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Каталог рам для байкпакинга. Поиск и сравнение гравийных, туристических и горных платформ.">
+<title>ВЕЛОБЮРО — Рамы для байкпакинга</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<script defer src="./catalog.js"></script>
+<script defer src="./app.js"></script>
 </head>
 <body>
-  <main>
-    <h1>new-project</h1>
-    <p>Стартовая страница проекта.</p>
-  </main>
+<header class="header">
+  <a class="logo" href="#" aria-label="Велобюро, главная"><b class="mark" aria-hidden="true">△</b> ВЕЛОБЮРО<span>.</span></a>
+  <nav aria-label="Разделы"><a href="#selection">Подбор</a><a href="#catalog">Каталог</a><a href="#guide">Как выбрать</a></nav>
+  <button id="saved-toggle" class="outline" type="button" aria-pressed="false">♡ <span>Избранное</span> <strong id="saved-count">0</strong></button>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Товарищ,<br>седлай <em>маршрут!</em></h1>
+      <p>Подбор велосипеда и деталей для поездок с багажом.</p>
+      <a class="solid" href="#selection">Подобрать сборку</a>
+    </div>
+    <div class="poster" role="img" aria-label="Сатирическая иллюстрация велосипедиста с горой багажа"></div>
+  </section>
+  <section class="selection" id="selection">
+    <h2>Анкета велосипедиста</h2>
+    <form id="fit-form">
+      <label>Где катаетесь?
+        <select name="surface" required>
+          <option value="">Выберите покрытие</option>
+          <option value="road">В основном асфальт</option>
+          <option value="gravel">Грейдеры и укатанный гравий</option>
+          <option value="rough">Каменистые дороги и горные тропы</option>
+          <option value="sand">Песок и рыхлый снег</option>
+        </select>
+      </label>
+      <label>Рост, см<input required type="number" min="130" max="220" name="height" placeholder="175"></label>
+      <label>Вес, кг<input required type="number" min="35" max="200" step="0.1" name="weight" placeholder="75"></label>
+      <label>Какой велосипед сейчас?
+        <select name="bike" required>
+          <option value="">Выберите тип</option>
+          <option value="none">Пока нет велосипеда</option>
+          <option value="road">Шоссейный или городской</option>
+          <option value="gravel">Гравийный или туристический</option>
+          <option value="rough">MTB / хардтейл</option>
+          <option value="sand">Фэтбайк</option>
+          <option value="other">Другой / не знаю</option>
+        </select>
+      </label>
+      <label>Марка, модель и год <small>необязательно</small><input name="model" maxlength="100" placeholder="Например, Marin Four Corners 2024"></label>
+      <label>Багаж, кг <small>необязательно</small><input name="luggage" type="number" min="0" max="100" step="0.1" placeholder="Например, 12"></label>
+      <button class="solid" type="submit">Подобрать велосипед и детали</button>
+    </form>
+    <div id="fit-result" hidden tabindex="-1" aria-live="polite"></div>
+  </section>
+  <section class="catalog" id="catalog">
+    <div class="section-head">
+      <div><p class="eyebrow">ПОДБОР РАМЫ</p><h2>Каталог рам</h2></div>
+      <p class="totals"><strong id="total"></strong> моделей <span> / </span> <strong id="brand-total"></strong> брендов</p>
+    </div>
+    <div class="tabs" id="tabs" aria-label="Назначение рамы"></div>
+    <div class="controls">
+      <label class="search"><span aria-hidden="true">⌕</span><input id="q" type="search" placeholder="Поиск по модели или бренду" aria-label="Поиск по модели или бренду"></label>
+      <select id="material" aria-label="Материал рамы"><option value="">Любой материал</option></select>
+      <select id="brand" aria-label="Бренд"><option value="">Все бренды</option></select>
+      <select id="sort" aria-label="Сортировка"><option value="featured">Порядок каталога</option><option value="az">По названию А–Я</option><option value="za">По названию Я–А</option></select>
+    </div>
+    <div class="statusline"><p id="count" aria-live="polite"></p><button id="reset" type="button" hidden>Сбросить фильтры</button></div>
+    <div id="grid" class="grid"></div>
+    <div class="more"><button id="more" class="outline" type="button">Показать ещё</button></div>
+  </section>
+  <section class="guide" id="guide">
+    <p class="eyebrow">ПЕРЕД СБОРКОЙ</p><h2>Как выбрать раму</h2>
+    <div class="tips">
+      <article><h3>Маршрут и посадка</h3><p>Сравните геометрию нужного размера с велосипедом, на котором вам удобно. Для сложных троп рассмотрите MTB-платформу, для асфальта и грейдера — гравийную или туристическую.</p></article>
+      <article><h3>Колёса и компоненты</h3><p>Проверьте клиренс с выбранным ободом, стандарты осей и каретки, совместимость вилки, тормозов и трансмиссии.</p></article>
+      <article><h3>Багаж и комплектация</h3><p>Уточните крепления и допустимую нагрузку. Каталог включает архивные модели и платформы от серийных велосипедов. Наличие рамы отдельно и комплектацию проверяйте у производителя.</p></article>
+    </div>
+  </section>
+</main>
+<footer><a class="logo" href="#"><b class="mark" aria-hidden="true">△</b> ВЕЛОБЮРО<span>.</span></a><a href="#catalog">К каталогу</a></footer>
+<aside class="compare-bar" id="compare-bar" hidden aria-label="Выбранные рамы">
+  <strong id="compare-count"></strong><button class="solid" id="compare-open">Сравнить</button><button class="outline" id="compare-clear">Очистить</button>
+</aside>
+<dialog id="compare-dialog"><div class="dialog-head"><h2>Сравнение рам</h2><form method="dialog"><button class="outline" aria-label="Закрыть">×</button></form></div><div id="compare-content"></div></dialog>
 </body>
 </html>
