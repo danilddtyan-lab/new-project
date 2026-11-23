@@ -2,7 +2,7 @@
 
 const gearSections = [
   {
-    id:'bags',title:'Сумки',caption:'Сначала измерьте раму. Потом выясняйте, почему кухня едет отдельно.',
+    id:'bags',title:'Сумки',caption:'Рамные, подседельные и рулевые сумки для поездок с багажом.',
     items:[
       ['Rhinowalk','Plateau X 1,7 л','В раму','Компактная треугольная сумка. Сверьте положение фляг и места для ремней.','https://rhinowalk.com/products/plateau-series-x-waterproof-triangle-bag-1-7l'],
       ['Rhinowalk','Wilderness 14 л','Под седло','Сумка с крепёжной системой. Проверьте высоту седла и зазор над покрышкой.','https://rhinowalk.com/products/14l-waterproof-harness-saddle-bag-wilderness-series'],
@@ -17,7 +17,7 @@ const gearSections = [
     ]
   },
   {
-    id:'wheels',title:'Колёса',caption:'Круглые с виду. По осям — со своим характером.',
+    id:'wheels',title:'Колёса',caption:'Вилсеты и обода для гравия и MTB.',
     items:[
       ['DT Swiss','GR 1600 SPLINE','Гравий','Алюминиевый вилсет. Подберите диаметр, барабан и стандарт ротора.','https://www.dtswiss.com/'],
       ['HUNT','4 Season Gravel X-Wide','Гравий','Алюминиевый вилсет. Сверьте внутреннюю ширину обода с покрышкой.','https://www.huntbikewheels.com/'],
@@ -28,7 +28,7 @@ const gearSections = [
     ]
   },
   {
-    id:'tires',title:'Покрышки',caption:'Укатываем километры, а не грунтозацепы.',
+    id:'tires',title:'Покрышки',caption:'Покрышки для асфальта, гравия, троп и рыхлого покрытия.',
     items:[
       ['Maxxis','Aspen','XC / плотный грунт','Быстрая XC-покрышка. Проверьте размер, версию и зазор в раме и вилке.','https://www.maxxis.com/int/tire/aspen/'],
       ['Schwalbe','Marathon Almotion','Асфальт','Дорожная туристическая покрышка. Сверьте точный размер ETRTO.','https://www.schwalbe.com/en/Marathon-Almotion'],
@@ -39,7 +39,7 @@ const gearSections = [
     ]
   },
   {
-    id:'drivetrains',title:'Трансмиссии',caption:'Передач должно хватить и на подъём, и на обратную дорогу.',
+    id:'drivetrains',title:'Трансмиссии',caption:'Механические и электронные системы для гравия и MTB.',
     items:[
       ['SENTYEH','ECS PRO','Электронная трансмиссия','Беспроводное переключение. Для комплекта сверяйте манетки, переключатель, кассету, цепь и тормоза.','https://sentyehsmart.com/'],
       ['Shimano','GRX RX820','Гравий','Механические конфигурации 1×12 и 2×12. Уточните барабан под выбранную кассету.','https://bike.shimano.com/en-UK/stories/article/shimano-grx-personalities.html'],

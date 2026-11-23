@@ -214,3 +214,39 @@ footer a{font-weight:650}
   .front-page .hero{grid-template-columns:1fr}
   .travel-card.featured img{height:auto;aspect-ratio:3/2}
 }
+
+/* Contemporary typography and spacing with the existing wood palette. */
+:root{--surface:#f7ead5;--soft-border:#bfa381;--panel-radius:12px;--heading-font:"Golos Text",system-ui,sans-serif}
+body{background:var(--paper)}
+.header{padding-block:14px 0;border-bottom:1px solid #8a644a}
+.header .logo{font:800 clamp(1.55rem,3vw,2.35rem)/1.05 var(--heading-font);letter-spacing:-.055em}
+.header nav{justify-content:flex-start;gap:5px clamp(10px,2.3vw,34px);padding-block:7px}
+.header nav a{padding-inline:4px;text-decoration:none}
+.header nav a[aria-current=page]{text-decoration:none;border-bottom:2px solid #efcfa4}
+footer{padding-block:22px 40px;border-top:1px solid var(--soft-border)}
+.page-intro,.selection,.catalog,.dropbar,.guide,.gallery,.marketplace,.gear,.lev{border-bottom:1px solid var(--soft-border)}
+.page-intro h1,.hero h1,h2,h3{letter-spacing:-.04em}
+.standfirst,.caption,.hero-joke,.cover-art figcaption{font-family:var(--heading-font);font-style:normal}
+.standfirst{font-size:1rem}.caption{font-size:.9rem}
+.solid,.outline,.tabs button,input,select,dialog,#board-form textarea{border-radius:8px}
+.solid{box-shadow:none;background:var(--darkred);border-color:var(--darkred)}
+.outline{border:1px solid var(--line)}.outline:hover,[aria-pressed=true].outline{background:#cfb38c}
+.tabs button{border:1px solid var(--line)}
+.card,.tips article,.result-grid article,.travel-card,.news-leads article,.frame-photo{border:1px solid var(--soft-border);border-radius:var(--panel-radius);background:var(--surface)}
+.frame-photo{border-radius:8px}.frame-photo img{background:#fffdf8}
+.gear .card{border:1px solid var(--soft-border)}
+.front-page{margin-top:20px}.front-page .hero,.builds,.news-box,.route-day{border:1px solid var(--soft-border);border-radius:var(--panel-radius);overflow:hidden}
+.front-page .hero{background:#ead5b5}
+.front-page .hero::before{content:none}
+.front-page .hero h1{font-weight:800;font-size:clamp(2.25rem,4.2vw,4.6rem);line-height:1.04;overflow-wrap:normal}
+.hero p{margin-block:14px 18px}.hero h1 em{color:inherit}
+.cover-art{border-left:1px solid var(--soft-border)}
+.builds{background:var(--surface);padding:16px}
+.builds h2,.news-box h2,.route-day-heading h2,.news-section>h3,.news-section h4{font-family:var(--heading-font)}
+.build-list{border-top:1px solid var(--soft-border)}
+.build-list details{border-bottom:1px solid var(--soft-border)}
+.news-box{background:#e6cfad}.news-page .news-section{border-top:1px solid var(--soft-border)}
+.route-day-heading{border-right:0}
+.fit-lead,.geometry,.training-plan,.training-help{border:1px solid var(--soft-border);border-radius:var(--panel-radius);background:var(--surface)}
+@media(max-width:1000px){.front-page .hero h1{font-size:clamp(2.25rem,5.5vw,4.1rem)}}
+@media(max-width:530px){.cover-art{border-left:0;border-top:1px solid var(--soft-border)}.header nav{column-gap:9px}.front-page{margin-top:12px}}
