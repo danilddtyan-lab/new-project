@@ -396,11 +396,6 @@ footer{padding-block:22px 40px;border-top:1px solid var(--soft-border)}
 .frame-facts div{border-top:1px solid var(--line);padding-block:.25rem}
 .frame-facts dt{font-weight:700}
 .frame-facts dd{margin:0}
-.aspen-sketch{height:4.5rem;border-radius:.5rem;background:
- repeating-linear-gradient(0deg,transparent 0 .4rem,var(--ink) .4rem .68rem,transparent .68rem 1rem) center/22% 100% no-repeat,
- repeating-linear-gradient(0deg,var(--ink) 0 .55rem,transparent .55rem 1.18rem) left 10% center/14% 100% no-repeat,
- repeating-linear-gradient(0deg,transparent 0 .23rem,var(--ink) .23rem .78rem,transparent .78rem 1.18rem) right 10% center/14% 100% no-repeat,
- var(--panel)}
 .route-category{margin-block:1.25rem}
 .route-category h4{font-size:1.15rem;margin:0}
 .route-category article:target{outline:3px solid var(--green);outline-offset:2px}

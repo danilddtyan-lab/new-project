@@ -2,6 +2,7 @@
 
 const raceNewsSections = {
   upcoming:document.getElementById('race-upcoming'),
+  equipment:document.getElementById('equipment-news'),
   riders:document.getElementById('race-riders'),
   archive:document.getElementById('race-news')
 };
@@ -13,7 +14,7 @@ const raceOrder = (item,other) => {
   if (future) return item.date.localeCompare(other.date);
   return other.date.localeCompare(item.date);
 };
-for (const item of [...raceNews].sort(raceOrder)) {
+for (const item of [...raceNews,...equipmentNews].sort(raceOrder)) {
   const category = item.category === 'upcoming' && item.date < raceToday ? 'archive' : item.category;
   const grid = raceNewsSections[category] || raceNewsSections.archive;
   const card = document.createElement('article');

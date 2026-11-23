@@ -46,7 +46,7 @@ function frameClearance(spec) {
     const note = spec.clearanceNote ? ' · '+escapeHtml(spec.clearanceNote) : '';
     return 'Перед '+(spec.frontMm ? spec.frontMm+' мм' : '—')+' · зад '+(spec.rearMm ? spec.rearMm+' мм' : '—')+note;
   }
-  return spec?.clearanceMm ? 'До '+spec.clearanceMm+' мм, общий допуск' : 'Нет данных';
+  return spec?.clearanceMm ? 'До '+spec.clearanceMm+' мм, общий допуск'+(spec.clearanceNote ? ' · '+escapeHtml(spec.clearanceNote) : '') : 'Нет данных';
 }
 
 function render(event) {
@@ -101,7 +101,7 @@ function render(event) {
         <div><dt>Вес рамы</dt><dd>${frameWeight(spec)}</dd></div>
         <div><dt>Покрышка 700C</dt><dd>${frameClearance(spec)}</dd></div>
       </dl>
-      ${details?.note ? `<p>${escapeHtml(details.note)}</p>` : ''}
+      ${(spec?.note || details?.note) ? `<p>${escapeHtml(spec?.note || details.note)}</p>` : ''}
       ${details?.price ? `<p class="catalog-price">${escapeHtml(details.price)} <span>по прайсу производителя</span></p>` : ''}
       <div class="card-actions">
         <button class="outline" type="button" data-action="save" data-frame="${id}" aria-label="В избранное: ${id}" aria-pressed="${starred}">${starred?'♥':'♡'}</button>

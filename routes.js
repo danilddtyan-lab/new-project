@@ -103,3 +103,10 @@ if (routesGrid) {
     '<section class="card"><h3>'+label+'</h3><ul>'+rideLibrary.map((ride,index) => ride.days === days
       ? '<li><a href="#ride-'+index+'">'+ride.title+'</a></li>' : '').join('')+'</ul></section>').join('');
 }
+
+const expeditionGrid = document.getElementById('expedition-grid');
+if (expeditionGrid) {
+  expeditionGrid.innerHTML = expeditions.map(route =>
+    '<article class="card"><h3>'+route.title+'</h3><p class="meta">'+route.meta+'</p><p>'+route.detail+
+    '</p><a href="'+route.url+'">Карта и описание маршрута</a></article>').join('');
+}

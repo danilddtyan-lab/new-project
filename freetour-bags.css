@@ -9,4 +9,3 @@
 .gear-catalog .gear-filter{display:grid;gap:.3rem;max-width:20rem;margin-top:1rem;font-weight:700}
 .gear-catalog .card{display:flex;flex-direction:column}
 .gear-catalog .product-links{margin-top:auto;padding-top:.4rem}
-.tire-tread-photo{display:block;width:min(100%,14rem);height:auto;aspect-ratio:1;object-fit:contain;margin-inline:auto}

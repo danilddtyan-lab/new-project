@@ -40,3 +40,21 @@ const rideLibrary = [
     detail:'Горный грунтовый выезд. Организуйте подвоз к старту и проверьте возможные броды по треку.',
     url:'https://kyrgyzmap.com/route/research-freebike-kara-suu-lake-road-bike/'}
 ];
+
+const expeditions = [
+  {title:'Tian Shan Traverse', meta:'987 км · 14 935 м набора · около 20 дней · 95% грунта',
+    detail:'Через Тянь-Шань к Бишкеку. Высшая точка 3840 м. Есть отдалённые участки с редкими магазинами и бродами.',
+    url:'https://bikepacking.com/routes/tian-shan-traverse-kyrgyzstan/'},
+  {title:'The Celestial Divide', meta:'1067 км · 20 236 м набора · около 20 дней · 70% грунта',
+    detail:'Маршрут Малика Алымкулова с севера на юг через внутренний Тянь-Шань к Алаю. Подходит для продолжения в сторону Памира при отдельной проверке границы и доступа.',
+    url:'https://bikepacking.com/routes/the-celestial-divide/'},
+  {title:'Expedition Alay', meta:'467 км · 7573 м набора · около 8 дней · 85% грунта',
+    detail:'Кольцо из Оша через Кой-Джол и перевал Джиптик. Есть высокогорные участки, где велосипед придётся вести или нести.',
+    url:'https://bikepacking.com/routes/expedition-alay/'},
+  {title:'At-Bashi Circuit', meta:'386 км · 5020 м набора · около 7 дней · 85% грунта',
+    detail:'Кольцо в Нарынской области через Таш-Рабат и окрестности Чатыр-Куля. Уточните доступ в приграничную зону и условия на перевалах.',
+    url:'https://bikepacking.com/routes/at-bashi-circuit/'},
+  {title:'Bishkek Eastern Compass', meta:'Кольцо из Бишкека · многодневный маршрут',
+    detail:'Авторский маршрут через Чуйскую долину и долины у Иссык-Куля и Кочкора. Уточните по треку пешие участки и варианты схода.',
+    url:'https://bikepackingkyrgyzstan.cc/bishkek_eastern_compass_route_ru'}
+];

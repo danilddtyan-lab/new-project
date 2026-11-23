@@ -1,6 +1,36 @@
 'use strict';
 
+const mondinceSpecs = [
+  ['FM356',1100,61,'Для байкпакинга по рыхлому покрытию.'],
+  ['FM376',1080,57,'Гоночная геометрия для смешанного покрытия.'],
+  ['FM366',1050,57,'Аэропрофиль и отсек в нижней трубе.'],
+  ['FM326',1100,50,'Вилка с регулировкой вылета flip-chip.'],
+  ['FM316',1150,50,'Геометрия для длинных дистанций.'],
+  ['FM306',1010,50,'Вилка со сменным вылетом.'],
+  ['FM296',1150,50,'Отсек в нижней трубе для инструмента и мелочей.'],
+  ['FM286',950,50,'Облегчённая рама для гонок и подъёмов.'],
+  ['FM266',1150,45,'Платформа для смешанного покрытия с несколькими вариантами каретки.'],
+  ['FM166',1020,42,'Рама для циклокросса с резьбовой кареткой BSA.']
+];
+
 const frameSpecs = {
+  ...Object.fromEntries(mondinceSpecs.map(([model,weightG,clearanceMm,note]) => [
+    'Mondince/'+model,{current:true, weightG, clearanceMm, note, weightBasis:'заявленный вес рамы',
+      source:'https://www.mondincecycle.com/products/carbon-gravel-bike-frame'}
+  ])),
+  'Ribble/Ultra Grit': {clearanceMm:50,current:true,note:'Отсек в нижней трубе и петух UDH.',source:'https://www.ribblecycles.co.uk/ribble-ultra-grit/'},
+  'Whyte/Verro': {current:true,note:'В заводской сборке стоят Maxxis Ravager 50 мм.',source:'https://whytebikes.com/products/verro-gravel-adventure-bike?variant=55457665778037'},
+  'Kinesis UK/Tripster AT Plus': {current:true,clearanceMm:50,source:'https://kinesisbikes.co.uk/products/kinesis-tripster-at-plus'},
+  'Cinelli/Tutto Mini': {current:true,source:'https://cinelli-milano.com/collections/tutto-mini'},
+  'Argon 18/Anti Matter': {current:true,clearanceMm:52,clearanceNote:'До 55 мм фактической ширины по инструкции.',source:'https://storage.googleapis.com/argon18craft/files/Assembly-Guides/2026/ANTI-MATTER_Assembly-Guide_386A-B-C_2026-05-11.pdf'},
+  'Specialized/Diverge 4': {current:true,source:'https://www.specialized.com/us/en/diverge'},
+  'Santa Cruz/Stigmata': {current:true,clearanceMm:50,clearanceNote:'Stigmata 4 MY26: до 50 мм с 1×, до 45 мм с 2×.',source:'https://www.santacruzbicycles.com/pages/product-support/stigmata-4-my-26'},
+  'Cinelli/Hobootleg Geo': {clearanceMm:76,note:'Производитель указывает максимальную ширину 29 × 3,0″.',source:'https://cinelli-milano.com/collections/test-outlet-bikes/products/hobootleg-geo-frameset'},
+  'ENVE/MOG': {clearanceMm:50,current:true,source:'https://support.enve.com/hc/en-us/article_attachments/13112328880155'},
+  'Canyon/Grizl CF': {clearanceMm:54,current:true,clearanceNote:'Поколение с допуском до 54 мм.',source:'https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/'},
+  'Trek/Checkpoint ALR Gen 3': {clearanceMm:50,current:true,source:'https://www.trekbikes.com/emea/en_EM_DS/bikes/bikepacking-and-touring-bikes/checkpoint/checkpoint-alr/f/F224-2/checkpoint-alr-5-gen-3/49946/5332810/'},
+  'Moots/Routt 45': {clearanceMm:45,clearanceNote:'Архивная спецификация. Сверьте год рамы.',source:'https://moots.com/wp-content/uploads/2023/02/2018-WHATS-NEW.pdf'},
+  'Moots/Routt RSL': {clearanceMm:50,current:true,source:'https://moots.com/products/routt-rsl'},
   'SPCycle/G028': {
     current:true, weightG:1100, toleranceG:60, weightBasis:'матовая чёрная рама',
     clearanceMm:57, kitUsd:738,
