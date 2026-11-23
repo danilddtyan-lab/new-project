@@ -31,6 +31,7 @@ function createNewsCard(item,headline = false) {
   const title = document.createElement(headline ? 'h3' : 'h2');
   title.textContent = item.title;
   const summary = document.createElement('p');
+  if (headline) summary.className = 'headline-summary';
   summary.textContent = item.summary;
   if (!item.image) {
     const placeholder = document.createElement('div');
@@ -180,7 +181,7 @@ function showCarousel(items) {
   restart();
 }
 
-fetch('./data/news.json')
+fetch('./data/news.json', { cache: 'no-cache' })
   .then(response => {
     if (!response.ok) throw new Error('News request failed: '+response.status);
     return response.json();
