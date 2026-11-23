@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css?v=13">
+<link rel="stylesheet" href="./style.css?v=14">
 <script defer src="./site.js?v=11"></script>
 <script defer src="./routes.js?v=11"></script>
 </head>
@@ -21,15 +21,30 @@
 </header>
 <main id="main-content" tabindex="-1">
 <div class="front-page">
-<section class="hero">
-<div class="hero-copy">
-<h1>Байкпакинг в Кыргызстане</h1>
-<p>Подберите велосипед и снаряжение для поездок с багажом. Сравните рамы, готовые сборки и маршруты.</p>
-<a class="solid" href="./selection.html">Подобрать сборку</a>
+<section class="home-news" id="news" aria-labelledby="news-title">
+<header class="home-news-heading">
+<p class="eyebrow">Кыргызстан и мир · <time datetime="2026-11-23">23 ноября 2026</time></p>
+<h1 id="news-title">Новости байкпакинга</h1>
+</header>
+<img class="home-news-cover" src="./mountain-cover.webp" alt="Велосипед с сумками на каменистой тропе в горах" width="760" height="453" fetchpriority="high">
+<div class="home-stories">
+<article class="home-story home-story-lead">
+<p class="eyebrow">Silk Road Mountain Race · Кыргызстан</p>
+<h2><a href="./news.html#vlad-podofedov">Влад Подофёдов и Сергей Черепанов выиграли парный зачёт</a></h2>
+<p>Гонщики прошли маршрут от Таласа до Чолпон-Аты за 10 дней, 12 часов и 14 минут.</p>
+</article>
+<article class="home-story">
+<p class="eyebrow">Tour of Orto-Sai · Кыргызстан</p>
+<h2><a href="./news.html#anton-kollegin">Антон Коллегин взял бронзу</a></h2>
+<p>Третье место в своей категории по итогам трёх этапов любительской MTB-гонки.</p>
+</article>
+<article class="home-story">
+<p class="eyebrow">Taurus Mountain Race · Турция</p>
+<h2><a href="./news.html#taurus-mountain-race">Гонку остановили после старта</a></h2>
+<p>Сильные осадки и оползни вынудили организаторов отменить оставшуюся часть маршрута.</p>
+</article>
 </div>
-<figure class="cover-art mountain-cover">
-<img alt="Велосипед с сумками на каменистой тропе в горах" height="453" src="./mountain-cover.webp" width="760"/>
-</figure>
+<a class="solid home-news-all" href="./news.html">Все новости</a>
 </section>
 <aside aria-labelledby="builds-title" class="builds" id="builds">
 <h2 id="builds-title">Готовые сборки</h2>
@@ -43,6 +58,7 @@
 <dt>Трансмиссия</dt><dd>SENTYEH ECS PRO Road 1×13. Манетки и задний переключатель ECS, кассета EVE 11–45, совместимая 13-скоростная цепь и шатуны под BSA 68 со звездой около 40T.</dd>
 </dl>
 <p class="build-check">Фреймсет стоил 439 USD. Перед заказом ECS PRO проверьте состав лота, барабан под выбранную кассету и совместимость цепи со звездой. Для гидравлических ручек берите совместимые калиперы Flat Mount.</p>
+<a class="outline builds-selection" href="./selection.html">Подобрать сборку</a>
 <p class="build-links"><a href="https://twitterbikeusa.com/products/twitter-g2max-alloy-gravel-frame-set-al6061-t6-frame-carbon-fork-700c-thru-axle-udh-700-50c">Фреймсет</a><a href="https://sentyehsmart.com/products">SENTYEH ECS PRO</a></p>
 </details>
 <details>
@@ -53,6 +69,7 @@
 <dt>Трансмиссия</dt><dd>microSHIFT Advent X 1×10, манетка в торце руля BS‑M10‑R, переключатель RD‑M6205GM, шатуны Prowheel Charm FD04S‑TT 34T, кассета SHULZ 11–46 и цепь KMC X10.</dd>
 </dl>
 <p class="build-check">Схема повторяет серийную комплектацию. Нужны каретка 73 мм под вал выбранных шатунов и барабан HG. Фреймсет в прайсе производителя — 28 300 RUB.</p>
+<a class="outline builds-selection" href="./selection.html">Подобрать сборку</a>
 <p class="build-links"><a href="https://shulz.ru/catalog/framesets/adventure-bikes-framesets/freimset-shulz-boys-dont-cry/1716">Фреймсет</a><a href="https://shulz.ru/catalog/bikes/mtb/shulz-boys-dont-cry/1726">Серийная сборка</a></p>
 </details>
 <details>
@@ -63,6 +80,7 @@
 <dt>Трансмиссия</dt><dd>microSHIFT Sword 1×10, шатуны Sword 40T, кассета 11–48 и цепь на 10 скоростей.</dd>
 </dl>
 <p class="build-check">Нужны барабан HG, каретка BSA 68 под вал 24 мм и тормоза Flat Mount под дорожную тягу. Фреймсет стоил 479,99 USD.</p>
+<a class="outline builds-selection" href="./selection.html">Подобрать сборку</a>
 <p class="build-links"><a href="https://www.statebicycle.com/collections/4130-all-road/products/4130-all-road-frameset-udh-external-routing-schoolyard-yellow">Фреймсет</a><a href="https://shop.microshift.com/products/sword-1x10-groupset">Трансмиссия</a></p>
 </details>
 <details>
@@ -73,6 +91,7 @@
 <dt>Трансмиссия</dt><dd>Манетки GRX RX610, шатуны FC‑RX610‑1 с 38T, переключатель RD‑RX822‑SGS, кассета Shimano 10–51 и цепь HG 12 скоростей.</dd>
 </dl>
 <p class="build-check">Нужны барабан Micro Spline и каретка T47 под вал Shimano 24 мм. До заказа уточните у SPCycle точную ширину стакана вашей версии и зазор звезды 38T. Фреймсет стоил 608 USD.</p>
+<a class="outline builds-selection" href="./selection.html">Подобрать сборку</a>
 <p class="build-links"><a href="https://www.sp-cycle.com/Spcycle-G028-Carbon-Gravel-Bike-Frame-700x57C-UDH-Hanger-Full-Internal-Cable-Gravel-Bicycle-Carbon-Frameset-p6993835.html">Фреймсет</a><a href="https://bike.shimano.com/de-DE/stories/article/grx-upgrade.html">Трансмиссия</a></p>
 </details>
 <details>
@@ -83,20 +102,16 @@
 <dt>Трансмиссия</dt><dd>Манетки GRX RX610, переключатель RD‑RX822‑SGS, шатуны Shimano MT510 34T, кассета Deore M6100 10–51 и цепь M6100.</dd>
 </dl>
 <p class="build-check">Нужны барабан Micro Spline и каретка Shimano BB52 под BSA 73. Сочетание GRX и Deore взято за основу с серийной Fargo GRX 610. Фреймсет 2026 стоил 1 599 USD.</p>
+<a class="outline builds-selection" href="./selection.html">Подобрать сборку</a>
 <p class="build-links"><a href="https://www.salsacycles.com/products/2026-fargo-steel-frameset">Фреймсет</a><a href="https://www.salsacycles.com/products/2025-fargo-grx-610">Серийная комплектация</a></p>
 </details>
 </div>
+<a class="outline builds-selection" href="./selection.html">Подобрать сборку</a>
 <p class="build-links"><a href="./catalog.html?photos=1">Фото рам в каталоге</a><a href="./fit-guide.html">Посадка на MTB-дропбаре</a></p>
 <p class="builds-note">Оценки на 23 ноября 2026. Колёса, кокпит, доставка и пошлины отдельно. Состав тормозов зависит от набора.</p>
 </aside>
-</div><section aria-labelledby="news-title" class="news-box" id="news">
-<div>
-<p class="eyebrow">ОБНОВЛЕНО <time datetime="2026-11-23">23 НОЯБРЯ 2026</time></p>
-<h2 id="news-title">Новости</h2>
 </div>
-<div class="news-brief"><strong>Главное</strong><p>Влад Подофёдов выиграл парный зачёт Silk Road Mountain Race, Антон Коллегин взял бронзу на Tour of Orto-Sai, а Taurus остановили из-за непогоды.</p></div>
-<a class="solid" href="./news.html">Читать новости</a>
-</section><section aria-labelledby="route-day-title" class="route-day" id="route-day">
+<section aria-labelledby="route-day-title" class="route-day" id="route-day">
 <div class="route-day-heading">
 <p class="eyebrow" id="route-day-date"></p>
 <h2 id="route-day-title">Маршрут дня</h2><a href="./routes.html">Все маршруты</a>
