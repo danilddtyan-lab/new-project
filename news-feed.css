@@ -1,0 +1,61 @@
+.headline-news {
+  background: var(--cream);
+  border: 1px solid var(--soft-border);
+  border-radius: var(--panel-radius);
+  padding: clamp(.75rem, 2.5vw, 1.5rem);
+  display: grid;
+  gap: .75rem;
+}
+.headline-news h2 { font-size: clamp(1.25rem, 3vw, 1.9rem); }
+.headline-news > a { justify-self: start; font-weight: 700; }
+.headline-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(2.75rem, 12vw, 8rem);
+  align-content: start;
+  gap: .65rem;
+}
+.headline-card > :not(.headline-placeholder, .headline-image) { grid-column: 1; }
+.headline-placeholder, .headline-image {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  width: 100%;
+  aspect-ratio: 1;
+  background: var(--panel);
+  border-radius: .5rem;
+  object-fit: cover;
+}
+.headline-card h3 { font-size: clamp(1.3rem, 3vw, 2.2rem); }
+.headline-card .solid { justify-self: start; min-height: 44px; }
+#headline-slide { touch-action: pan-y pinch-zoom; }
+.headline-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-top: .75rem; }
+.headline-controls > button { min-height: 44px; }
+.headline-dots { display: flex; flex-wrap: wrap; order: 1; width: 100%; }
+.headline-dots button {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: 0;
+}
+.headline-dots button::before {
+  content: '';
+  width: .5rem;
+  height: .5rem;
+  border: 1px solid var(--green);
+  border-radius: 50%;
+}
+.headline-dots button[aria-current="true"]::before { background: var(--green); }
+.feed-sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.feed-card h2 { font-size: 1.25rem; letter-spacing: normal; }
+.feed-card:target { outline: 3px solid var(--green); outline-offset: 2px; }
+.front-page.front-page-builds { grid-template-columns: minmax(0, 1fr); }
+@media (prefers-reduced-motion: no-preference) {
+  .headline-card { animation: headline-appear 180ms ease-out; }
+  @keyframes headline-appear { from { opacity: .65; } to { opacity: 1; } }
+}
+.feed-card .headline-placeholder {
+  grid-column: auto;
+  grid-row: auto;
+  aspect-ratio: 5 / 1;
+}
