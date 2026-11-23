@@ -2,6 +2,12 @@
 
 const raceNews = [
   {
+    id:'kollegin-seven-rivers', category:'riders', date:'2026-11-23', dateLabel:'23 ноября 2026',
+    title:'Антон Коллегин примет участие в Seven Rivers Ultra',
+    summary:'По информации Велобюро, Антон Коллегин планирует стартовать на Seven Rivers Ultra в Казахстане. Старт запланирован на 26 июня 2027 года в Алматы. Маршрут длиной около 1075 км финиширует в Конаеве.',
+    source:'https://sevenriversultra.com/', sourceLabel:'Маршрут и даты у организатора'
+  },
+  {
     category:'upcoming', date:'2027-06-26', dateLabel:'26 июня 2027 · старт',
     title:'Seven Rivers Ultra стартует в Алматы',
     summary:'Организаторы заявили около 1075 км и более 14 000 м набора. Маршрут пройдёт через плато Асы и Алтын-Эмель, с финишем в Конаеве.',

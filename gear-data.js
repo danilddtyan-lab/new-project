@@ -44,8 +44,8 @@ const gearSections = [
       ["WOTOW", "Frame Bag 2 л", "В раму", "Проверьте габариты и положение крепёжных ремней.", ""],
       ["NDakter", "Frame Bag 2 л", "В раму", "Проверьте габариты и доступ к флягам.", ""],
       ["Topeak", "BackLoader 6 / 10 л", "Под седло", "Сверьте объём и зазор над покрышкой.", "https://www.topeak.com/"],
-      ["Topeak", "FrontLoader 8 л", "На руль", "Рулевое крепление с гермомешком.", "https://www.topeak.com/"],
-      ["Topeak", "BarLoader", "На руль", "Компактная нарульная сумка.", "https://www.topeak.com/"],
+      ["Topeak", "FrontLoader 8 л", "На руль", "Рулевое крепление с гермомешком.", "https://www.topeak.com/global/en/product/1290-FRONTLOADER"],
+      ["Topeak", "BarLoader", "На руль", "Компактная нарульная сумка.", "https://www.topeak.com/global/en/product/1301-BARLOADER-"],
       ["Route Werks", "The Handlebar Bag", "На руль", "Сумка с жёсткой крышкой и отдельным креплением.", "https://routewerks.us/"],
       ["Blackburn", "Outpost Handlebar Roll", "На руль", "Рулевой мешок с креплением. Проверьте ширину и объём.", "https://www.blackburndesign.com/"],
       ["Rhinowalk", "Bike Handlebar Bag 2,4 л", "На руль", "Компактная сумка для коротких поездок.", "https://rhinowalk.com/"],
@@ -61,7 +61,7 @@ const gearSections = [
       ['DT Swiss','GR 1600 SPLINE','Гравий','Алюминиевый вилсет. Подберите диаметр, барабан и стандарт ротора.','https://www.dtswiss.com/'],
       ['HUNT','4 Season Gravel X-Wide','Гравий','Алюминиевый вилсет. Сверьте внутреннюю ширину обода с покрышкой.','https://www.huntbikewheels.com/'],
       ['Shimano','GRX WH-RX570','Гравий','Проверьте диаметр, оси и совместимость кассеты с барабаном.','https://bike.shimano.com/'],
-      ['DT Swiss','XM 1700 SPLINE','MTB','Проверьте стандарт втулок и допустимый системный вес.','https://www.dtswiss.com/'],
+      ['DT Swiss','XM 1700 SPLINE','MTB','Проверьте стандарт втулок и допустимый системный вес.','https://www.dtswiss.com/en/wheels/wheels-mtb/all-mountain/xm-1700-spline'],
       ['Race Face','Aeffect R','MTB','Проверьте ширину осей и стандарт барабана для вашей кассеты.','https://www.raceface.com/'],
       ['WTB','KOM Tough i30','Обод','Обод для сборки колеса. Подберите число спиц, втулку и диаметр.','https://www.wtb.com/']
     ]
@@ -72,7 +72,7 @@ const gearSections = [
       ['Maxxis','Aspen','XC / плотный грунт','Быстрая XC-покрышка. Проверьте размер, версию и зазор в раме и вилке.','https://www.maxxis.com/int/tire/aspen/'],
       ['Schwalbe','Marathon Almotion','Асфальт','Дорожная туристическая покрышка. Сверьте точный размер ETRTO.','https://www.schwalbe.com/en/Marathon-Almotion'],
       ['Schwalbe','G-One Bite','Гравий','Протектор для смешанных дорог. Проверьте выбранную ширину и тип борта.','https://www.schwalbe.com/en/bike-tires/'],
-      ['Continental','Terra Trail','Гравий','Более выраженный протектор для рыхлого грунта.','https://www.continental-tires.com/products/b2c/bicycle/tires/terra-trail/'],
+      ['Continental','Terra Trail','Гравий','Более выраженный протектор для рыхлого грунта.','https://www.continental-tires.com/products/b2c/bicycle/'],
       ['Maxxis','Ikon','XC / смешанный грунт','Универсальная XC-покрышка. Диаметр и состав зависят от версии.','https://www.maxxis.com/'],
       ["Maxxis", "Rambler", "Гравий", "Мелкий протектор для плотного гравия. Сверьте версии EXO под 650B и 700C и варианты SilkShield.", "https://www.maxxis.com/us/tire/rambler/"],
       ["Maxxis", "Rekon Race", "XC / плотный грунт", "Низкий протектор для сухих трасс XC. Уточните каркас и размер у производителя.", "https://www.maxxis.com/us/tire/rekon-race/"],
@@ -115,7 +115,7 @@ const gearSections = [
       ["Panaracer", "GravelKing X1", "Гравий", "Шашечный протектор для переменного покрытия.", "https://www.panaracerusa.com/"],
       ["Goodyear", "Connector Ultimate", "Гравий", "Гравийная модель для смешанных дорог.", "https://www.goodyearbike.com/"],
       ["Teravail", "Updraft", "Гравий", "Гоночный гравийный протектор.", "https://www.teravail.com/"],
-      ["Teravail", "Rutland", "Гравий", "Для рыхлого грунта. Сверьте варианты 650B и 700C.", "https://www.teravail.com/"],
+      ["Teravail", "Rutland", "Гравий", "Для рыхлого грунта. Сверьте варианты 650B и 700C.", "https://www.teravail.com/products/rutland-tire"],
       ["Teravail", "Ehline", "XC / смешанный грунт", "Покрышка для XC и лёгких трейлов.", "https://www.teravail.com/"],
       ["Ultradynamico", "MARS Race", "Гравий", "Открытый рисунок для рыхлых поверхностей. Вес зависит от версии.", "https://ultradynamico.com/"],
       ["Challenge", "Gravel Grinder", "Гравий", "Плотный рисунок по центру с более выраженными боковыми шашками.", "https://www.challengetires.com/"],
@@ -130,7 +130,7 @@ const gearSections = [
       ['Shimano','GRX RX400','Гравий','Механическая платформа 2×10. Сверьте совместимость манеток и переключателей.','https://bike.shimano.com/'],
       ['Shimano','Deore M6100','MTB','1×12 с плоским рулём. Кассете CS-M6100 нужен Micro Spline.','https://bike.shimano.com/'],
       ['SRAM','Apex XPLR','Гравий','Семейство 1×12. Уточните механическое или электронное исполнение и кассету.','https://www.sram.com/'],
-      ['microSHIFT','Sword','Гравий','Механическое семейство 10 скоростей для руля-барана. Сверьте версию 1× или 2×.','https://www.microshift.com/'],
+      ['microSHIFT','Sword','Гравий','Механическое семейство 10 скоростей для руля-барана. Сверьте версию 1× или 2×.','https://www.microshift.com/products/groups/sword/'],
       ['microSHIFT','Advent X','MTB / гравий','1×10. Выберите манетку для своего руля из совместимой линейки.','https://www.microshift.com/']
     ]
   }

@@ -3,6 +3,8 @@
 const mondinceSpecs = [
   ['FM356',1100,61,'Для байкпакинга по рыхлому покрытию.'],
   ['FM376',1080,57,'Гоночная геометрия для смешанного покрытия.'],
+  ['FM346',1150,57,'Гравийная рама с защитой нижней трубы и пера.'],
+  ['FM336',1050,47,'Гоночный фреймсет с отсеком в нижней трубе.'],
   ['FM366',1050,57,'Аэропрофиль и отсек в нижней трубе.'],
   ['FM326',1100,50,'Вилка с регулировкой вылета flip-chip.'],
   ['FM316',1150,50,'Геометрия для длинных дистанций.'],
@@ -26,6 +28,37 @@ const frameSpecs = {
   'Specialized/Diverge 4': {current:true,source:'https://www.specialized.com/us/en/diverge'},
   'Santa Cruz/Stigmata': {current:true,clearanceMm:50,clearanceNote:'Stigmata 4 MY26: до 50 мм с 1×, до 45 мм с 2×.',source:'https://www.santacruzbicycles.com/pages/product-support/stigmata-4-my-26'},
   'Cinelli/Hobootleg Geo': {clearanceMm:76,note:'Производитель указывает максимальную ширину 29 × 3,0″.',source:'https://cinelli-milano.com/collections/test-outlet-bikes/products/hobootleg-geo-frameset'},
+  'Fairlight/Strael': {
+    current:true, clearanceMm:39, frontMm:39, rearMm:39, weightG:1640, weightBasis:'окрашенная рама 54R, без крепежа и оси',
+    note:'Strael 4.0. С крыльями до 30 мм или до 35 мм с доработанными крыльями 45 мм.',
+    source:'https://fairlightcycles.com/strael-4-0/'
+  },
+  'Fairlight/Faran': {
+    current:true, clearanceMm:53, frontMm:53, rearMm:53, weightG:1950, weightBasis:'окрашенная рама 54T, без крепежа и оси',
+    clearanceNote:'Faran 3.0 без крыльев: 1× до 53 мм, 2× до 48 мм. Для 650B заявлено 62 и 58 мм.',
+    source:'https://fairlightcycles.com/faran-3-0/'
+  },
+  'Fairlight/Holt 2.0': {
+    current:true, clearanceMm:66, rearMm:66, weightG:2220, weightBasis:'окрашенная рама M, без крепежа и оси',
+    clearanceNote:'Допуск спереди зависит от вилки.',
+    source:'https://media.fairlightcycles.com/wp-content/uploads/2025/08/Fairlight-Holt-2.0-Design-Notes.pdf'
+  },
+  'Fairlight/Holt': {
+    clearanceMm:62, note:'Holt 1.0. Максимум на раме: 29 × 62 мм. Передний допуск зависит от вилки.',
+    source:'https://fairlightcycles.com/holt-1-0/'
+  },
+  'GRIND Cycles/GR1ST': {
+    current:true, weightG:1200, weightBasis:'рама, размер M', clearanceMm:50,
+    source:'https://grindcycles.com/collections/bikes'
+  },
+  'GRIND Cycles/TRACE': {
+    current:true, weightG:1250, weightBasis:'рама, размер S', clearanceMm:50,
+    source:'https://grindcycles.com/collections/gravel'
+  },
+  'GRIND Cycles/GRIT': {
+    current:true, weightG:980, weightBasis:'рама, размер M', clearanceMm:42,
+    source:'https://grindcycles.com/collections/all-road'
+  },
   'ENVE/MOG': {clearanceMm:50,current:true,source:'https://support.enve.com/hc/en-us/article_attachments/13112328880155'},
   'Canyon/Grizl CF': {clearanceMm:54,current:true,clearanceNote:'Поколение с допуском до 54 мм.',source:'https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/'},
   'Trek/Checkpoint ALR Gen 3': {clearanceMm:50,current:true,source:'https://www.trekbikes.com/emea/en_EM_DS/bikes/bikepacking-and-touring-bikes/checkpoint/checkpoint-alr/f/F224-2/checkpoint-alr-5-gen-3/49946/5332810/'},
@@ -84,7 +117,7 @@ const frameSpecs = {
     source:'https://icancycling.com/products/graro-eu'
   },
   'Fairlight/Secan': {
-    current:true, clearanceMm:53, frontMm:53, rearMm:53,
+    current:true, clearanceMm:53, frontMm:53, rearMm:53, weightG:1987, weightBasis:'окрашенная рама 56R, без крепежа и оси',
     clearanceNote:'Secan 3.0, 1× без крыльев. С 2× до 48 мм.',
     source:'https://fairlightcycles.com/secan-3-0/'
   },

@@ -19,6 +19,7 @@ for (const item of [...raceNews,...equipmentNews].sort(raceOrder)) {
   const grid = raceNewsSections[category] || raceNewsSections.archive;
   const card = document.createElement('article');
   card.className = 'card';
+  if (item.id) card.id = item.id;
   const date = document.createElement('time');
   date.className = 'meta';
   date.dateTime = item.date;

@@ -62,12 +62,12 @@ const framePhotos = new Map([...dropbarPicks, {
   id:'SHULZ/Boys Don’t Cry', image:'https://static.tildacdn.com/stor6532-3961-4464-a139-616633393533/68085261.jpg', credit:'Tour Bike Time'
 }, {
   id:'State Bicycle Co./4130 All-Road', image:'https://www.statebicycle.com/cdn/shop/files/4130All-Road-Frameset_UDH_ExternalRouting_-SchoolyardYellow-1_large.jpg?width=720', credit:'State Bicycle Co.'
-}].map(item => [item.id,item]));
+}, ...catalogPhotos].map(item => [item.id,item]));
 
 function renderFramePhoto(id) {
   const photo = framePhotos.get(id);
   if (!photo) return '<figure class="frame-photo photo-unavailable">Фото рамы отсутствует</figure>';
-  return `<figure class="frame-photo"><img src="${photo.image}" alt="Фреймсет ${id.replace('/',' ')}" loading="lazy" decoding="async" width="720" height="480" referrerpolicy="no-referrer"><figcaption>Фото: ${photo.credit}</figcaption></figure>`;
+  return `<figure class="frame-photo"><img src="${photo.image}" alt="${photo.built ? 'Велосипед' : 'Фреймсет'} ${id.replace('/',' ')}" loading="lazy" decoding="async" width="720" height="480" referrerpolicy="no-referrer"><figcaption>Фото: ${photo.credit}</figcaption></figure>`;
 }
 
 document.addEventListener('error', event => {

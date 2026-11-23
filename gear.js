@@ -4,11 +4,12 @@ const gearRoot = document.getElementById('gear-sections');
 const gearIds = new Set(gearRoot.dataset.section.split(/\s+/));
 const gearRequested = gearSections.filter(section => gearIds.has(section.id));
 
-function gearCard([brand,name,use,detail,url,image], shop = false) {
+function gearCard([brand,name,use,detail,url,storeImage], shop = false) {
+  const image = storeImage || gearPhotos[brand+'/'+name];
   return [
     '<article class="card">',
-    image ? '<figure class="frame-photo freetour-photo"><img alt="'+brand+' '+name+'" src="'+image+
-      '" width="720" height="480" loading="lazy" decoding="async"></figure>' : '',
+    image ? '<figure class="frame-photo gear-photo"><img alt="'+brand+' '+name+'" src="'+image+
+      '" width="720" height="480" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure>' : '',
     '<p class="meta">'+brand+' · '+use+'</p><h3>'+name+'</h3><p>'+detail+'</p>',
     '<div class="product-links">'+(url ? '<a href="'+url+'">'+(shop ? 'Карточка FreeTour' : 'Источник')+'</a>' : '<span>Ссылка на спецификацию уточняется</span>'),
     shop ? '' : renderMarketLink(brand+'/'+name),'</div></article>'
@@ -64,7 +65,7 @@ for (const {id,items} of gearRequested) {
 
 gearRoot.addEventListener('error',event => {
   const image = event.target;
-  if (!image.matches?.('.freetour-photo img')) return;
+  if (!image.matches?.('.gear-photo img')) return;
   const figure = image.closest('figure');
   figure.classList.add('photo-unavailable');
   figure.textContent = 'Фото временно недоступно';

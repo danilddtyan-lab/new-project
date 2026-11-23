@@ -21,7 +21,7 @@ try {
 const compared = new Set();
 const collectionButtons = [...document.querySelectorAll('[data-collection]')];
 const catalogPriority = new Map(Object.keys(frameDetails).filter(id => frameDetails[id].pick).map((id,index) => [id,index]));
-const frameSpec = frame => frameSpecs[frame.id]?.source || frameDetails[frame.id]?.spec || framePhotos.get(frame.id)?.spec || frame.url;
+const frameSpec = frame => (frame.brand === 'Mondince' && framePhotos.get(frame.id)?.spec) || frameSpecs[frame.id]?.source || frameDetails[frame.id]?.spec || framePhotos.get(frame.id)?.spec || frame.url;
 
 get('photos-only').checked = new URLSearchParams(location.search).has('photos');
 get('total').textContent = frames.length;
@@ -72,6 +72,7 @@ function render(event) {
   else matching.sort((left,right) =>
     (frameSpecs[right.id]?.current === true ? 1 : frameSpecs[right.id]?.current === false ? -1 : 0) -
     (frameSpecs[left.id]?.current === true ? 1 : frameSpecs[left.id]?.current === false ? -1 : 0) ||
+    Number(framePhotos.has(right.id)) - Number(framePhotos.has(left.id)) ||
     (catalogPriority.get(left.id) ?? catalogPriority.size) - (catalogPriority.get(right.id) ?? catalogPriority.size));
   const visible = matching.slice(0,limit);
   get('count').textContent = 'Показано '+visible.length+' из '+matching.length;
