@@ -8,17 +8,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css?v=4">
-<script defer src="./catalog.js?v=4"></script>
-<script defer src="./market.js?v=4"></script>
-<script defer src="./gear.js?v=4"></script>
-<script defer src="./features.js?v=4"></script>
-<script defer src="./app.js?v=4"></script>
+<link rel="stylesheet" href="./style.css?v=5">
+<script defer src="./catalog.js?v=5"></script>
+<script defer src="./market.js?v=5"></script>
+<script defer src="./gear.js?v=5"></script>
+<script defer src="./features.js?v=5"></script>
+<script defer src="./routes.js?v=5"></script>
+<script defer src="./app.js?v=5"></script>
 </head>
 <body>
 <header class="header">
   <a class="logo" href="#" aria-label="Велобюро, главная"><b class="mark" aria-hidden="true">△</b> ВЕЛОБЮРО<span>.</span></a>
-  <nav aria-label="Разделы"><a href="#selection">Подбор</a><a href="#catalog">Рамы</a><a href="#dropbar">MTB дропбар</a><a href="#news">Газета</a><a href="#gallery">Галерея</a><a href="#bags">Сумки</a><a href="#wheels">Колёса</a><a href="#tires">Покрышки</a><a href="#drivetrains">Трансмиссии</a><a class="lev-link" href="#lev">Для Льва</a></nav>
+  <nav aria-label="Разделы"><a href="#selection">Подбор</a><a href="#route-day">Маршрут дня</a><a href="#catalog">Рамы</a><a href="#dropbar">MTB дропбар</a><a href="#news">Газета</a><a href="#gallery">Галерея</a><a href="#bags">Сумки</a><a href="#wheels">Колёса</a><a href="#tires">Покрышки</a><a href="#drivetrains">Трансмиссии</a><a class="lev-link" href="#lev">Для Льва</a></nav>
   <button id="saved-toggle" class="outline" type="button" aria-pressed="false">♡ <span>Избранное</span> <strong id="saved-count">0</strong></button>
 </header>
 <a class="skip" href="#main-content">Перейти к содержимому</a>
@@ -42,13 +43,21 @@
     <div class="news-brief"><strong>На первой полосе</strong><p>Дропбар для бездорожья, новый Polygon Tambora и сумки для первых выездов с ночёвкой.</p></div>
     <button class="solid" type="button" id="open-news">Читать выпуск</button>
   </section>
+  <section class="route-day" id="route-day" aria-labelledby="route-day-title">
+    <div class="route-day-heading">
+      <p class="eyebrow" id="route-day-date"></p>
+      <h2 id="route-day-title">Маршрут дня</h2>
+    </div>
+    <div id="route-day-content"></div>
+  </section>
   <section class="selection" id="selection">
     <h2>Анкета велосипедиста</h2>
     <form id="fit-form">
       <label>Где катаетесь?
-        <select name="surface" required>
+        <select name="surface" required aria-describedby="surface-example">
           <option value="">Выберите покрытие</option>
           <option value="road">В основном асфальт</option>
+          <option value="roadpacking">Езжу в байкпакинг по дорогам</option>
           <option value="gravel">Грейдеры и укатанный гравий</option>
           <option value="rough">Каменистые дороги и горные тропы</option>
           <option value="sand">Песок и рыхлый снег</option>
@@ -69,6 +78,9 @@
       </label>
       <label>Марка, модель и год <small>необязательно</small><input name="model" maxlength="100" placeholder="Например, Marin Four Corners 2024"></label>
       <label>Багаж, кг <small>необязательно</small><input name="luggage" type="number" min="0" max="100" step="0.1" placeholder="Например, 12"></label>
+      <div class="surface-example" id="surface-example" aria-live="polite">
+        <p>Выберите, где ездите чаще всего, чтобы увидеть пример маршрута в Кыргызстане.</p>
+      </div>
       <button class="solid" type="submit">Подобрать велосипед и детали</button>
     </form>
     <div id="fit-result" hidden tabindex="-1" aria-live="polite"></div>
