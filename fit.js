@@ -100,6 +100,7 @@ bikeFitForm.addEventListener('submit',event => {
     </div>
     <p>${[fitGuidance[input.style],distanceTip,inseamTip].filter(Boolean).join(" ")}</p>
     <p><a href="./fit-guide.html">Гайд по ростовке, выносу и рулю MTB-дропбара</a></p>
+    <p><a href="./catalog.html">Сравнить рамы</a> · <a href="./gear.html#tires">Каталог покрышек</a> · <a href="./gear.html#bags">Каталог сумок</a></p>
     <p class="result-route"><strong>Пример маршрута.</strong> <a href="${routeExample.url}">${routeExample.title}</a></p>
     <p><strong>Проверьте нагрузку.</strong> ${load} Сверьте полную массу с лимитами производителя велосипеда, рамы и колёс, а нагрузку на багажник — с его отдельным лимитом.</p>`;
   result.hidden = false;

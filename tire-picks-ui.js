@@ -21,6 +21,20 @@ for (const tire of tirePicks) {
     sketch.setAttribute('role','img');
     sketch.setAttribute('aria-label','Условная схема Aspen. Мелкие шашки по центру, крупные по краям.');
     card.insertBefore(sketch,description);
+    if (tire.treadPhoto) {
+      const photo = document.createElement('img');
+      photo.className = 'tire-tread-photo';
+      photo.alt = 'Протектор Maxxis Aspen крупным планом';
+      photo.width = 300;
+      photo.height = 300;
+      photo.hidden = true;
+      photo.addEventListener('load',() => {
+        photo.hidden = false;
+        sketch.hidden = true;
+      },{once:true});
+      photo.src = tire.treadPhoto;
+      card.insertBefore(photo,description);
+    }
   }
   tireGrid.append(card);
 }

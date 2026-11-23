@@ -30,11 +30,28 @@ const frameSpecs = {
     source:'https://www.sp-cycle.com/2023-new-t1000-carbon-gravel-frame-70047c-cyclocross-bike-frame-t47-disc-brake-gravel-bike-frameset-road-bike-frame-p4468945.html'
   },
   'Carbonda/CFR707': {
-    clearanceMm:50, source:'https://carbonda.com/road/cfr-707.html'
+    clearanceMm:50, weightG:1300, toleranceG:50, weightBasis:'размер M, с металлическими деталями',
+    source:'https://carbonda.com/road/cfr-707.html'
   },
   'SPCycle/G026': {
-    clearanceMm:50,
+    clearanceMm:50, weightG:1250, toleranceG:60,
     source:'https://www.sp-cycle.com/Spcycle-G026-Carbon-Gravel-Bike-Frame-700x50C-UDH-Thread-T47-865-Storage-Box-Gravel-Bicycle-Carbon-Frameset-p7023451.html'
+  },
+  'Carbonda/CFR696': {
+    clearanceMm:50, weightG:1200, toleranceG:50,
+    source:'https://carbonda.com/road/cfr-696.html'
+  },
+  'SPCycle/G068': {
+    clearanceMm:47, weightG:1120, toleranceG:30, weightBasis:'размер M, матовая чёрная, без металлических деталей',
+    source:'https://www.sp-cycle.com/spcycle-g068-t1000-carbon-gravel-bike-frame-semi-internal-cable-udh-hanger-disc-brake-aero-carbon-gravel-bicycle-frameset-p5700272.html'
+  },
+  'LightCarbon/LCG087-D': {
+    clearanceMm:47, weightG:1480, toleranceG:40, weightBasis:'размер M',
+    source:'https://www.lightcarbon.com/lightcarbon-gravel-frameset-with-micro-suspension-downtube-storage-plus-handlebar_p243.html'
+  },
+  'ICAN/Graro': {
+    clearanceMm:45,
+    source:'https://icancycling.com/products/graro-eu'
   },
   'Fairlight/Secan': {
     current:true, clearanceMm:53, frontMm:53, rearMm:53,

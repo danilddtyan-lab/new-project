@@ -10,8 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./style.css?v=20">
 <script defer src="./site.js?v=11"></script>
-<script defer src="./race-news.js"></script>
-<script defer src="./race-news-ui.js"></script>
+<script defer src="./race-news.js?v=2"></script>
+<script defer src="./race-news-ui.js?v=2"></script>
 </head>
 <body data-page="news">
 <a class="skip" href="#main-content">Перейти к содержимому</a>
@@ -21,7 +21,12 @@
   <nav aria-label="Разделы сайта"><a href="./index.html">Главная</a><a href="./selection.html">Подбор</a><a href="./catalog.html">Рамы</a><a href="./gear.html">Детали</a><a href="./training.html">Тренировки</a><a href="./routes.html">Маршруты</a><a href="./news.html" aria-current="page">Новости</a><a href="./gallery.html">Галерея</a><a href="./marketplace.html">Барахолка</a><a href="https://freetour-sigma.vercel.app/">Магазин FreeTour</a></nav>
 </header>
 <main id="main-content" tabindex="-1">
-<header class="page-intro"><h1>Новости</h1><p class="standfirst">Подборка от 23 ноября 2026 года</p><p class="fit-inline-link"><a href="#podiums">Архив подиумов</a></p></header><div class="news-page">
+<header class="page-intro"><h1>Новости</h1><p class="standfirst">Анонсы, протоколы и выступления гонщиков Кыргызстана.</p></header>
+<nav class="section-menu" aria-label="Разделы новостей"><a href="#upcoming">Ближайшие гонки</a><a href="#riders">Гонщики и команды</a><a href="#race-archive">Архив стартов</a><a href="#podiums">Архив подиумов</a></nav>
+<div class="news-page">
+<section class="news-section" id="upcoming" aria-labelledby="upcoming-title">
+  <h2 id="upcoming-title">Ближайшие гонки</h2><div id="race-upcoming" class="grid enhancement-grid"></div>
+</section>
 
 <section aria-labelledby="local-riders-title" class="news-section">
 <h2 id="local-riders-title">Гонки в Кыргызстане</h2>
@@ -76,8 +81,11 @@
 </article>
 </div>
 </section>
-<section class="news-section" aria-labelledby="race-news-title">
-<h2 id="race-news-title">Календарь и протоколы гонок</h2>
+<section class="news-section" id="riders" aria-labelledby="riders-title">
+  <h2 id="riders-title">Гонщики и команды</h2><div id="race-riders" class="grid enhancement-grid"></div>
+</section>
+<section class="news-section" id="race-archive" aria-labelledby="race-news-title">
+<h2 id="race-news-title">Архив стартов и протоколов</h2>
 <div id="race-news" class="grid enhancement-grid"></div>
 </section>
 <section aria-labelledby="podium-title" class="news-section" id="podiums">
