@@ -323,3 +323,6 @@ footer{padding-block:22px 40px;border-top:1px solid var(--soft-border)}
   .home-stories{grid-template-columns:1fr}
   .home-news-all,.builds-selection{display:flex;width:100%;justify-content:center}
 }
+.site-tagline{margin:0;color:#efdfc9;font-size:.9rem;line-height:1.35}
+@media(max-width:560px){.site-tagline{flex-basis:100%}}
+.news-page .news-leads article:last-child{grid-column:auto}

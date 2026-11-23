@@ -14,16 +14,16 @@ const kyrgyzRoutes = {
     url:'https://kyrgyzmap.com/ru/route/sary-mogol-daroot-korgon-cycle-ru/', link:'Карта и GPX на KyrgyzMap'
   },
   gravel: {
-    title:'Бишкек — вдоль Большого Чуйского канала',
-    meta:'Гравий и местный асфальт · фрагмент Bishkek Eastern Compass',
-    detail:'Для примера покрытия смотрите участок вдоль канала у автора маршрута. Полное кольцо многодневное и включает сложные перевалы.',
-    url:'https://bikepackingkyrgyzstan.cc/bishkek_eastern_compass_route_en', link:'Описание и авторский GPX'
+    title:'Карагачёвая тропа',
+    meta:'Бишкек · около 1,1 км · лёгкий грунтовый синглтрек',
+    detail:'Короткий участок с небольшим перепадом высот. Подойдёт, чтобы проверить, как велосипед с багажом ведёт себя на узкой грунтовой тропе.',
+    url:'https://www.trailforks.com/trails/karagachevaya-322508/', link:'Профиль тропы на Trailforks'
   },
   rough: {
-    title:'Тянь-Шаньский траверс',
-    meta:'Горный байкпакинг · камни, грунт и высокие перевалы',
-    detail:'Многодневный маршрут по внутренним долинам Кыргызстана через Сон-Куль. Для оценки покрытия смотрите опубликованный трек и профиль.',
-    url:'https://bikepacking.com/routes/tian-shan-traverse-kyrgyzstan/', link:'Карта и описание траверса'
+    title:'Тропа к перевалу Электро',
+    meta:'Иссык-Ата · около 2 км · MTB-синглтрек средней сложности',
+    detail:'Пример узкой горной тропы. Для подбора сборки важны сцепление покрышек на грунте и устойчивость велосипеда с грузом.',
+    url:'https://www.trailforks.com/trails/path-to-mountain-pass-elektro/', link:'Профиль тропы на Trailforks'
   },
   sand: {
     title:'Ак-Сай — Туз-Кёль',
@@ -69,7 +69,11 @@ if (surface) {
   if (new URLSearchParams(location.search).has('day')) {
     surface.value = featuredRoute.surface;
     showSurfaceExample(featuredRoute);
-  } else if (surface.value) showSurfaceExample();
+  } else {
+    const requestedSurface = new URLSearchParams(location.search).get('surface');
+    if (Object.hasOwn(kyrgyzRoutes, requestedSurface)) surface.value = requestedSurface;
+    if (surface.value) showSurfaceExample();
+  }
 }
 
 const routeDayContent = document.getElementById('route-day-content');
@@ -88,5 +92,5 @@ if (routesGrid) {
   const surfaces = {road:'Асфальт',roadpacking:'Дорожный байкпакинг',gravel:'Гравий',rough:'Камни и тропы',sand:'Песок и рыхлый грунт'};
   routesGrid.innerHTML = Object.entries(kyrgyzRoutes).map(([type,route]) =>
     `<article class="card"><p class="meta">${surfaces[type]}</p><h3>${route.title}</h3>
-      <p class="route-meta">${route.meta}</p><p>${route.detail}</p><a href="${route.url}">${route.link}</a></article>`).join('');
+      <p class="route-meta">${route.meta}</p><p>${route.detail}</p><div class="route-actions"><a href="${route.url}">${route.link}</a><a href="./selection.html?surface=${type}">Подобрать сборку</a></div></article>`).join('');
 }
