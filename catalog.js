@@ -48,6 +48,7 @@ const brands = [
 ['Carbonda','https://www.carbonda.com/','CFR696|C|G'],
 ['Winspace','https://www.winspace.cc/','G5|C|G'],
 ['YOELEO','https://www.yoeleobike.com/','Altera G21|C|G'],
+['SHULZ','https://shulz.ru/catalog/all/framesets','The Lightning|S|G'],
 ['Сусанин','https://t.me/s/susaninbikes','Адвенчур|S|E,Трейл|S|M'],
 ['Canyon','https://www.canyon.com/','Grizl CF|C|G,Grizl AL|A|G,Grail CF SL|C|G,Exceed CF|C|M'],
 ['Rose','https://www.rosebikes.com/','Backroad|C|G,Backroad AL|A|G,Backroad FF|C|G'],
@@ -75,7 +76,7 @@ const brands = [
 const regionBrands = {
   CN:'SPCycle,Tideace,Twitter,LightCarbon,ICAN,Carbonda,Winspace,YOELEO',
   EU:'Bombtrack,Brother Cycles,Fairlight,Genesis,Nordest,Kinesis UK,3T,Mason,Tout Terrain,Pelago,Vitus,Stooge,OPEN,Canyon,Rose,Sour,Cotic,Stanforth,Ribble,Basso,Wilier,Ridley,Rondo,8bar,Cinelli,Bergamont,Focus,Cube,Van Rysel,Kellys,Orbea,Megamo,Lapierre,Origine,Chiru',
-  RU:'Сусанин'
+  RU:'Сусанин,SHULZ'
 };
 const brandRegions = new Map(Object.entries(regionBrands).flatMap(([region,names]) =>
   names.split(',').map(name => [name,region])));

@@ -29,6 +29,7 @@ function render(event) {
   const focusData = focus?.dataset;
   const filters = [get('q'), get('material'), get('brand'), get('region'), get('sort')];
   const [query, frameMaterial, brand, region, sort] = filters.map(input => input.value.trim());
+  const photosOnly = get('photos-only').checked;
   const words = normalize(query).split(/\s+/);
   const matching = frames.filter(frame =>
     (!activeTerrain || activeTerrain === frame.t) &&
@@ -36,6 +37,7 @@ function render(event) {
     (!brand || brand === frame.brand) &&
     (!region || region === frame.region) &&
     (!savedOnly || saved.has(frame.id)) &&
+    (!photosOnly || framePhotos.has(frame.id)) &&
     words.every(word => normalize(frame.brand+' '+frame.model).includes(word)));
   if (sort !== 'featured') matching.sort((left,right) =>
     collator.compare(left.brand+' '+left.model,right.brand+' '+right.model) * (sort === 'az' ? 1 : -1));
@@ -44,7 +46,7 @@ function render(event) {
   get('saved-count').textContent = saved.size;
   get('saved-toggle').setAttribute('aria-pressed',savedOnly);
   get('more').hidden = matching.length <= limit;
-  get('reset').hidden = !(activeTerrain || savedOnly || query || frameMaterial || brand || region || sort !== 'featured');
+  get('reset').hidden = !(activeTerrain || savedOnly || query || frameMaterial || brand || region || photosOnly || sort !== 'featured');
   get('tabs').querySelectorAll('button').forEach(button =>
     button.setAttribute('aria-pressed',button.dataset.terrain === activeTerrain));
   get('grid').innerHTML = visible.map(frame => {
@@ -52,6 +54,7 @@ function render(event) {
     const selected = compared.has(frame.id);
     const starred = saved.has(frame.id);
     return `<article class="card">
+      ${renderFramePhoto(frame.id)}
       <p class="meta">${escapeHtml(frame.brand)}</p>
       <h3>${escapeHtml(frame.model)}</h3>
       <p>${material[frame.m]} · ${terrain[frame.t]}${regionNames[frame.region] ? ' · '+regionNames[frame.region] : ''}</p>
@@ -74,7 +77,7 @@ function refilter() {
   limit = pageSize;
   render();
 }
-for (const [name,event] of [['q','input'],['material','change'],['brand','change'],['region','change'],['sort','change']]) {
+for (const [name,event] of [['q','input'],['material','change'],['brand','change'],['region','change'],['photos-only','change'],['sort','change']]) {
   get(name).addEventListener(event,refilter);
 }
 get('tabs').addEventListener('click',event => {
@@ -91,6 +94,7 @@ get('saved-toggle').addEventListener('click',() => {
 get('reset').addEventListener('click',() => {
   for (const field of ['q','material','brand','region']) get(field).value = '';
   get('sort').value = 'featured';
+  get('photos-only').checked = false;
   activeTerrain = '';
   savedOnly = false;
   refilter();

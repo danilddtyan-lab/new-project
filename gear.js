@@ -4,6 +4,10 @@ const gearSections = [
   {
     id:'bags',title:'Сумки',caption:'Сначала измерьте раму. Потом выясняйте, почему кухня едет отдельно.',
     items:[
+      ['Rhinowalk','Plateau X 1,7 л','В раму','Компактная треугольная сумка. Сверьте положение фляг и места для ремней.','https://rhinowalk.com/products/plateau-series-x-waterproof-triangle-bag-1-7l'],
+      ['Rhinowalk','Wilderness 14 л','Под седло','Сумка с крепёжной системой. Проверьте высоту седла и зазор над покрышкой.','https://rhinowalk.com/products/14l-waterproof-harness-saddle-bag-wilderness-series'],
+      ['Apidura','Backcountry Frame Pack','В раму','Серия для MTB и бездорожья. Используйте шаблон производителя для проверки посадки.','https://www.apidura.com/shop/backcountry-frame-pack/'],
+      ['Sarmatian Bags','Рамная сумка','В раму','Примеры работ и варианты крепления у мастерской. Размеры и материал уточняйте для конкретной сумки.','https://www.instagram.com/sarmatianbags/'],
       ['Revelate Designs','Tangle','В раму','Полурамная сумка из X-Pac VX21. Подберите длину и проверьте доступ к флягам.','https://revelatedesigns.com/product/tangleframebag/'],
       ['Apidura','Expedition Frame Pack','В раму','Для инструментов, еды и тяжёлых вещей по центру велосипеда.','https://www.apidura.com/shop/expedition-frame-pack/'],
       ['Apidura','Expedition Saddle Pack','Под седло','Для объёмных лёгких вещей. Проверьте зазор над задним колесом.','https://www.apidura.com/shop/expedition-saddle-pack/'],
