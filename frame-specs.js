@@ -44,8 +44,9 @@ const frameSpecs = {
     source:'https://media.fairlightcycles.com/wp-content/uploads/2025/08/Fairlight-Holt-2.0-Design-Notes.pdf'
   },
   'Fairlight/Holt': {
-    clearanceMm:62, note:'Holt 1.0. Максимум на раме: 29 × 62 мм. Передний допуск зависит от вилки.',
-    source:'https://fairlightcycles.com/holt-1-0/'
+    current:false, clearanceMm:62, rearMm:62, weightG:2258, weightBasis:'окрашенная рама M, без крепежа и оси',
+    clearanceNote:'Holt 1.0. Допуск спереди зависит от вилки.',
+    source:'https://fairlightcycles.com/wp-content/uploads/2024/01/Fairlight-Holt-Lookbook-v1.4-web.pdf'
   },
   'GRIND Cycles/GR1ST': {
     current:true, weightG:1200, weightBasis:'рама, размер M', clearanceMm:50,
