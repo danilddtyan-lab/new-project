@@ -391,6 +391,7 @@ footer{padding-block:22px 40px;border-top:1px solid var(--soft-border)}
 .enhancement-form button{align-self:end;min-height:46px}
 @media(min-width:760px){.home-start .grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:560px){#fit-form{grid-template-columns:1fr}.header nav a{min-width:0}}
+.home-start .home-featured{background:var(--surface);border-inline-start:4px solid var(--red)}
 .home-start .card h2{font-size:clamp(1.1rem,2vw,1.5rem)}
 .frame-facts{margin:0}
 .frame-facts div{border-top:1px solid var(--line);padding-block:.25rem}
