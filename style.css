@@ -126,3 +126,6 @@ body{background-color:var(--paper);background-image:radial-gradient(#4b301111 .6
 @media(max-width:1000px){.front-page{grid-template-columns:1fr}.front-page .hero h1{font-size:clamp(2.45rem,7vw,5.25rem)}.build-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}}
 @media(max-width:680px){.build-list{grid-template-columns:1fr}.front-page .hero{min-height:0}}
 @media(max-width:530px){.front-page{width:calc(100% - 26px);gap:12px}}
+.gallery-builds{margin-top:16px}.gallery-builds>h3{font-size:1.45rem}
+#build-gallery-grid{margin-top:14px}.gallery-builds .card>a{justify-self:start;font-size:.9rem;font-weight:700}
+.gallery .gallery-photo{margin-top:22px}

@@ -52,7 +52,7 @@ const brands = [
 ['Carbonda','https://www.carbonda.com/','CFR696|C|G,CFR707|C|G'],
 ['Winspace','https://www.winspace.cc/','G5|C|G'],
 ['YOELEO','https://www.yoeleobike.com/','Altera G21|C|G'],
-['SHULZ','https://shulz.ru/catalog/all/framesets','The Lightning|S|G'],
+['SHULZ','https://shulz.ru/catalog/all/framesets','The Lightning|S|G,Boys Don’t Cry|S|E'],
 ['Сусанин','https://t.me/s/susaninbikes','Адвенчур|S|E,Трейл|S|M'],
 ['Canyon','https://www.canyon.com/','Grizl CF|C|G,Grizl AL|A|G,Grail CF SL|C|G,Exceed CF|C|M'],
 ['Rose','https://www.rosebikes.com/','Backroad|C|G,Backroad AL|A|G,Backroad FF|C|G'],

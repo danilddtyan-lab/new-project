@@ -54,6 +54,12 @@ const framePhotos = new Map([...dropbarPicks, {
   id:'Seaboard/GR02', image:'https://www.mrbicycles.com/wp-content/uploads/2023/11/GR02-Gravel-Frameset-Silver-Gray-1.jpg', credit:'Mr. Bicycles'
 }, {
   id:'Twitter/G2 MAX', image:'https://cdn.shopify.com/s/files/1/0587/2982/4417/files/frameset-g2max-2026.jpg?v=1788461870&width=720', credit:'Twitter Bikes USA'
+}, {
+  id:'SPCycle/G028', image:'https://usaimages.oss-us-west-1.aliyuncs.com/6230/product/20260515/Spcycle_G028_Carbon_Gravel_Bike_Frame_700x57C_UDH_Hanger_Full_Internal_Cable_Gravel_Bicycle_Carbon_Frameset_1778837682616_1.jpg_w720.jpg', credit:'SPCycle'
+}, {
+  id:'SHULZ/Boys Don’t Cry', image:'https://static.tildacdn.com/stor6532-3961-4464-a139-616633393533/68085261.jpg', credit:'Tour Bike Time'
+}, {
+  id:'State Bicycle Co./4130 All-Road', image:'https://www.statebicycle.com/cdn/shop/files/4130All-Road-Frameset_UDH_ExternalRouting_-SchoolyardYellow-1_large.jpg?width=720', credit:'State Bicycle Co.'
 }].map(item => [item.id,item]));
 
 function renderFramePhoto(id) {
@@ -74,6 +80,12 @@ document.getElementById('dropbar-grid').innerHTML = dropbarPicks.map(({id,use,no
     ${renderFramePhoto(id)}
     <p class="meta">${use}</p><h3>${id.replace('/',' ')}</h3><p>${note}</p>
     <a href="${spec}">Характеристики</a>
+  </article>`).join('');
+
+const buildGalleryIds = ['Twitter/G2 MAX','SHULZ/Boys Don’t Cry','State Bicycle Co./4130 All-Road','SPCycle/G028','Salsa/Fargo'];
+document.getElementById('build-gallery-grid').innerHTML = buildGalleryIds.map(id =>
+  `<article class="card"><h3>${id.replace('/',' ')}</h3>${renderFramePhoto(id)}
+    <a href="${framePhotos.get(id).image}" target="_blank" rel="noopener noreferrer">Открыть фото</a>
   </article>`).join('');
 
 const newspaper = document.getElementById('news-dialog');
