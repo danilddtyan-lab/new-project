@@ -46,7 +46,7 @@ const dayRoutes = [
 
 const surface = document.querySelector('#fit-form select[name="surface"]');
 const surfaceExample = document.getElementById('surface-example');
-const surfacePlaceholder = surfaceExample.innerHTML;
+const surfacePlaceholder = surfaceExample?.innerHTML;
 let selectedRouteExample;
 
 function showSurfaceExample(route = kyrgyzRoutes[surface.value]) {
@@ -56,8 +56,6 @@ function showSurfaceExample(route = kyrgyzRoutes[surface.value]) {
     <p>${route.detail}</p><a href="${route.url}">${route.link}</a>` : surfacePlaceholder;
   document.getElementById('fit-result').hidden = true;
 }
-surface.addEventListener('change',() => showSurfaceExample());
-if (surface.value) showSurfaceExample();
 
 const now = new Date();
 const timeZone = 'Asia/Bishkek';
@@ -66,17 +64,29 @@ const date = Object.fromEntries(parts.map(({type,value}) => [type,value]));
 const bishkekDay = Date.UTC(Number(date.year),Number(date.month)-1,Number(date.day)) / 86400000;
 const featuredRoute = dayRoutes[bishkekDay % dayRoutes.length];
 
-document.getElementById('route-day-date').textContent = new Intl.DateTimeFormat('ru',{timeZone,day:'numeric',month:'long'}).format(now);
+if (surface) {
+  surface.addEventListener('change',() => showSurfaceExample());
+  if (new URLSearchParams(location.search).has('day')) {
+    surface.value = featuredRoute.surface;
+    showSurfaceExample(featuredRoute);
+  } else if (surface.value) showSurfaceExample();
+}
+
 const routeDayContent = document.getElementById('route-day-content');
-routeDayContent.innerHTML = `<h3>${featuredRoute.title}</h3>
-  <p class="route-meta">Старт: ${featuredRoute.start} · ${featuredRoute.meta}</p>
-  <p>${featuredRoute.detail}</p>
-  <p class="route-conditions">Перед выездом проверьте погоду и состояние дороги.</p>
-  <div class="route-actions"><a href="${featuredRoute.url}">${featuredRoute.link}</a>
-  <button class="outline" type="button" id="route-day-fit">Подобрать велосипед</button></div>`;
-document.getElementById('route-day-fit').addEventListener('click',() => {
-  surface.value = featuredRoute.surface;
-  showSurfaceExample(featuredRoute);
-  surface.focus({preventScroll:true});
-  document.getElementById('selection').scrollIntoView();
-});
+if (routeDayContent) {
+  document.getElementById('route-day-date').textContent = new Intl.DateTimeFormat('ru',{timeZone,day:'numeric',month:'long'}).format(now);
+  routeDayContent.innerHTML = `<h3>${featuredRoute.title}</h3>
+    <p class="route-meta">Старт: ${featuredRoute.start} · ${featuredRoute.meta}</p>
+    <p>${featuredRoute.detail}</p>
+    <p class="route-conditions">Перед выездом проверьте погоду и состояние дороги.</p>
+    <div class="route-actions"><a href="${featuredRoute.url}">${featuredRoute.link}</a>
+    <a class="outline" href="./selection.html?day=1">Подобрать велосипед</a></div>`;
+}
+
+const routesGrid = document.getElementById('routes-grid');
+if (routesGrid) {
+  const surfaces = {road:'Асфальт',roadpacking:'Дорожный байкпакинг',gravel:'Гравий',rough:'Камни и тропы',sand:'Песок и рыхлый грунт'};
+  routesGrid.innerHTML = Object.entries(kyrgyzRoutes).map(([type,route]) =>
+    `<article class="card"><p class="meta">${surfaces[type]}</p><h3>${route.title}</h3>
+      <p class="route-meta">${route.meta}</p><p>${route.detail}</p><a href="${route.url}">${route.link}</a></article>`).join('');
+}

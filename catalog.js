@@ -52,6 +52,7 @@ const brands = [
 ['Carbonda','https://www.carbonda.com/','CFR696|C|G,CFR707|C|G'],
 ['Winspace','https://www.winspace.cc/','G5|C|G'],
 ['YOELEO','https://www.yoeleobike.com/','Altera G21|C|G'],
+['GRIND Cycles','https://grindcycles.com/collections/gravel','GR1ST|C|G,TRACE|C|G'],
 ['SHULZ','https://shulz.ru/catalog/all/framesets','The Lightning|S|G,Boys Don’t Cry|S|E'],
 ['Сусанин','https://t.me/s/susaninbikes','Адвенчур|S|E,Трейл|S|M'],
 ['Canyon','https://www.canyon.com/','Grizl CF|C|G,Grizl AL|A|G,Grail CF SL|C|G,Exceed CF|C|M'],
@@ -79,7 +80,7 @@ const brands = [
 ];
 const regionBrands = {
   CN:'SPCycle,Tideace,Twitter,LightCarbon,ICAN,Carbonda,Winspace,YOELEO,Seaboard,TanTan Seraph,VeloBuild',
-  EU:'Bombtrack,Brother Cycles,Fairlight,Genesis,Nordest,Kinesis UK,3T,Mason,Tout Terrain,Pelago,Vitus,Stooge,OPEN,Canyon,Rose,Sour,Cotic,Stanforth,Ribble,Basso,Wilier,Ridley,Rondo,8bar,Cinelli,Bergamont,Focus,Cube,Van Rysel,Kellys,Orbea,Megamo,Lapierre,Origine,Chiru',
+  EU:'GRIND Cycles,Bombtrack,Brother Cycles,Fairlight,Genesis,Nordest,Kinesis UK,3T,Mason,Tout Terrain,Pelago,Vitus,Stooge,OPEN,Canyon,Rose,Sour,Cotic,Stanforth,Ribble,Basso,Wilier,Ridley,Rondo,8bar,Cinelli,Bergamont,Focus,Cube,Van Rysel,Kellys,Orbea,Megamo,Lapierre,Origine,Chiru',
   RU:'Сусанин,SHULZ'
 };
 const brandRegions = new Map(Object.entries(regionBrands).flatMap(([region,names]) =>

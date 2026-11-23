@@ -82,14 +82,3 @@ document.getElementById('dropbar-grid').innerHTML = dropbarPicks.map(({id,use,no
     <a href="${spec}">Характеристики</a>
   </article>`).join('');
 
-const buildGalleryIds = ['Twitter/G2 MAX','SHULZ/Boys Don’t Cry','State Bicycle Co./4130 All-Road','SPCycle/G028','Salsa/Fargo'];
-document.getElementById('build-gallery-grid').innerHTML = buildGalleryIds.map(id =>
-  `<article class="card"><h3>${id.replace('/',' ')}</h3>${renderFramePhoto(id)}
-    <a href="${framePhotos.get(id).image}" target="_blank" rel="noopener noreferrer">Открыть фото</a>
-  </article>`).join('');
-
-const newspaper = document.getElementById('news-dialog');
-document.getElementById('open-news').addEventListener('click', () => newspaper.showModal());
-newspaper.addEventListener('click', event => {
-  if (event.target.closest('a[href^="#"]')) newspaper.close();
-});

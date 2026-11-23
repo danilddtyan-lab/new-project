@@ -1,6 +1,8 @@
 'use strict';
 
 const frameDetails = {
+  'GRIND Cycles/GR1ST': {spec:'https://grindcycles.com/collections/bikes', note:'Карбон, клиренс 50 мм, BSA 68, UDH и точки крепления для багажа.'},
+  'GRIND Cycles/TRACE': {spec:'https://grindcycles.com/collections/gravel', note:'Карбон, клиренс 50 мм, T47 и UDH. Есть отсек в нижней трубе.'},
   'Seaboard/CX01': {pick:'popular', spec:'https://tsunamibicycle.com/product-category/products/weapon-tsunami-fixie-frameset-road-bike-frameset-gravel-frameset/multiple-speed-frameset/gravel-frameset-best-steel-gravel-bike-alloy-frame-set/', note:'Сталь, наружная проводка, эксцентрики и тормоза Post Mount.'},
   'Seaboard/GR02': {pick:'popular', spec:'https://tsunamibicycle.com/product-category/products/weapon-tsunami-fixie-frameset-road-bike-frameset-gravel-frameset/multiple-speed-frameset/gravel-frameset-best-steel-gravel-bike-alloy-frame-set/', note:'Алюминий, сквозные оси, Flat Mount и заявленный клиренс до 45 мм.'},
   'Twitter/G2 MAX': {pick:'popular', spec:'https://twitterbikeusa.com/products/twitter-g2max-alloy-gravel-frame-set-al6061-t6-frame-carbon-fork-700c-thru-axle-udh-700-50c', note:'Алюминиевая рама, карбоновая вилка и петух UDH.'},
