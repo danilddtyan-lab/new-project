@@ -8,11 +8,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css?v=3.2">
-<script defer src="./catalog.js?v=3"></script>
-<script defer src="./gear.js?v=3"></script>
-<script defer src="./features.js?v=3.1"></script>
-<script defer src="./app.js?v=3"></script>
+<link rel="stylesheet" href="./style.css?v=4">
+<script defer src="./catalog.js?v=4"></script>
+<script defer src="./market.js?v=4"></script>
+<script defer src="./gear.js?v=4"></script>
+<script defer src="./features.js?v=4"></script>
+<script defer src="./app.js?v=4"></script>
 </head>
 <body>
 <header class="header">
@@ -20,7 +21,8 @@
   <nav aria-label="Разделы"><a href="#selection">Подбор</a><a href="#catalog">Рамы</a><a href="#dropbar">MTB дропбар</a><a href="#news">Газета</a><a href="#gallery">Галерея</a><a href="#bags">Сумки</a><a href="#wheels">Колёса</a><a href="#tires">Покрышки</a><a href="#drivetrains">Трансмиссии</a><a class="lev-link" href="#lev">Для Льва</a></nav>
   <button id="saved-toggle" class="outline" type="button" aria-pressed="false">♡ <span>Избранное</span> <strong id="saved-count">0</strong></button>
 </header>
-<main>
+<a class="skip" href="#main-content">Перейти к содержимому</a>
+<main id="main-content" tabindex="-1">
   <div class="issue-line"><span>Сатирический веложурнал</span><span>О дальних дорогах и лишнем багаже</span></div>
   <section class="hero">
     <div class="hero-copy">
@@ -81,7 +83,7 @@
   <section class="catalog" id="catalog">
     <div class="section-head">
       <div><p class="eyebrow">ПОДБОР РАМЫ</p><h2>Каталог рам</h2></div>
-      <p class="totals"><strong id="total"></strong> моделей <span> / </span> <strong id="brand-total"></strong> брендов</p>
+      <p class="totals"><strong id="total"></strong> <span id="model-label"></span> <span> / </span> <strong id="brand-total"></strong> <span id="brand-label"></span></p>
     </div>
     <div class="tabs" id="tabs" aria-label="Назначение рамы"></div>
     <div class="controls">
@@ -91,10 +93,11 @@
       <select id="brand" aria-label="Бренд"><option value="">Все бренды</option></select>
       <select id="sort" aria-label="Сортировка"><option value="featured">Порядок каталога</option><option value="az">По названию А–Я</option><option value="za">По названию Я–А</option></select>
     </div>
+    <p class="market-note">«Найти на Pinduoduo» открывает поиск по модели. Для просмотра результатов может потребоваться вход.</p>
     <label class="photo-filter"><input id="photos-only" type="checkbox"> Только с фотографиями</label>
     <div class="statusline"><p id="count" aria-live="polite"></p><button id="reset" type="button" hidden>Сбросить фильтры</button></div>
     <div id="grid" class="grid"></div>
-    <div class="more"><button id="more" class="outline" type="button">Показать ещё</button></div>
+    <div class="more"><button id="more" class="outline" type="button" aria-controls="grid">Показать ещё</button></div>
   </section>
   <section class="gallery" id="gallery" aria-labelledby="gallery-title">
     <h2 id="gallery-title">Галерея</h2>
@@ -131,7 +134,7 @@
 <aside class="compare-bar" id="compare-bar" hidden aria-label="Выбранные рамы">
   <strong id="compare-count"></strong><button class="solid" id="compare-open">Сравнить</button><button class="outline" id="compare-clear">Очистить</button>
 </aside>
-<dialog id="compare-dialog"><div class="dialog-head"><h2>Сравнение рам</h2><form method="dialog"><button class="outline" aria-label="Закрыть">×</button></form></div><div id="compare-content"></div></dialog>
+<dialog id="compare-dialog" aria-labelledby="compare-title"><div class="dialog-head"><h2 id="compare-title">Сравнение рам</h2><form method="dialog"><button class="outline" aria-label="Закрыть">×</button></form></div><div id="compare-content"></div></dialog>
 <dialog id="news-dialog" aria-labelledby="news-modal-title">
   <div class="dialog-head"><div><p class="eyebrow">23 НОЯБРЯ 2026</p><h2 id="news-modal-title">Велогазета</h2></div><form method="dialog"><button class="outline" aria-label="Закрыть выпуск">×</button></form></div>
   <div class="news-columns">

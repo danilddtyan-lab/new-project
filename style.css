@@ -54,3 +54,9 @@ body{background-color:var(--paper);background-image:radial-gradient(#4b301111 .6
 .gallery-photo{margin:16px 0 0;max-width:480px;border:1px solid var(--ink);background:var(--cream)}
 .gallery-photo img{display:block;width:100%;height:auto}.gallery-photo figcaption{padding:8px 12px;font:italic .9rem/1.4 var(--serif)}
 @media(max-width:530px){.gallery{width:calc(100% - 26px);padding-block:30px}}
+.skip{position:absolute;z-index:4;top:8px;left:12px;transform:translateY(-150%);background:var(--cream);border:2px solid var(--ink);padding:8px}
+.skip:focus{transform:none}
+.market-note{font-size:.91rem;margin-top:12px;color:#584333}
+.market-link{font-size:.89rem;font-weight:750;color:var(--darkred);justify-self:start}
+.product-links{display:flex;align-items:baseline;flex-wrap:wrap;gap:5px 14px}
+#grid h3:focus{outline:2px solid var(--green);outline-offset:4px}

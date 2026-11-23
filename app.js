@@ -7,6 +7,8 @@ const normalize = value => value.toLocaleLowerCase().normalize('NFD').replace(/\
 const byId = new Map(frames.map(frame => [frame.id, frame]));
 const collator = new Intl.Collator('ru');
 const pageSize = 15;
+const plurals = new Intl.PluralRules('ru');
+const wordForm = (count, one, few, many) => ({one, few, many})[plurals.select(count)] || many;
 let limit = pageSize;
 let activeTerrain = '';
 let savedOnly = false;
@@ -19,6 +21,8 @@ const compared = new Set();
 
 get('total').textContent = frames.length;
 get('brand-total').textContent = brands.length;
+get('model-label').textContent = wordForm(frames.length,'модель','модели','моделей');
+get('brand-label').textContent = wordForm(brands.length,'бренд','бренда','брендов');
 for (const [key, label] of Object.entries(material)) get('material').add(new Option(label,key));
 for (const brand of brands.map(item => item[0]).sort(collator.compare)) get('brand').add(new Option(brand,brand));
 get('tabs').innerHTML = Object.entries({'':'Все рамы',...terrain}).map(([key,label]) =>
@@ -56,13 +60,13 @@ function render(event) {
     return `<article class="card">
       ${renderFramePhoto(frame.id)}
       <p class="meta">${escapeHtml(frame.brand)}</p>
-      <h3>${escapeHtml(frame.model)}</h3>
+      <h3 tabindex="-1">${escapeHtml(frame.model)}</h3>
       <p>${material[frame.m]} · ${terrain[frame.t]}${regionNames[frame.region] ? ' · '+regionNames[frame.region] : ''}</p>
       <div class="card-actions">
         <button class="outline" type="button" data-action="save" data-frame="${id}" aria-label="В избранное: ${id}" aria-pressed="${starred}">${starred?'♥':'♡'}</button>
         <button class="outline" type="button" data-action="compare" data-frame="${id}" aria-label="В сравнение: ${id}" aria-pressed="${selected}" ${compared.size === 3 && !selected ? 'disabled' : ''}>${selected?'В сравнении':'Сравнить'}</button>
-        <a href="${frame.url}" aria-label="Сайт производителя ${escapeHtml(frame.brand)}">Бренд</a>
-      </div></article>`;
+        <a href="${framePhotos.get(frame.id)?.spec || frame.url}" aria-label="Сайт производителя ${escapeHtml(frame.brand)}">${framePhotos.get(frame.id)?.spec ? 'Характеристики' : 'Бренд'}</a>
+      </div>${renderMarketLink(frame.id)}</article>`;
   }).join('') || '<p class="empty">Подходящих рам нет. Смените фильтры.</p>';
   get('compare-bar').hidden = !compared.size;
   get('compare-open').disabled = compared.size < 2;
@@ -86,22 +90,29 @@ get('tabs').addEventListener('click',event => {
   activeTerrain = button.dataset.terrain;
   refilter();
 });
-get('saved-toggle').addEventListener('click',() => {
-  savedOnly = !savedOnly;
-  refilter();
-  get('catalog').scrollIntoView();
-});
-get('reset').addEventListener('click',() => {
+function clearFilters() {
   for (const field of ['q','material','brand','region']) get(field).value = '';
   get('sort').value = 'featured';
   get('photos-only').checked = false;
   activeTerrain = '';
+}
+get('saved-toggle').addEventListener('click',() => {
+  savedOnly = !savedOnly;
+  if (savedOnly) clearFilters();
+  refilter();
+  get('catalog').scrollIntoView();
+});
+get('reset').addEventListener('click',() => {
+  clearFilters();
   savedOnly = false;
   refilter();
+  get('q').focus();
 });
 get('more').addEventListener('click',() => {
+  const firstNew = limit;
   limit += pageSize;
   render();
+  get('grid').querySelectorAll('h3')[firstNew]?.focus();
 });
 get('grid').addEventListener('click',event => {
   const button = event.target.closest('button[data-action]');
@@ -118,6 +129,7 @@ get('grid').addEventListener('click',event => {
 get('compare-clear').addEventListener('click',() => {
   compared.clear();
   render();
+  get('q').focus();
 });
 get('compare-open').addEventListener('click',() => {
   const columns = [...compared].map(id => byId.get(id));
@@ -126,6 +138,7 @@ get('compare-open').addEventListener('click',() => {
     '</tr></thead><tbody>'+[
       ['Материал',frame => material[frame.m]],
       ['Назначение',frame => terrain[frame.t]],
+      ['Регион бренда',frame => regionNames[frame.region] || 'Другие регионы'],
       ['Сайт',frame => '<a href="'+frame.url+'">Производитель</a>']
     ].map(([label,value]) => '<tr><th scope="row">'+label+'</th>'+
       columns.map(frame => '<td>'+value(frame)+'</td>').join('')+'</tr>').join('')+

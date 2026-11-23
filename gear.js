@@ -53,8 +53,8 @@ const gearSections = [
 
 document.getElementById('gear-sections').innerHTML = gearSections.map(({id,title,caption,items}) =>
   `<section id="${id}" class="gear">
-    <div class="section-head"><div><h2>${title}</h2><p class="standfirst">${caption}</p></div></div>
+    <div class="section-head"><div><h2>${title}</h2><p class="standfirst">${caption}</p>${id === 'bags' ? '<p class="market-note">Ссылки Pinduoduo открывают поиск по модели. Для результатов может потребоваться вход.</p>' : ''}</div></div>
     <div class="grid">${items.map(([brand,name,use,detail,url]) =>
-      `<article class="card"><p class="meta">${brand} · ${use}</p><h3>${name}</h3><p>${detail}</p><a href="${url}">У производителя</a></article>`
+      `<article class="card"><p class="meta">${brand} · ${use}</p><h3>${name}</h3><p>${detail}</p><div class="product-links"><a href="${url}">У производителя</a>${renderMarketLink(brand+'/'+name)}</div></article>`
     ).join('')}</div>
   </section>`).join('');
