@@ -27,13 +27,14 @@ get('tabs').innerHTML = Object.entries({'':'Все рамы',...terrain}).map(([
 function render(event) {
   const focus = event?.target.closest?.('button[data-action]');
   const focusData = focus?.dataset;
-  const filters = [get('q'), get('material'), get('brand'), get('sort')];
-  const [query, frameMaterial, brand, sort] = filters.map(input => input.value.trim());
+  const filters = [get('q'), get('material'), get('brand'), get('region'), get('sort')];
+  const [query, frameMaterial, brand, region, sort] = filters.map(input => input.value.trim());
   const words = normalize(query).split(/\s+/);
   const matching = frames.filter(frame =>
     (!activeTerrain || activeTerrain === frame.t) &&
     (!frameMaterial || frameMaterial === frame.m) &&
     (!brand || brand === frame.brand) &&
+    (!region || region === frame.region) &&
     (!savedOnly || saved.has(frame.id)) &&
     words.every(word => normalize(frame.brand+' '+frame.model).includes(word)));
   if (sort !== 'featured') matching.sort((left,right) =>
@@ -43,7 +44,7 @@ function render(event) {
   get('saved-count').textContent = saved.size;
   get('saved-toggle').setAttribute('aria-pressed',savedOnly);
   get('more').hidden = matching.length <= limit;
-  get('reset').hidden = !(activeTerrain || savedOnly || query || frameMaterial || brand || sort !== 'featured');
+  get('reset').hidden = !(activeTerrain || savedOnly || query || frameMaterial || brand || region || sort !== 'featured');
   get('tabs').querySelectorAll('button').forEach(button =>
     button.setAttribute('aria-pressed',button.dataset.terrain === activeTerrain));
   get('grid').innerHTML = visible.map(frame => {
@@ -53,7 +54,7 @@ function render(event) {
     return `<article class="card">
       <p class="meta">${escapeHtml(frame.brand)}</p>
       <h3>${escapeHtml(frame.model)}</h3>
-      <p>${material[frame.m]} · ${terrain[frame.t]}</p>
+      <p>${material[frame.m]} · ${terrain[frame.t]}${regionNames[frame.region] ? ' · '+regionNames[frame.region] : ''}</p>
       <div class="card-actions">
         <button class="outline" type="button" data-action="save" data-frame="${id}" aria-label="В избранное: ${id}" aria-pressed="${starred}">${starred?'♥':'♡'}</button>
         <button class="outline" type="button" data-action="compare" data-frame="${id}" aria-label="В сравнение: ${id}" aria-pressed="${selected}" ${compared.size === 3 && !selected ? 'disabled' : ''}>${selected?'В сравнении':'Сравнить'}</button>
@@ -73,7 +74,7 @@ function refilter() {
   limit = pageSize;
   render();
 }
-for (const [name,event] of [['q','input'],['material','change'],['brand','change'],['sort','change']]) {
+for (const [name,event] of [['q','input'],['material','change'],['brand','change'],['region','change'],['sort','change']]) {
   get(name).addEventListener(event,refilter);
 }
 get('tabs').addEventListener('click',event => {
@@ -88,7 +89,7 @@ get('saved-toggle').addEventListener('click',() => {
   get('catalog').scrollIntoView();
 });
 get('reset').addEventListener('click',() => {
-  for (const field of ['q','material','brand']) get(field).value = '';
+  for (const field of ['q','material','brand','region']) get(field).value = '';
   get('sort').value = 'featured';
   activeTerrain = '';
   savedOnly = false;

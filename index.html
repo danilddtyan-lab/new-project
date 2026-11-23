@@ -4,25 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Каталог рам для байкпакинга. Поиск и сравнение гравийных, туристических и горных платформ.">
-<title>ВЕЛОБЮРО — Рамы для байкпакинга</title>
+<title>Велобюро — журнал о байкпакинге</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./style.css">
 <script defer src="./catalog.js"></script>
+<script defer src="./gear.js"></script>
 <script defer src="./app.js"></script>
 </head>
 <body>
 <header class="header">
   <a class="logo" href="#" aria-label="Велобюро, главная"><b class="mark" aria-hidden="true">△</b> ВЕЛОБЮРО<span>.</span></a>
-  <nav aria-label="Разделы"><a href="#selection">Подбор</a><a href="#catalog">Каталог</a><a href="#guide">Как выбрать</a></nav>
+  <nav aria-label="Разделы"><a href="#selection">Подбор</a><a href="#catalog">Рамы</a><a href="#bags">Сумки</a><a href="#wheels">Колёса</a><a href="#tires">Покрышки</a><a href="#drivetrains">Трансмиссии</a><a class="lev-link" href="#lev">Для Льва</a></nav>
   <button id="saved-toggle" class="outline" type="button" aria-pressed="false">♡ <span>Избранное</span> <strong id="saved-count">0</strong></button>
 </header>
 <main>
+  <div class="issue-line"><span>Сатирический веложурнал</span><span>О дальних дорогах и лишнем багаже</span></div>
   <section class="hero">
     <div class="hero-copy">
       <h1>Товарищ,<br>седлай <em>маршрут!</em></h1>
-      <p>Подбор велосипеда и деталей для поездок с багажом.</p>
+      <p>Подбор велосипеда и деталей для поездок с багажом.</p><p class="hero-joke">«Палатку взяли. А место для велосипедиста оставили?»</p>
       <a class="solid" href="#selection">Подобрать сборку</a>
     </div>
     <div class="poster" role="img" aria-label="Сатирическая иллюстрация велосипедиста с горой багажа"></div>
@@ -67,12 +69,28 @@
     <div class="controls">
       <label class="search"><span aria-hidden="true">⌕</span><input id="q" type="search" placeholder="Поиск по модели или бренду" aria-label="Поиск по модели или бренду"></label>
       <select id="material" aria-label="Материал рамы"><option value="">Любой материал</option></select>
+      <select id="region" aria-label="Регион бренда"><option value="">Все регионы</option><option value="CN">Китай</option><option value="EU">Европа</option><option value="RU">Россия</option><option value="OTHER">Другие регионы</option></select>
       <select id="brand" aria-label="Бренд"><option value="">Все бренды</option></select>
       <select id="sort" aria-label="Сортировка"><option value="featured">Порядок каталога</option><option value="az">По названию А–Я</option><option value="za">По названию Я–А</option></select>
     </div>
     <div class="statusline"><p id="count" aria-live="polite"></p><button id="reset" type="button" hidden>Сбросить фильтры</button></div>
     <div id="grid" class="grid"></div>
     <div class="more"><button id="more" class="outline" type="button">Показать ещё</button></div>
+  </section>
+  <div id="gear-sections"></div>
+  <section class="lev" id="lev">
+    <div class="lev-copy">
+      <p class="eyebrow">ДЛЯ ЛЬВА</p>
+      <h2>Турист ’67</h2>
+      <p class="standfirst">Велосипед, который выглядит так, будто вышел из веломастерской в 1967-м.</p>
+      <dl>
+        <div><dt>Рама</dt><dd>Стальная, с классическими узлами и бордовыми акцентами.</dd></div>
+        <div><dt>Багаж</dt><dd>Парусиновые сумки, кожаные ремешки и передняя полка.</dd></div>
+        <div><dt>Детали</dt><dd>Крылья, руль-баран и современные фонари без лишнего блеска.</dd></div>
+      </dl>
+      <p class="caption">Эскиз для Льва. Ростовка и комплектация подбираются отдельно.</p>
+    </div>
+    <img src="./lev.webp" alt="Рисунок бордово-кремового туристического велосипеда с парусиновыми сумками" loading="lazy" width="750" height="500">
   </section>
   <section class="guide" id="guide">
     <p class="eyebrow">ПЕРЕД СБОРКОЙ</p><h2>Как выбрать раму</h2>

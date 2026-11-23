@@ -6,7 +6,7 @@ const brands = [
 ['Brother Cycles','https://www.brothercycles.com/','Big Bro|S|M,Mehteh|S|G,Kepler|S|G,Mr Wooden|S|E,Stroma|S|G'],
 ['Fairlight','https://fairlightcycles.com/','Secan|S|G,Faran|S|E,Holt|S|M'],
 ['Curve','https://www.curvecycling.com/','Kevin of Steel|S|G,GXR (Kevin)|T|G,GMX+|T|E,Big Kev|T|E,UPROCK|T|M'],
-['Kona','https://www.konaworld.com/','Sutra|S|E,Sutra LTD|S|E,Unit|S|M,Unit X|S|M,Rove|S|G,Rove LTD|S|G,Libre CR|C|G,Honzo ESD|S|M'],
+['Kona','https://www.konaworld.com/','Sutra|S|E,Sutra LTD|S|E,Sutra ULTD|S|E,Unit|S|M,Unit X|S|M,Rove|S|G,Rove LTD|S|G,Libre CR|C|G,Honzo ESD|S|M'],
 ['Ritchey','https://ritcheylogic.com/','Outback|S|G,Outback Break-Away|S|G,Ascent|S|E,Swiss Cross|S|G,Ultra|S|M,P-29er|S|M'],
 ['Wilde','https://www.wildebikes.com/','Supertramp|S|E,Rambler|S|G,Rambler SL|S|G,Dream Engine|T|G,Earth Ship Steel|S|G,Earth Ship Titanium|T|G,Wayfinder|S|M'],
 ['Otso','https://otsocycles.com/','Fenrir Stainless|S|E,Fenrir Titanium|T|E,Waheela C|C|G,Warakin Stainless|S|G,Warakin Titanium|T|G,Voytek|C|F,Arctodus|S|F'],
@@ -39,11 +39,50 @@ const brands = [
 ['Bearclaw','https://bearclawbicycleco.com/','Thunderhawk|T|G,Beaux Jaxon|T|E,Towmak|T|F'],
 ['Chumba','https://chumbausa.com/','Terlingua Steel|S|G,Terlingua Titanium|T|G,Sendero Steel|S|M,Sendero Titanium|T|M'],
 ['Stooge','https://stoogecycles.co.uk/','Scrambler|S|M,Speedbomb|S|M,Dirt Tracker|S|M'],
-['State Bicycle Co.','https://www.statebicycle.com/','4130 All-Road|S|G,6061 All-Road|A|G,Carbon All-Road|C|G']
+['State Bicycle Co.','https://www.statebicycle.com/','4130 All-Road|S|G,6061 All-Road|A|G,Carbon All-Road|C|G'],
+['SPCycle','https://amp.sp-cycle.com/Carbon-Cyclocross-Gravel-Frame-c57268/','G028|C|G,G058|C|G,G068|C|G'],
+['Tideace','https://tideacebike.com/collections/gravel-bike-frame','FM-GV201|C|G,FM-CX072|C|G,FM-CR060|C|G'],
+['Twitter','https://www.twitterbikefactory.com/collections/gravel-bike','Gravel V1|C|G,Gravel V3|C|G,G2 MAX|A|G'],
+['LightCarbon','https://www.lightcarbon.com/','LCG071-D|C|G,LCG071-PRO|C|G'],
+['ICAN','https://icancycling.com/','Graro|C|G'],
+['Carbonda','https://www.carbonda.com/','CFR696|C|G'],
+['Winspace','https://www.winspace.cc/','G5|C|G'],
+['YOELEO','https://www.yoeleobike.com/','Altera G21|C|G'],
+['Сусанин','https://t.me/s/susaninbikes','Адвенчур|S|E,Трейл|S|M'],
+['Canyon','https://www.canyon.com/','Grizl CF|C|G,Grizl AL|A|G,Grail CF SL|C|G,Exceed CF|C|M'],
+['Rose','https://www.rosebikes.com/','Backroad|C|G,Backroad AL|A|G,Backroad FF|C|G'],
+['Sour','https://sour.bike/','Purple Haze|S|G,Clueless|S|G,Crumble|S|M,Big Fun|S|M'],
+['Cotic','https://www.cotic.co.uk/','Cascade|S|E,Escapade|S|G,Solaris|S|M,BFe|S|M'],
+['Stanforth','https://www.stanforthbikes.co.uk/','Kibo|S|E,Skyelander|S|E'],
+['Ribble','https://www.ribblecycles.co.uk/','Gravel Ti|T|G,Gravel AL|A|G,Gravel SL|C|G'],
+['Basso','https://bassobikes.com/','Palta|C|G,Tera|A|G'],
+['Wilier','https://www.wilier.com/','Rave SLR|C|G,Jena|C|G,Adlar|C|G'],
+['Ridley','https://www.ridley-bikes.com/','Kanzo Adventure|C|G,Kanzo Fast|C|G,Kanzo A|A|G'],
+['Rondo','https://rondo.cc/','Ruut CF|C|G,Ruut AL|A|G,Ruut ST|S|G,Bogan|S|E'],
+['8bar','https://8bar-bikes.com/','MITTE 3in1|A|G,TFLSBERG|S|E'],
+['Cinelli','https://www.cinelli-milano.com/','Hobootleg|S|E,Hobootleg Geo|S|E,King Zydeco|C|G,Zydeco|A|G'],
+['Bergamont','https://www.bergamont.com/','Grandurance RD|A|E,Grandurance Elite|C|G'],
+['Focus','https://www.focus-bikes.com/','Atlas 6|A|G,Atlas 8|C|G'],
+['Cube','https://www.cube.eu/','Nuroad|A|G,Nuroad C:62|C|G'],
+['Van Rysel','https://www.decathlon.com/','GRVL AF|A|G'],
+['Kellys','https://kellysbike.com/','Soot|A|G'],
+['Orbea','https://www.orbea.com/','Terra OMR|C|G,Terra Hydro|A|G,Alma OMR|C|M'],
+['Megamo','https://www.megamo.com/','West|C|G,Jakar|A|G'],
+['Lapierre','https://www.lapierrebikes.com/','Crosshill|A|G,Crosshill CF|C|G'],
+['Origine','https://www.origine-cycles.com/','Graxx|C|G,Trail|A|G'],
+['Chiru','https://www.chirubikes.com/','Kegeti|T|E,Divider|T|E']
 ];
+const regionBrands = {
+  CN:'SPCycle,Tideace,Twitter,LightCarbon,ICAN,Carbonda,Winspace,YOELEO',
+  EU:'Bombtrack,Brother Cycles,Fairlight,Genesis,Nordest,Kinesis UK,3T,Mason,Tout Terrain,Pelago,Vitus,Stooge,OPEN,Canyon,Rose,Sour,Cotic,Stanforth,Ribble,Basso,Wilier,Ridley,Rondo,8bar,Cinelli,Bergamont,Focus,Cube,Van Rysel,Kellys,Orbea,Megamo,Lapierre,Origine,Chiru',
+  RU:'Сусанин'
+};
+const brandRegions = new Map(Object.entries(regionBrands).flatMap(([region,names]) =>
+  names.split(',').map(name => [name,region])));
+const regionNames = {CN:'Китай',EU:'Европа',RU:'Россия'};
 const material = {S:'Сталь',T:'Титан',A:'Алюминий',C:'Карбон'};
 const terrain = {G:'Гравий',E:'Туринг',M:'Трейлы / MTB',F:'Фэтбайк'};
 const frames = brands.flatMap(([brand,url,models]) => models.split(',').map(entry => {
   const [model,m,t] = entry.replace(/\u200b/g,'').split('|');
-  return {brand,url,model,m,t,id:brand+'/'+model};
+  return {brand,url,model,m,t,region:brandRegions.get(brand)||'OTHER',id:brand+'/'+model};
 }));

@@ -5,3 +5,27 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 .example{margin-top:.55rem;font-weight:650}.outline:disabled{opacity:.55;cursor:default}
+
+/* A newsprint palette and column rules carry the magazine style through the catalog. */
+:root{--paper:#f3e6c9;--ink:#30271f;--red:#a22b22;--darkred:#792018;--line:#ab9272;--green:#275148;--cream:#fbf0d6;--serif:Georgia,"Times New Roman",serif}
+body{background-color:var(--paper);background-image:radial-gradient(#4b301111 .65px,transparent .7px),linear-gradient(105deg,#e9d9b134,transparent 55%,#a0611910);background-size:4px 4px,100% 100%}
+.header{flex-wrap:wrap;border-bottom:4px double var(--ink);padding-block:14px 0}
+.header .logo{font-weight:900;font-size:clamp(2rem,5.5vw,4.1rem);line-height:.87;letter-spacing:-.095em;color:var(--red);text-shadow:1px 1px 0 var(--ink)}
+.header .logo .mark{font-family:var(--serif);font-size:.7em;margin-right:.1em;text-shadow:none}
+.header nav{order:3;width:100%;justify-content:space-between;flex-wrap:wrap;gap:10px 18px;padding-block:10px 9px;border-top:1px solid var(--line);font-size:.9rem}
+.lev-link{color:var(--darkred);border-bottom:2px solid currentColor}
+.issue-line{width:min(1120px,calc(100% - 44px));margin:12px auto 0;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font:italic .9rem var(--serif)}
+.hero{margin-top:12px;background-color:#edd7a7;background-image:repeating-linear-gradient(45deg,#532e191c 0 1px,transparent 1px 20px),repeating-linear-gradient(-45deg,#532e191c 0 1px,transparent 1px 20px);grid-template-columns:1.04fr 1fr}
+.hero::before{content:"";position:absolute;inset:0 48% 0 0;pointer-events:none;background:linear-gradient(90deg,#f0dfb9 4%,#f0dfb9d1 57%,#f0dfb90b)}
+.hero h1{font-size:clamp(2.8rem,6.8vw,6.2rem);font-weight:900}.hero-joke{font:italic 1rem/1.35 var(--serif);max-width:31ch!important;border-left:3px solid var(--red);padding-left:10px}
+.hero-copy{padding-block:32px}.solid{box-shadow:3px 3px 0 var(--ink);border-radius:0}
+.gear,.lev{width:min(1120px,calc(100% - 44px));margin-inline:auto;padding-block:40px;border-bottom:4px double var(--ink)}
+.selection,.catalog,.guide{border-bottom:4px double var(--ink)}
+.gear .grid{margin-top:18px}.gear .card{border-width:1px 1px 1px 3px;border-left-color:var(--red)}
+.gear .card a{font-size:.89rem;font-weight:700;justify-self:start}.standfirst{margin-top:8px;font:italic 1.17rem/1.4 var(--serif);max-width:62ch}
+.gear:nth-child(even) .card{border-left-color:var(--green)}
+.lev{display:grid;grid-template-columns:1fr 1.15fr;align-items:center;gap:22px}
+.lev img{display:block;width:100%;height:auto;border:2px solid var(--ink);background:var(--cream)}
+.lev dl{margin:14px 0}.lev dl div{border-top:1px solid var(--line);padding:8px 0;display:grid;grid-template-columns:5.5rem 1fr;gap:8px}
+.lev dt{font-weight:800}.lev dd{margin:0}.caption{font:italic .92rem/1.35 var(--serif)}
+@media(max-width:530px){.header .logo{font-size:2rem}.header nav{font-size:.83rem;gap:7px 14px}.hero,.gear,.lev,.issue-line{width:calc(100% - 26px)}.hero,.lev{grid-template-columns:1fr}.hero::before{inset:0}.hero .poster{z-index:1}.gear,.lev{padding-block:30px}#fit-form{grid-template-columns:repeat(2,minmax(0,1fr))}}
