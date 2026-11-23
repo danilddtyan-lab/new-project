@@ -159,3 +159,58 @@ body{background-image:radial-gradient(#5b3a211c .65px,transparent .8px),linear-g
 footer a{font-weight:650}
 @media(max-width:620px){.travel-grid{grid-template-columns:1fr}.travel-card.featured img{aspect-ratio:3/2}}
 @media(max-width:530px){.page-intro,.section-menu,.routes-library,.news-page{width:calc(100% - 26px)}}
+.fit-guide{width:min(900px,calc(100% - 44px));margin:10px auto 40px}
+.fit-lead,.geometry{padding:clamp(14px,3vw,23px);border:2px solid var(--ink);background:var(--cream)}
+.fit-guide h2{font-size:clamp(1.6rem,4vw,2.25rem);letter-spacing:-.04em}
+.fit-guide p,.fit-guide li{margin-top:8px}
+.fit-guide ol,.fit-guide ul{margin:9px 0 0;padding-left:1.35rem}
+.fit-chapter{margin-top:20px;padding-block:14px;border-top:1px solid var(--line);scroll-margin-top:14px}
+.fit-inline-link{margin-top:9px;font-weight:650}
+.geometry{padding:clamp(14px,3vw,23px)}
+#geometry-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}
+#geometry-form fieldset{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:0;min-width:0;border:1px solid var(--line)}
+#geometry-form label{display:grid;gap:4px;min-width:0}
+#geometry-form button{grid-column:1/-1;justify-self:start}
+#geometry-result{display:block;margin-top:12px;padding:10px;background:#e1c99f;font-weight:700}
+.fit-sources summary{cursor:pointer;font-weight:750}
+.fit-guide .fit-next{width:100%;font-weight:700}
+@media(max-width:580px){#geometry-form{grid-template-columns:1fr}.fit-guide{width:calc(100% - 26px)}}
+
+/* Shared page edges and grids across the journal. */
+:root{--page-gutter:clamp(18px,2.5vw,52px);--layout-gap:16px}
+.header,footer{padding-inline:var(--page-gutter)}
+.issue-line,.front-page,.news-box,.route-day,.page-intro,.section-menu,.routes-library,.news-page,
+.selection,.catalog,.dropbar,.guide,.gallery,.marketplace,.gear,.lev,.fit-guide{
+  width:calc(100% - 2 * var(--page-gutter));
+  margin-inline:auto;
+}
+.front-page{gap:var(--layout-gap);align-items:stretch}
+.front-page .hero{grid-template-columns:repeat(2,minmax(0,1fr));min-width:0;align-self:stretch}
+.front-page .builds{align-self:stretch}
+.front-page .hero h1{font-size:clamp(2.45rem,4.8vw,5.25rem)}
+.grid,.result-grid,.tips,.news-leads{gap:var(--layout-gap);align-items:stretch}
+.grid .card{min-width:0}
+.card:has(.card-actions){grid-template-rows:auto;grid-auto-rows:max-content}
+.card:has(.card-actions) .card-actions{align-self:end}
+.travel-card{min-width:0;grid-template-rows:auto 1fr}
+.travel-card.featured img{aspect-ratio:auto;height:clamp(250px,34vw,540px)}
+.route-day-heading>a{display:inline-block;margin-top:8px;font-weight:700}
+.fit-guide .fit-next{width:100%}
+.fit-guide>.fit-chapter>p,.fit-lead>p,.fit-guide li{max-width:79ch}
+.news-page .news-columns{columns:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--layout-gap)}
+.news-page .news-columns article{min-width:0}
+@media(min-width:1250px){
+  [data-page="gear"] .grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media(max-width:1000px){
+  .front-page .hero h1{font-size:clamp(2.45rem,7vw,5.25rem)}
+}
+@media(max-width:680px){
+  .news-page .news-columns{grid-template-columns:1fr}
+  :root{--layout-gap:12px}
+}
+@media(max-width:530px){
+  :root{--page-gutter:13px}
+  .front-page .hero{grid-template-columns:1fr}
+  .travel-card.featured img{height:auto;aspect-ratio:3/2}
+}
