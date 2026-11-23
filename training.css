@@ -9,3 +9,8 @@
 .training-help{margin-top:20px}.training-help summary{cursor:pointer;font-weight:700}
 .training-help ol{padding-left:1.4rem}.training-help li{margin-block:6px}
 @media(max-width:530px){.training-controls{grid-template-columns:1fr}.training-plan td,.training-plan th{padding:.4rem .35rem}}
+@media(max-width:530px){
+  .training-plan table{table-layout:fixed}
+  .training-plan th:first-child{width:39%}
+  .training-plan th,.training-plan td{overflow-wrap:anywhere}
+}

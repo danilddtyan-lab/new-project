@@ -45,7 +45,7 @@ function renderWorkout() {
   detail.innerHTML = `<h3>${workout.title} · ${totalMinutes} мин</h3><p>${workout.description}</p>
     <div class="workout-profile" aria-hidden="true">${chart}</div>
     <table><thead><tr><th scope="col">Этап</th><th scope="col">Время</th><th scope="col">% FTP</th>
-      ${watts === null ? '' : '<th scope="col">Мощность</th>'}</tr></thead><tbody>${rows}</tbody></table>`;
+      ${watts === null ? '' : '<th scope="col">Вт</th>'}</tr></thead><tbody>${rows}</tbody></table>`;
 }
 
 trainingForm.addEventListener('submit',event => event.preventDefault());
