@@ -45,7 +45,9 @@ const dropbarPicks = [
   }
 ];
 const framePhotos = new Map([...dropbarPicks, {
-  id:'Tideace/FM-GV201', image:'https://tideacebike.com/cdn/shop/files/T1000-carbon-gravel-frames.png?v=1723449554&width=720', credit:'Tideace'
+  id:'Tideace/FM-GV201', image:'https://tideacebike.com/cdn/shop/files/T1000-carbon-gravel-frames.png?v=1723449554&width=720', spec:'https://tideacebike.com/products/fm-gv201-noah-carbon-gravel-bike-frame', credit:'Tideace'
+}, {
+  id:'Tideace/FM-M039', image:'https://tideacebike.com/cdn/shop/files/carbon-29er-boost-rigid-frame.jpg?v=1733904210&width=720', spec:'https://tideacebike.com/products/fm-m039-carbon-one-piece-boost-mtb-frame', credit:'Tideace'
 }, {
   id:'SPCycle/G068', image:'https://usaimages.oss-us-west-1.aliyuncs.com/6230/product/20240702/Spcycle_G068_T1000_Carbon_Gravel_Bike_Frame_Semi_Internal_Cable_UDH_Hanger_Disc_Brake_Aero_Carbon_Gravel_Bicycle_Frameset_1719885879405_2.jpg_w2048.jpg', credit:'SPCycle'
 }, {

@@ -30,6 +30,8 @@ get('model-label').textContent = wordForm(frames.length,'модель','моде
 get('brand-label').textContent = wordForm(brands.length,'бренд','бренда','брендов');
 for (const [key, label] of Object.entries(material)) get('material').add(new Option(label,key));
 for (const brand of brands.map(item => item[0]).sort(collator.compare)) get('brand').add(new Option(brand,brand));
+const requestedBrand = new URLSearchParams(location.search).get('brand');
+if (brands.some(([brand]) => brand === requestedBrand)) get('brand').value = requestedBrand;
 get('tabs').innerHTML = Object.entries({'':'Все рамы',...terrain}).map(([key,label]) =>
   '<button type="button" data-terrain="'+key+'">'+label+'</button>').join('');
 

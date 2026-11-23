@@ -45,7 +45,7 @@ const brands = [
 ['VeloBuild','https://www.velobuild.com/','GF-001|C|G,GF-002|C|G,GF-003|C|G,CX-002|C|G'],
 ['Poseidon','https://www.poseidonbike.com/','Redwood|A|E,X|A|G'],
 ['SPCycle','https://amp.sp-cycle.com/Carbon-Cyclocross-Gravel-Frame-c57268/','G028|C|G,G058|C|G,G068|C|G,G026|C|G,G056|C|G,G069|C|G'],
-['Tideace','https://tideacebike.com/collections/gravel-bike-frame','FM-GV201|C|G,FM-CX072|C|G,FM-CR060|C|G'],
+['Tideace','https://tideacebike.com/collections/gravel-bike-frame','FM-GV201|C|G,FM-CX072|C|G,FM-CR060|C|G,FM-M039|C|M'],
 ['Twitter','https://www.twitterbikefactory.com/collections/gravel-bike','Gravel V1|C|G,Gravel V3|C|G,G2 MAX|A|G'],
 ['LightCarbon','https://www.lightcarbon.com/','LCG071-D|C|G,LCG071-PRO|C|G,LCG072-D|C|G,LCG073-D|C|G,LCG087-D|C|G'],
 ['ICAN','https://icancycling.com/','Graro|C|G'],
