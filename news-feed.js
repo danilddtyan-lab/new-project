@@ -102,7 +102,7 @@ function showCarousel(items) {
   function restart() {
     stop();
     if (items.length >= 2 && !hovered && !focused && !manuallyPaused && !document.hidden) {
-      timer = setInterval(() => show(position+1),60_000);
+      timer = setInterval(() => show(position+1),7_000);
     }
   }
   function show(index,announce = false) {
