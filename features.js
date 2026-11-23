@@ -33,8 +33,8 @@ const dropbarPicks = [
     id:'Kona/Sutra LTD', use:'От асфальта до лесных дорог',
     note:'Стальная платформа для путешествий с увеличенным клиренсом. Подойдёт для маршрутов, где асфальт чередуется с разбитыми дорогами.',
     spec:'https://konaworld.com/products/sutra-ltd-frame',
-    image:'https://store-eirin-jp.com/cdn/shop/files/KONASUTRALTDFRAMESET2025_1.jpg?v=1729235005&width=720',
-    credit:'Cycle Shop Eirin'
+    image:'https://konaworld.com/cdn/shop/files/my23_sutra_ltd_frame.jpg?v=1733100217&width=720',
+    credit:'Kona'
   },
   {
     id:'Curve/GMX+', use:'Экспедиции на широких покрышках',
@@ -49,7 +49,7 @@ const framePhotos = new Map([...dropbarPicks, {
 }, {
   id:'SPCycle/G068', image:'https://usaimages.oss-us-west-1.aliyuncs.com/6230/product/20240702/Spcycle_G068_T1000_Carbon_Gravel_Bike_Frame_Semi_Internal_Cable_UDH_Hanger_Disc_Brake_Aero_Carbon_Gravel_Bicycle_Frameset_1719885879405_2.jpg_w2048.jpg', credit:'SPCycle'
 }, {
-  id:'SHULZ/The Lightning', image:'https://upload.shulz.ru/bigadd_221-10933--freimsetshulzthelightninggroza02.webp', credit:'SHULZ'
+  id:'SHULZ/The Lightning', image:'https://shulzbikes.com/cdn/shop/files/bigproduct_209-1897-nevskiyvechernevaevenings-framesetthelightningframenevaeveningpt5255.webp?v=1770805403&width=720', credit:'SHULZ'
 }].map(item => [item.id,item]));
 
 function renderFramePhoto(id) {
