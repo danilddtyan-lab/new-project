@@ -501,3 +501,21 @@ body[data-page=home] .header nav { grid-template-columns: repeat(3,minmax(0,1fr)
   padding: .25rem;
 }
 .product-photo:has(.product-photo-controls:not(:empty)) figcaption { inset-block: 0 auto; }
+
+.product-photo.photo-unavailable[data-illustration] {
+  background: var(--panel) var(--category-art) center / cover no-repeat;
+  align-items: end;
+}
+.product-photo.photo-unavailable[data-illustration] figcaption {
+  width: 100%;
+  padding: .45rem .6rem;
+  background: var(--cream);
+}
+[data-illustration="frame"] { --category-art: url('./data/images/illustrations/frame.webp'); }
+[data-illustration="bike"] { --category-art: url('./data/images/illustrations/bike.webp'); }
+[data-illustration="wheel"] { --category-art: url('./data/images/illustrations/wheel.webp'); }
+[data-illustration="tire"] { --category-art: url('./data/images/illustrations/tire.webp'); }
+[data-illustration="bag"] { --category-art: url('./data/images/illustrations/bag.webp'); }
+[data-illustration="drivetrain"] { --category-art: url('./data/images/illustrations/drivetrain.webp'); }
+[data-illustration="training"] { --category-art: url('./data/images/illustrations/training.webp'); }
+[data-illustration="route"] { --category-art: url('./data/images/illustrations/route.webp'); }

@@ -8,8 +8,13 @@ function photoPlaceholder(id,category,label) {
   const figure = document.createElement('figure');
   figure.className = 'product-photo photo-unavailable';
   figure.dataset.photo = id;
+  figure.dataset.illustration = {
+    'Рамы':'frame', 'Сумки':'bag', 'Покрышки':'tire',
+    'Колёса':'wheel', 'Трансмиссии':'drivetrain',
+    'Подбор':'bike', 'Тренировки':'training', 'Маршруты':'route'
+  }[category] || 'bike';
   const caption = document.createElement('figcaption');
-  caption.textContent = label ? category+' · '+label : category;
+  caption.textContent = label ? 'Схема · '+label : 'Схема · '+category;
   figure.append(caption);
   return figure;
 }

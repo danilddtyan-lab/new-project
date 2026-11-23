@@ -41,7 +41,15 @@ function createNewsCard(item,headline = false) {
   const summary = document.createElement('p');
   if (headline) summary.className = 'headline-summary';
   summary.textContent = item.summary;
-  card.append(meta,title,summary);
+  const illustration = document.createElement('div');
+  illustration.className = 'news-illustration';
+  illustration.dataset.illustration = {
+    'гонки':'route','гонщики':'bike','снаряжение':'bag','маршруты':'route',
+    'события':'bike','новинки':'bike','запчасти':'drivetrain'
+  }[item.category] || 'bike';
+  if (item.id === 'lev-broken-brakes-hype-67') illustration.dataset.illustration = 'wheel';
+  illustration.setAttribute('aria-hidden','true');
+  card.append(illustration,meta,title,summary);
   if (!item.verified) {
     const badge = document.createElement('span');
     badge.className = 'feed-unverified';
