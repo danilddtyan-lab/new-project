@@ -325,3 +325,21 @@ footer{padding-block:22px 40px;border-top:1px solid var(--soft-border)}
 .news-page .news-leads article:last-child{grid-column:auto}
 
 .podium-intro{margin-bottom:14px;max-width:70ch}
+
+.race-photos{min-width:0}
+.race-photos .home-news-cover{
+  aspect-ratio:602 / 563;
+  object-fit:contain;
+  background:#38291f;
+}
+.race-photo figcaption{min-height:2.7em}
+.race-photo-controls{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:8px;
+  margin-top:6px;
+}
+.race-photos [hidden]{display:none}
+.race-photo-controls button{min-width:44px;min-height:44px;font-size:1.15rem}
+.race-photo-count{font-variant-numeric:tabular-nums;font-size:.9rem}

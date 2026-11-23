@@ -8,9 +8,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css?v=16">
+<link rel="stylesheet" href="./style.css?v=18">
 <script defer src="./site.js?v=11"></script>
 <script defer src="./routes.js?v=12"></script>
+<script defer src="./race-photos.js"></script>
 </head>
 <body data-page="home">
 <a class="skip" href="#main-content">Перейти к содержимому</a>
@@ -33,10 +34,41 @@
     <h2><a href="./news.html#vlad-podofedov">Владислав Подофёдов и Сергей Черепанов выиграли парный зачёт</a></h2>
     <p>От Таласа до Чолпон-Аты за 10 дней, 12 часов и 14 минут.</p>
   </article>
-  <figure>
-    <img class="home-news-cover" src="https://24kgr2.bemint.pro/files/media/466/466512.jpg" alt="Владислав Подофёдов и Сергей Черепанов у финишного баннера Silk Road Mountain Race 2026" width="602" height="563" fetchpriority="high">
-    <figcaption>Финиш Silk Road Mountain Race 2026 · <a href="https://24.kg/article/386724">Фото из репортажа 24.kg</a></figcaption>
-  </figure>
+  <section class="race-photos" aria-label="Фотографии Silk Road Mountain Race 2026" aria-roledescription="карусель">
+    <figure class="race-photo">
+      <img class="home-news-cover" src="https://24kgr2.bemint.pro/files/media/466/466512.jpg" alt="Подофёдов и Черепанов у финишного баннера" width="602" height="563" fetchpriority="high">
+      <figcaption>Победители парного зачёта у финишного баннера · <a href="https://24.kg/article/386724">24.kg</a></figcaption>
+    </figure>
+    <figure class="race-photo" hidden>
+      <img class="home-news-cover" data-src="https://24kgr2.bemint.pro/files/media/466/466513.jpg" alt="Два гонщика едут рядом по грунтовой дороге" width="602" height="463">
+      <figcaption>Подофёдов и Черепанов на дистанции · <a href="https://24.kg/article/386724">24.kg</a></figcaption>
+    </figure>
+    <figure class="race-photo" hidden>
+      <img class="home-news-cover" data-src="https://24kgr2.bemint.pro/files/media/466/466514.jpg" alt="Два велосипедиста едут ночью навстречу зрителям с флагом Кыргызстана" width="601" height="602">
+      <figcaption>Ночной кадр с флагом Кыргызстана · <a href="https://24.kg/article/386724">24.kg</a></figcaption>
+    </figure>
+    <figure class="race-photo" hidden>
+      <img class="home-news-cover" data-src="https://bikepacking.com/wp-content/uploads/2026/08/Podofedovv-2026-srmr-rigs_1-2000x1333.jpg" alt="Гоночный велосипед Владислава Подофёдова с сумками" width="2000" height="1333">
+      <figcaption>Титановый велосипед Владислава Подофёдова · <a href="https://bikepacking.com/bikes/2026-silk-road-mountain-race-part-two/">BIKEPACKING.com</a></figcaption>
+    </figure>
+    <figure class="race-photo" hidden>
+      <img class="home-news-cover" data-src="https://bikepacking.com/wp-content/uploads/2026/08/2026-SRMR-Rig-Sofiane-Sehili_1-2000x1334.jpg" alt="Велосипед Софьяна Сеили с гоночным снаряжением" width="2000" height="1334">
+      <figcaption>Bombtrack Cale Софьяна Сеили · <a href="https://bikepacking.com/bikes/2026-silk-road-mountain-race-part-two/">BIKEPACKING.com</a></figcaption>
+    </figure>
+    <figure class="race-photo" hidden>
+      <img class="home-news-cover" data-src="https://bikepacking.com/wp-content/uploads/2026/08/kSienkiewicz-2026-srmr-rigs_1-2000x1333.jpg" alt="Горный велосипед Кшиштофа Сенкевича с рулём-бараном" width="2000" height="1333">
+      <figcaption>MTB-дропбар Кшиштофа Сенкевича · <a href="https://bikepacking.com/bikes/2026-silk-road-mountain-race-part-two/">BIKEPACKING.com</a></figcaption>
+    </figure>
+    <figure class="race-photo" hidden>
+      <img class="home-news-cover" data-src="https://bikepacking.com/wp-content/uploads/2026/08/aStychneuski-2026-srmr-rigs_1-2000x1333.jpg" alt="Гоночный двухподвес Антона Стычневского с сумками" width="2000" height="1333">
+      <figcaption>Orbea Oiz Антона Стычневского · <a href="https://bikepacking.com/bikes/2026-silk-road-mountain-race-part-two/">BIKEPACKING.com</a></figcaption>
+    </figure>
+    <div class="race-photo-controls" hidden>
+      <button type="button" class="outline" data-step="-1" aria-label="Предыдущее фото">←</button>
+      <span class="race-photo-count" role="status">1 из 7</span>
+      <button type="button" class="outline" data-step="1" aria-label="Следующее фото">→</button>
+    </div>
+  </section>
 </div>
 <ul class="home-stories">
   <li><a href="./news.html#anton-kollegin">Антон Коллегин взял бронзу на Tour of Orto-Sai</a></li>
