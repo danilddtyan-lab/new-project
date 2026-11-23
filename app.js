@@ -11,6 +11,7 @@ const plurals = new Intl.PluralRules('ru');
 const wordForm = (count, one, few, many) => ({one, few, many})[plurals.select(count)] || many;
 let limit = pageSize;
 let activeTerrain = '';
+let activeCollection = '';
 let savedOnly = false;
 let saved = new Set();
 try {
@@ -18,6 +19,9 @@ try {
   if (Array.isArray(stored)) saved = new Set(stored.filter(id => byId.has(id)));
 } catch {}
 const compared = new Set();
+const collectionButtons = [...document.querySelectorAll('[data-collection]')];
+const catalogPriority = new Map(Object.keys(frameDetails).map((id,index) => [id,index]));
+const frameSpec = frame => frameDetails[frame.id]?.spec || framePhotos.get(frame.id)?.spec || frame.url;
 
 get('total').textContent = frames.length;
 get('brand-total').textContent = brands.length;
@@ -37,6 +41,7 @@ function render(event) {
   const words = normalize(query).split(/\s+/);
   const matching = frames.filter(frame =>
     (!activeTerrain || activeTerrain === frame.t) &&
+    (!activeCollection || frameDetails[frame.id]?.pick === activeCollection) &&
     (!frameMaterial || frameMaterial === frame.m) &&
     (!brand || brand === frame.brand) &&
     (!region || region === frame.region) &&
@@ -45,15 +50,19 @@ function render(event) {
     words.every(word => normalize(frame.brand+' '+frame.model).includes(word)));
   if (sort !== 'featured') matching.sort((left,right) =>
     collator.compare(left.brand+' '+left.model,right.brand+' '+right.model) * (sort === 'az' ? 1 : -1));
+  else matching.sort((left,right) =>
+    (catalogPriority.get(left.id) ?? catalogPriority.size) - (catalogPriority.get(right.id) ?? catalogPriority.size));
   const visible = matching.slice(0,limit);
   get('count').textContent = 'Показано '+visible.length+' из '+matching.length;
   get('saved-count').textContent = saved.size;
   get('saved-toggle').setAttribute('aria-pressed',savedOnly);
   get('more').hidden = matching.length <= limit;
-  get('reset').hidden = !(activeTerrain || savedOnly || query || frameMaterial || brand || region || photosOnly || sort !== 'featured');
+  get('reset').hidden = !(activeTerrain || activeCollection || savedOnly || query || frameMaterial || brand || region || photosOnly || sort !== 'featured');
   get('tabs').querySelectorAll('button').forEach(button =>
     button.setAttribute('aria-pressed',button.dataset.terrain === activeTerrain));
+  for (const button of collectionButtons) button.setAttribute('aria-pressed',button.dataset.collection === activeCollection);
   get('grid').innerHTML = visible.map(frame => {
+    const details = frameDetails[frame.id];
     const id = escapeHtml(frame.id);
     const selected = compared.has(frame.id);
     const starred = saved.has(frame.id);
@@ -62,10 +71,12 @@ function render(event) {
       <p class="meta">${escapeHtml(frame.brand)}</p>
       <h3 tabindex="-1">${escapeHtml(frame.model)}</h3>
       <p>${material[frame.m]} · ${terrain[frame.t]}${regionNames[frame.region] ? ' · '+regionNames[frame.region] : ''}</p>
+      ${details?.note ? `<p>${escapeHtml(details.note)}</p>` : ''}
+      ${details?.price ? `<p class="catalog-price">${escapeHtml(details.price)} <span>по прайсу производителя</span></p>` : ''}
       <div class="card-actions">
         <button class="outline" type="button" data-action="save" data-frame="${id}" aria-label="В избранное: ${id}" aria-pressed="${starred}">${starred?'♥':'♡'}</button>
         <button class="outline" type="button" data-action="compare" data-frame="${id}" aria-label="В сравнение: ${id}" aria-pressed="${selected}" ${compared.size === 3 && !selected ? 'disabled' : ''}>${selected?'В сравнении':'Сравнить'}</button>
-        <a href="${framePhotos.get(frame.id)?.spec || frame.url}" aria-label="Сайт производителя ${escapeHtml(frame.brand)}">${framePhotos.get(frame.id)?.spec ? 'Характеристики' : 'Бренд'}</a>
+        <a href="${escapeHtml(frameSpec(frame))}" aria-label="Сайт производителя ${escapeHtml(frame.brand)}">${(details?.spec || framePhotos.get(frame.id)?.spec) ? 'Характеристики' : 'Бренд'}</a>
       </div>${renderMarketLink(frame.id)}</article>`;
   }).join('') || '<p class="empty">Подходящих рам нет. Смените фильтры.</p>';
   get('compare-bar').hidden = !compared.size;
@@ -90,11 +101,16 @@ get('tabs').addEventListener('click',event => {
   activeTerrain = button.dataset.terrain;
   refilter();
 });
+for (const button of collectionButtons) button.addEventListener('click',() => {
+  activeCollection = button.dataset.collection;
+  refilter();
+});
 function clearFilters() {
   for (const field of ['q','material','brand','region']) get(field).value = '';
   get('sort').value = 'featured';
   get('photos-only').checked = false;
   activeTerrain = '';
+  activeCollection = '';
 }
 get('saved-toggle').addEventListener('click',() => {
   savedOnly = !savedOnly;
@@ -139,7 +155,7 @@ get('compare-open').addEventListener('click',() => {
       ['Материал',frame => material[frame.m]],
       ['Назначение',frame => terrain[frame.t]],
       ['Регион бренда',frame => regionNames[frame.region] || 'Другие регионы'],
-      ['Сайт',frame => '<a href="'+frame.url+'">Производитель</a>']
+      ['Сайт',frame => '<a href="'+escapeHtml(frameSpec(frame))+'">Производитель</a>']
     ].map(([label,value]) => '<tr><th scope="row">'+label+'</th>'+
       columns.map(frame => '<td>'+value(frame)+'</td>').join('')+'</tr>').join('')+
     '</tbody></table></div>';
@@ -149,31 +165,31 @@ get('compare-open').addEventListener('click',() => {
 const configurations = {
   road: {
     gearExample:'Shimano GRX RX820 2×12', tireExample:'Schwalbe Marathon Almotion',
-    title:'Туринг для асфальта', models:['Surly/Disc Trucker','Fairlight/Faran','Kona/Sutra'],
+    title:'Туринг для асфальта', models:['Seaboard/CX01','SHULZ/The Lightning','Poseidon/X'],
     gears:'Начните с 2×. Кассета с лёгкой передачей пригодится на подъёмах с багажом.',
     tires:'Гладкие или полуслики. Ориентир для новой сборки — 35–42 мм при подходящем клиренсе.'
   },
   roadpacking: {
     gearExample:'Shimano GRX RX820 2×12', tireExample:'Schwalbe Marathon Almotion',
-    title:'Дорожный байкпакинг с багажом', models:['Surly/Disc Trucker','Kona/Sutra','Fairlight/Faran'],
+    title:'Дорожный байкпакинг с багажом', models:['SHULZ/The Lightning','State Bicycle Co./4130 All-Road','Seaboard/CX01'],
     gears:'Для длинных перегонов и подъёмов с грузом рассмотрите 2×. Подберите лёгкую нижнюю передачу под крутизну маршрута.',
     tires:'Туристические полуслики с защитой от проколов. Ориентир — 38–45 мм с запасом под крылья, если они нужны.'
   },
   gravel: {
     gearExample:'Shimano GRX RX820 1×12', tireExample:'Schwalbe G-One Bite',
-    title:'Гравийник для смешанных дорог', models:['Ritchey/Outback','Fairlight/Secan','Bombtrack/Hook EXT'],
+    title:'Гравийник для смешанных дорог', models:['Twitter/G2 MAX','Seaboard/GR02','SPCycle/G028'],
     gears:'1× с широким диапазоном для грунта или 2×, если много асфальта и важны небольшие шаги между передачами.',
     tires:'Мелкий центральный протектор и боковые грунтозацепы. Ориентир — 40–50 мм.'
   },
   rough: {
     gearExample:'Shimano Deore M6100 1×12', tireExample:'Schwalbe Nobby Nic',
-    title:'Хардтейл для камней и троп', models:['Surly/Karate Monkey','Brother Cycles/Big Bro','Esker/Hayduke'],
+    title:'Хардтейл для камней и троп', models:['State Bicycle Co./4130 Trail','TanTan Seraph/FM529','Marin/Pine Mountain'],
     gears:'MTB 1× с широкой кассетой. При выборе звезды учитывайте крутизну подъёмов и вес багажа.',
     tires:'Выраженные грунтозацепы. Ориентир — 2,25–2,6″, в пределах допусков рамы и вилки.'
   },
   sand: {
     gearExample:'Shimano Deore M6100, если совместим с кареткой и чейнлайном', tireExample:'Schwalbe Jumbo Jim',
-    title:'Фэтбайк для рыхлого покрытия', models:['Surly/Wednesday','Otso/Arctodus','Salsa/Beargrease'],
+    title:'Фэтбайк для рыхлого покрытия', models:['Trek/Farley','Salsa/Mukluk','Surly/Wednesday'],
     gears:'MTB 1× с лёгкими передачами. Подберите систему под ширину каретки и чейнлайн фэтбайка.',
     tires:'Объёмные покрышки около 4–5″, если рама, вилка и обода рассчитаны на такой размер.'
   }
@@ -202,7 +218,7 @@ get('fit-form').addEventListener('submit',event => {
   const routeExample = selectedRouteExample || kyrgyzRoutes[input.surface];
   const models = route.models.map(id => {
     const frame = byId.get(id);
-    return '<li><a href="'+frame.url+'">'+escapeHtml(frame.brand+' '+frame.model)+'</a></li>';
+    return '<li><a href="'+escapeHtml(frameSpec(frame))+'">'+escapeHtml(frame.brand+' '+frame.model)+'</a></li>';
   }).join('');
   const load = input.luggage === '' ?
     'Вес велосипедиста '+weight.toLocaleString('ru')+' кг. Добавьте вес велосипеда, воды и всего багажа перед проверкой лимита нагрузки.' :

@@ -41,6 +41,7 @@ const gearSections = [
   {
     id:'drivetrains',title:'Трансмиссии',caption:'Передач должно хватить и на подъём, и на обратную дорогу.',
     items:[
+      ['SENTYEH','ECS PRO','Электронная трансмиссия','Беспроводное переключение. Для комплекта сверяйте манетки, переключатель, кассету, цепь и тормоза.','https://sentyehsmart.com/'],
       ['Shimano','GRX RX820','Гравий','Механические конфигурации 1×12 и 2×12. Уточните барабан под выбранную кассету.','https://bike.shimano.com/en-UK/stories/article/shimano-grx-personalities.html'],
       ['Shimano','GRX RX400','Гравий','Механическая платформа 2×10. Сверьте совместимость манеток и переключателей.','https://bike.shimano.com/'],
       ['Shimano','Deore M6100','MTB','1×12 с плоским рулём. Кассете CS-M6100 нужен Micro Spline.','https://bike.shimano.com/'],

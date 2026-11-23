@@ -8,7 +8,10 @@ const pinduoduoQueries = {
   ICAN: 'ICAN 碳纤维 自行车 车架',
   Carbonda: 'Carbonda 碳纤维 自行车 车架',
   Winspace: 'WINSPACE 碳纤维 自行车 车架',
-  YOELEO: 'YOELEO 碳纤维 自行车 车架'
+  YOELEO: 'YOELEO 碳纤维 自行车 车架',
+  Seaboard: 'Seaboard 自行车 车架',
+  'TanTan Seraph': 'TanTan SERAPH 碳纤维 自行车 车架',
+  VeloBuild: 'VeloBuild 碳纤维 自行车 车架'
 };
 const pinduoduoProductQueries = {
   'Rhinowalk/Plateau X 1,7 л': 'Rhinowalk 犀牛走 Plateau BGY0071 1.7L 自行车 三角包',

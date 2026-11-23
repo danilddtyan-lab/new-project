@@ -50,6 +50,10 @@ const framePhotos = new Map([...dropbarPicks, {
   id:'SPCycle/G068', image:'https://usaimages.oss-us-west-1.aliyuncs.com/6230/product/20240702/Spcycle_G068_T1000_Carbon_Gravel_Bike_Frame_Semi_Internal_Cable_UDH_Hanger_Disc_Brake_Aero_Carbon_Gravel_Bicycle_Frameset_1719885879405_2.jpg_w2048.jpg', credit:'SPCycle'
 }, {
   id:'SHULZ/The Lightning', image:'https://shulzbikes.com/cdn/shop/files/bigproduct_209-1897-nevskiyvechernevaevenings-framesetthelightningframenevaeveningpt5255.webp?v=1770805403&width=720', credit:'SHULZ'
+}, {
+  id:'Seaboard/GR02', image:'https://www.mrbicycles.com/wp-content/uploads/2023/11/GR02-Gravel-Frameset-Silver-Gray-1.jpg', credit:'Mr. Bicycles'
+}, {
+  id:'Twitter/G2 MAX', image:'https://cdn.shopify.com/s/files/1/0587/2982/4417/files/frameset-g2max-2026.jpg?v=1788461870&width=720', credit:'Twitter Bikes USA'
 }].map(item => [item.id,item]));
 
 function renderFramePhoto(id) {

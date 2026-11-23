@@ -39,13 +39,17 @@ const brands = [
 ['Bearclaw','https://bearclawbicycleco.com/','Thunderhawk|T|G,Beaux Jaxon|T|E,Towmak|T|F'],
 ['Chumba','https://chumbausa.com/','Terlingua Steel|S|G,Terlingua Titanium|T|G,Sendero Steel|S|M,Sendero Titanium|T|M'],
 ['Stooge','https://stoogecycles.co.uk/','Scrambler|S|M,Speedbomb|S|M,Dirt Tracker|S|M'],
-['State Bicycle Co.','https://www.statebicycle.com/','4130 All-Road|S|G,6061 All-Road|A|G,Carbon All-Road|C|G'],
-['SPCycle','https://amp.sp-cycle.com/Carbon-Cyclocross-Gravel-Frame-c57268/','G028|C|G,G058|C|G,G068|C|G'],
+['State Bicycle Co.','https://www.statebicycle.com/','4130 All-Road|S|G,4130 Trail|S|M,6061 All-Road|A|G,Carbon All-Road|C|G'],
+['Seaboard','https://tsunamibicycle.com/','GR02|A|G,CX01|S|G,CX03|S|G,GC05|S|G'],
+['TanTan Seraph','https://www.tantancycling.com/','GR048|C|G,GR201|C|G,GR257|C|G,FM529|C|M,FM080|C|M,FM121|C|M'],
+['VeloBuild','https://www.velobuild.com/','GF-001|C|G,GF-002|C|G,GF-003|C|G,CX-002|C|G'],
+['Poseidon','https://www.poseidonbike.com/','Redwood|A|E,X|A|G'],
+['SPCycle','https://amp.sp-cycle.com/Carbon-Cyclocross-Gravel-Frame-c57268/','G028|C|G,G058|C|G,G068|C|G,G026|C|G,G056|C|G,G069|C|G'],
 ['Tideace','https://tideacebike.com/collections/gravel-bike-frame','FM-GV201|C|G,FM-CX072|C|G,FM-CR060|C|G'],
 ['Twitter','https://www.twitterbikefactory.com/collections/gravel-bike','Gravel V1|C|G,Gravel V3|C|G,G2 MAX|A|G'],
-['LightCarbon','https://www.lightcarbon.com/','LCG071-D|C|G,LCG071-PRO|C|G'],
+['LightCarbon','https://www.lightcarbon.com/','LCG071-D|C|G,LCG071-PRO|C|G,LCG072-D|C|G,LCG073-D|C|G,LCG087-D|C|G'],
 ['ICAN','https://icancycling.com/','Graro|C|G'],
-['Carbonda','https://www.carbonda.com/','CFR696|C|G'],
+['Carbonda','https://www.carbonda.com/','CFR696|C|G,CFR707|C|G'],
 ['Winspace','https://www.winspace.cc/','G5|C|G'],
 ['YOELEO','https://www.yoeleobike.com/','Altera G21|C|G'],
 ['SHULZ','https://shulz.ru/catalog/all/framesets','The Lightning|S|G'],
@@ -74,7 +78,7 @@ const brands = [
 ['Chiru','https://www.chirubikes.com/','Kegeti|T|E,Divider|T|E']
 ];
 const regionBrands = {
-  CN:'SPCycle,Tideace,Twitter,LightCarbon,ICAN,Carbonda,Winspace,YOELEO',
+  CN:'SPCycle,Tideace,Twitter,LightCarbon,ICAN,Carbonda,Winspace,YOELEO,Seaboard,TanTan Seraph,VeloBuild',
   EU:'Bombtrack,Brother Cycles,Fairlight,Genesis,Nordest,Kinesis UK,3T,Mason,Tout Terrain,Pelago,Vitus,Stooge,OPEN,Canyon,Rose,Sour,Cotic,Stanforth,Ribble,Basso,Wilier,Ridley,Rondo,8bar,Cinelli,Bergamont,Focus,Cube,Van Rysel,Kellys,Orbea,Megamo,Lapierre,Origine,Chiru',
   RU:'Сусанин,SHULZ'
 };

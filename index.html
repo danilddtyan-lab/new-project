@@ -8,18 +8,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css?v=7">
-<script defer src="./catalog.js?v=5"></script>
-<script defer src="./market.js?v=5"></script>
-<script defer src="./gear.js?v=5"></script>
-<script defer src="./features.js?v=5"></script>
-<script defer src="./routes.js?v=5"></script>
-<script defer src="./app.js?v=5"></script>
+<link rel="stylesheet" href="./style.css?v=8">
+<script defer src="./catalog.js?v=8"></script>
+<script defer src="./market.js?v=8"></script>
+<script defer src="./gear.js?v=8"></script>
+<script defer src="./features.js?v=8"></script>
+<script defer src="./routes.js?v=8"></script>
+<script defer src="./popular.js?v=8"></script>
+<script defer src="./board.js?v=8"></script>
+<script defer src="./app.js?v=8"></script>
 </head>
 <body>
 <header class="header">
   <a class="logo" href="#" aria-label="Велобюро, главная"><b class="mark" aria-hidden="true">△</b> ВЕЛОБЮРО<span>.</span></a>
-  <nav aria-label="Разделы"><a href="#selection">Подбор</a><a href="#route-day">Маршрут дня</a><a href="#catalog">Рамы</a><a href="#dropbar">MTB дропбар</a><a href="#news">Газета</a><a href="#gallery">Галерея</a><a href="#bags">Сумки</a><a href="#wheels">Колёса</a><a href="#tires">Покрышки</a><a href="#drivetrains">Трансмиссии</a><a class="lev-link" href="#lev">Для Льва</a></nav>
+  <nav aria-label="Разделы"><a href="#selection">Подбор</a><a href="#route-day">Маршрут дня</a><a href="#catalog">Рамы</a><a href="#marketplace">Барахолка</a><a href="#dropbar">MTB дропбар</a><a href="#news">Газета</a><a href="#gallery">Галерея</a><a href="#bags">Сумки</a><a href="#wheels">Колёса</a><a href="#tires">Покрышки</a><a href="#drivetrains">Трансмиссии</a><a class="lev-link" href="#lev">Для Льва</a></nav>
   <button id="saved-toggle" class="outline" type="button" aria-pressed="false">♡ <span>Избранное</span> <strong id="saved-count">0</strong></button>
 </header>
 <a class="skip" href="#main-content">Перейти к содержимому</a>
@@ -28,7 +30,7 @@
   <section class="hero">
     <div class="hero-copy">
       <h1>Товарищ,<br>седлай <em>маршрут!</em></h1>
-      <p>Подбор велосипеда и деталей для поездок с багажом.</p><p class="hero-joke">«Палатку взяли. А место для велосипедиста оставили?»</p>
+      <p>Подбор велосипеда и деталей для поездок с багажом. В каталоге — доступные рамы и редкие модели китайских производителей.</p><p class="hero-joke">«Палатку взяли. А место для велосипедиста оставили?»</p>
       <a class="solid" href="#selection">Подобрать сборку</a>
     </div>
     <figure class="cover-art mountain-cover">
@@ -97,6 +99,12 @@
       <div><p class="eyebrow">ПОДБОР РАМЫ</p><h2>Каталог рам</h2></div>
       <p class="totals"><strong id="total"></strong> <span id="model-label"></span> <span> / </span> <strong id="brand-total"></strong> <span id="brand-label"></span></p>
     </div>
+    <div class="collections" aria-label="Подборки рам">
+      <button type="button" class="outline" data-collection="" aria-pressed="true">Весь каталог</button>
+      <button type="button" class="outline" data-collection="popular" aria-pressed="false">Народные рамы</button>
+      <button type="button" class="outline" data-collection="rare" aria-pressed="false">Редкие китайские</button>
+    </div>
+    <p class="caption" id="collection-note">В начале каталога — доступные платформы. У некоторых рам указана цена на сайте производителя на 23 ноября 2026 года, без доставки и пошлин.</p>
     <div class="tabs" id="tabs" aria-label="Назначение рамы"></div>
     <div class="controls">
       <label class="search"><span aria-hidden="true">⌕</span><input id="q" type="search" placeholder="Поиск по модели или бренду" aria-label="Поиск по модели или бренду"></label>
@@ -117,6 +125,20 @@
       <img src="./cover.webp" loading="lazy" width="760" height="760" alt="Карикатурный портрет велосипедиста в розовых очках, поднявшего фиолетовый SHULZ The Lightning">
       <figcaption>SHULZ The Lightning под Бишкеком. Иллюстрация по фотографии из публикации <a href="https://www.instagram.com/marxistcyclist/">marxistcyclist</a> и <a href="https://www.instagram.com/my_dear_shulz/">my_dear_shulz</a>.</figcaption>
     </figure>
+  </section>
+  <section id="marketplace" class="marketplace" aria-labelledby="board-title">
+    <div class="section-head"><div><h2 id="board-title">Велобарахолка</h2><p class="standfirst">Продайте или найдите раму, велосипед, сумки и запчасти.</p></div>
+      <button class="solid" type="button" id="board-open">Подать объявление</button>
+    </div>
+    <div class="board-toolbar">
+      <label>Тип объявления
+        <select id="board-filter"><option value="">Все</option><option value="Продам">Продам</option><option value="Куплю">Куплю</option></select>
+      </label>
+      <button type="button" class="outline" id="board-refresh">Обновить</button>
+      <a id="board-all" href="https://github.com/danilddtyan-lab/new-project/issues?q=is%3Aissue+is%3Aopen+in%3Atitle+%22%D0%91%D0%B0%D1%80%D0%B0%D1%85%D0%BE%D0%BB%D0%BA%D0%B0%22">Объявления на GitHub</a>
+    </div>
+    <p id="board-status" aria-live="polite">Загружаем объявления…</p>
+    <div id="board-grid" class="grid"></div>
   </section>
   <div id="gear-sections"></div>
   <section class="lev" id="lev">
@@ -147,6 +169,18 @@
   <strong id="compare-count"></strong><button class="solid" id="compare-open">Сравнить</button><button class="outline" id="compare-clear">Очистить</button>
 </aside>
 <dialog id="compare-dialog" aria-labelledby="compare-title"><div class="dialog-head"><h2 id="compare-title">Сравнение рам</h2><form method="dialog"><button class="outline" aria-label="Закрыть">×</button></form></div><div id="compare-content"></div></dialog>
+<dialog id="board-dialog" aria-labelledby="board-dialog-title">
+  <div class="dialog-head"><h2 id="board-dialog-title">Новое объявление</h2><form method="dialog"><button class="outline" aria-label="Закрыть">×</button></form></div>
+  <p>Объявление публичное. Для публикации откроется черновик на GitHub. Другие пользователи смогут ответить там в комментариях.</p>
+  <form id="board-form">
+    <label>Тип<select name="kind" required><option>Продам</option><option>Куплю</option></select></label>
+    <label>Что именно<input name="product" required maxlength="80" placeholder="Например, рама Seaboard GR02, M"></label>
+    <label>Город<input name="city" required maxlength="40" placeholder="Бишкек"></label>
+    <label>Цена и валюта<input name="price" maxlength="40" placeholder="Например, 18 000 сом"></label>
+    <label class="board-description">Описание<textarea name="description" required rows="4" maxlength="500" placeholder="Состояние, размер, комплектация. Фото можно прикрепить на GitHub."></textarea></label>
+    <button class="solid" type="submit">Открыть черновик на GitHub</button>
+  </form>
+</dialog>
 <dialog id="news-dialog" aria-labelledby="news-modal-title">
   <div class="dialog-head"><div><p class="eyebrow">23 НОЯБРЯ 2026</p><h2 id="news-modal-title">Велогазета</h2></div><form method="dialog"><button class="outline" aria-label="Закрыть выпуск">×</button></form></div>
   <section class="news-section" aria-labelledby="local-riders-title">
