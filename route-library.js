@@ -1,0 +1,42 @@
+'use strict';
+
+const rideCategories = {road:'Асфальт', gravel:'Гравий и асфальт', rough:'Полный гравий'};
+const rideLengths = {short:'Короткий', medium:'Средний', long:'Длинный'};
+const rideLibrary = [
+  {category:'road', length:'short', days:1, title:'Городское кольцо по Бишкеку', km:17, climb:160,
+    points:'Октябрьский район → городские улицы и велодорожки → Октябрьский район',
+    detail:'Городское кольцо с участками, где велосипед ведут пешком.',
+    url:'https://www.komoot.com/smarttour/37049527'},
+  {category:'road', length:'medium', days:1, title:'Токтогул — Торкент', km:21.3, climb:null,
+    points:'Токтогул → Торкент',
+    detail:'Поездка к Токтогульскому водохранилищу. Дистанция в одну сторону. Продумайте возвращение.',
+    url:'https://kyrgyzmap.com/route/toktogul-torkent-valley-cycle/'},
+  {category:'road', length:'long', days:1, title:'Сары-Могол — Дароот-Коргон', km:61.4, climb:null,
+    points:'Сары-Могол → Дароот-Коргон',
+    detail:'Перегон на запад по Алайской долине с видом на Заалайский хребет. Дистанция в одну сторону.',
+    url:'https://kyrgyzmap.com/ru/route/sary-mogol-daroot-korgon-cycle-ru/'},
+  {category:'gravel', length:'short', days:1, title:'Кольцо к смотровой у флагштока', km:38.4, climb:490,
+    points:'Бишкек-2 → смотровая у флагштока → Бишкек',
+    detail:'Кольцо от города до предгорий. На крутом участке может потребоваться спешиться.',
+    url:'https://www.komoot.com/smarttour/20163204'},
+  {category:'gravel', length:'medium', days:1, title:'Суусамыр — Кожомкул — Кызыл-Ой', km:40.1, climb:null,
+    points:'Суусамыр → Кожомкул → Кызыл-Ой',
+    detail:'Из открытой долины в ущелье Кёкёмерена. Уточните состояние участков после дождя и спланируйте транспорт с финиша.',
+    url:'https://kyrgyzmap.com/route/suusamyr-kozhomkul-kyzyl-oi-cycle/'},
+  {category:'gravel', length:'long', days:3, title:'Бишкек и городища Чуйской долины', km:137.3, climb:null,
+    points:'День 1: Бишкек → Красная Речка. День 2: Красная Речка → Ак-Бешим → Бурана. День 3: возвращение в Бишкек.',
+    detail:'Вариант разбивки опубликованного маршрута на три дня с остановками у городищ. Сверьте порядок точек с GPX и заранее подтвердите места ночёвок.',
+    url:'https://kyrgyzmap.com/route/discovery-bishkek-burana-suyab-nevaket-published-cycle/'},
+  {category:'rough', length:'short', days:1, title:'Кольцо по Ортосайским холмам', km:14, climb:210,
+    points:'Холмы за флагом → грунтовые дороги → холмы за флагом',
+    detail:'Самостоятельный круг по опубликованному треку. Маркировка на местности относилась к гоночному дню.',
+    url:'https://velomesto.kg/ortosairace'},
+  {category:'rough', length:'medium', days:1, title:'Ак-Сай — Туз-Кёль через каньоны', km:21, climb:null,
+    points:'Ак-Сай → каньоны южного берега → Туз-Кёль',
+    detail:'Грунт и рыхлый песок. Продумайте обратный трансфер или отдельный трек.',
+    url:'https://www.trailforks.com/route/salt-lake/'},
+  {category:'rough', length:'long', days:1, title:'От озера Кара-Суу к дороге на Токтогул', km:32.5, climb:null,
+    points:'Западный берег Кара-Суу → выход к дороге на Токтогул',
+    detail:'Горный грунтовый выезд. Организуйте подвоз к старту и проверьте возможные броды по треку.',
+    url:'https://kyrgyzmap.com/route/research-freebike-kara-suu-lake-road-bike/'}
+];

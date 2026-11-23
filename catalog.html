@@ -8,13 +8,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css?v=15">
+<link rel="stylesheet" href="./style.css?v=20">
 <script defer src="./site.js?v=11"></script>
 <script defer src="./catalog.js?v=19"></script>
 <script defer src="./market.js?v=11"></script>
-<script defer src="./features.js?v=19"></script>
+<script defer src="./features.js?v=20"></script>
 <script defer src="./popular.js?v=11"></script>
-<script defer src="./app.js?v=19"></script>
+<script defer src="./frame-specs.js"></script>
+<script defer src="./app.js?v=20"></script>
 </head>
 <body data-page="catalog">
 <a class="skip" href="#main-content">Перейти к содержимому</a>
@@ -40,8 +41,9 @@
 <label class="search"><span aria-hidden="true">⌕</span><input aria-label="Поиск по модели или бренду" id="q" placeholder="Поиск по модели или бренду" type="search"/></label>
 <select aria-label="Материал рамы" id="material"><option value="">Любой материал</option></select>
 <select aria-label="Регион бренда" id="region"><option value="">Все регионы</option><option value="CN">Китай</option><option value="EU">Европа</option><option value="RU">Россия</option><option value="OTHER">Другие регионы</option></select>
+<select aria-label="Минимальная ширина покрышки 700C" id="clearance"><option value="">Любой клиренс</option><option value="45">От 45 мм</option><option value="50">От 50 мм</option><option value="55">От 55 мм</option></select>
 <select aria-label="Бренд" id="brand"><option value="">Все бренды</option></select>
-<select aria-label="Сортировка" id="sort"><option value="featured">Порядок каталога</option><option value="az">По названию А–Я</option><option value="za">По названию Я–А</option></select>
+<select aria-label="Сортировка" id="sort"><option value="featured">Сначала актуальные</option><option value="az">По названию А–Я</option><option value="za">По названию Я–А</option></select>
 </div>
 <p class="market-note">«Найти на Pinduoduo» открывает поиск по модели. Для просмотра результатов может потребоваться вход.</p>
 <label class="photo-filter"><input id="photos-only" type="checkbox"/> Только с фотографиями</label>

@@ -1,23 +1,5 @@
 'use strict';
 
-const workouts = [
-  {
-    id:'easy-35', title:'Лёгкая прокрутка', exportName:'Veloburo Easy Spin',
-    description:'После перерыва или между нагрузочными днями. Держите усилие лёгким, чтобы спокойно разговаривать.',
-    blocks:[['Разминка',8,45],['Ровная прокрутка',20,55],['Заминка',7,45]]
-  },
-  {
-    id:'base-50', title:'База для байкпакинга', exportName:'Veloburo Endurance',
-    description:'Ровная работа на выносливость. Дышите спокойно и держите удобный каденс без резких ускорений.',
-    blocks:[['Разминка',10,50],['Ровная работа',35,65],['Заминка',5,45]]
-  },
-  {
-    id:'tempo-55', title:'Темп для длинных подъёмов', exportName:'Veloburo Tempo Climbs',
-    description:'Для тех, кто уже регулярно крутит станок. Три устойчивых усилия с лёгким восстановлением между ними.',
-    blocks:[['Разминка',10,55],['Темп',10,83],['Восстановление',4,50],['Темп',10,83],['Восстановление',4,50],['Темп',10,83],['Заминка',7,45]]
-  }
-];
-
 const trainingForm = document.getElementById('training-form');
 const workoutSelect = document.getElementById('workout-select');
 const ftp = document.getElementById('training-ftp');
@@ -76,3 +58,65 @@ ${steps}
 });
 
 renderWorkout();
+
+const customWorkout = document.getElementById('personal-workout');
+const customResult = document.getElementById('personal-workout-result');
+customWorkout.addEventListener('submit',event => {
+  event.preventDefault();
+  const {level,goal,minutes,equipment} = Object.fromEntries(new FormData(customWorkout));
+  const duration = Number(minutes);
+  const actualGoal = goal === 'tempo' && (level === 'beginner' || duration < 35) ? 'endurance' : goal;
+  const plan = workouts.find(workout => workout.id === workoutGoals[actualGoal]);
+  const total = plan.blocks.reduce((sum,[,time]) => sum + time,0);
+  const adjustment = actualGoal !== goal ? 'Начните с работы на выносливость. ' : '';
+  if (equipment === 'outdoors') {
+    const warmup = Math.floor(duration * .2);
+    const cooldown = Math.floor(duration * .15);
+    const main = duration - warmup - cooldown;
+    const effort = actualGoal === 'tempo'
+      ? ' Сделайте два отрезка по '+Math.floor(main / 3)+' мин с лёгкой ездой между ними и до заминки.'
+      : '';
+    customResult.textContent = adjustment+plan.title+' · '+duration+' мин. '+warmup+' мин разминки, '+main+' мин основной работы, '+cooldown+' мин заминки. '+outdoorEffort[actualGoal]+effort;
+    return;
+  }
+  const previous = workouts.findIndex(workout => workout.id === 'personal');
+  if (previous !== -1) {
+    workouts.splice(previous,1);
+    workoutSelect.querySelector('option[value="personal"]').remove();
+  }
+  let elapsed = 0;
+  let allocated = 0;
+  const blocks = plan.blocks.map(([label,time,power]) => {
+    elapsed += time;
+    const next = Math.round(elapsed * duration / total);
+    const length = next - allocated;
+    allocated = next;
+    return [label,length,power];
+  }).filter(([,length]) => length > 0);
+  workouts.push({...plan,id:'personal',blocks});
+  workoutSelect.add(new Option(plan.title+' · '+duration+' мин (подбор)','personal'));
+  workoutSelect.value = 'personal';
+  renderWorkout();
+  customResult.textContent = adjustment+plan.title+' · '+duration+' мин. План и файл Zwift доступны ниже.';
+});
+
+if (trainingCommunities.length) {
+  const community = document.getElementById('training-community');
+  const links = document.getElementById('training-community-links');
+  for (const group of trainingCommunities) {
+    const card = document.createElement('article');
+    card.className = 'card';
+    const title = document.createElement('h3');
+    title.textContent = group.name;
+    const description = document.createElement('p');
+    description.textContent = group.description;
+    const link = document.createElement('a');
+    link.className = 'outline';
+    link.href = group.url;
+    link.textContent = 'Вступить';
+    link.setAttribute('aria-label','Вступить в '+group.name+' в Telegram');
+    card.append(title,description,link);
+    links.append(card);
+  }
+  community.hidden = false;
+}

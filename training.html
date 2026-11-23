@@ -8,10 +8,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css?v=15">
+<link rel="stylesheet" href="./style.css?v=20">
 <script defer src="./site.js?v=11"></script>
-<link rel="stylesheet" href="./training.css?v=2">
-<script defer src="./training.js?v=2"></script>
+<link rel="stylesheet" href="./training.css?v=3">
+<script defer src="./training-plans.js"></script>
+<script defer src="./training.js?v=3"></script>
 </head>
 <body data-page="training">
 <a class="skip" href="#main-content">Перейти к содержимому</a>
@@ -25,6 +26,22 @@
   <h1>Зимние тренировки</h1>
   <p class="standfirst">Три занятия на смарт-станке для подготовки к длинным поездкам весной.</p>
 </header>
+<section class="routes-library" aria-labelledby="personal-workout-title">
+  <h2 id="personal-workout-title">Подобрать тренировку</h2>
+  <form class="enhancement-form" id="personal-workout">
+    <label>Уровень<select name="level"><option value="beginner">Начинающий</option><option value="regular">Тренируюсь регулярно</option></select></label>
+    <label>Цель<select name="goal"><option value="recovery">Восстановление</option><option value="endurance">Выносливость</option><option value="tempo">Темп на подъёмах</option></select></label>
+    <label>Доступное время, мин<input name="minutes" type="number" min="15" max="180" value="45" required></label>
+    <label>Где тренируетесь?<select name="equipment"><option value="trainer">На станке</option><option value="outdoors">На улице</option></select></label>
+    <button type="submit" class="solid">Подобрать тренировку</button>
+  </form>
+  <p id="personal-workout-result" role="status"></p>
+</section>
+<section class="routes-library" id="training-community" aria-labelledby="training-community-title" hidden>
+  <h2 id="training-community-title">Совместные тренировки в Telegram</h2>
+  <p class="standfirst">Найдите компанию для заездов на станке и обменяйтесь тренировками.</p>
+  <div id="training-community-links" class="grid enhancement-grid"></div>
+</section>
 <section class="routes-library training" aria-labelledby="training-title">
   <h2 id="training-title">Выбрать тренировку</h2>
   <form id="training-form" class="training-controls">

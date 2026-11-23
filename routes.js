@@ -89,8 +89,17 @@ if (routeDayContent) {
 
 const routesGrid = document.getElementById('routes-grid');
 if (routesGrid) {
-  const surfaces = {road:'Асфальт',roadpacking:'Дорожный байкпакинг',gravel:'Гравий',rough:'Камни и тропы',sand:'Песок и рыхлый грунт'};
-  routesGrid.innerHTML = Object.entries(kyrgyzRoutes).map(([type,route]) =>
-    `<article class="card"><p class="meta">${surfaces[type]}</p><h3>${route.title}</h3>
-      <p class="route-meta">${route.meta}</p><p>${route.detail}</p><div class="route-actions"><a href="${route.url}">${route.link}</a><a href="./selection.html?surface=${type}">Подобрать сборку</a></div></article>`).join('');
+  const rideCard = (ride,index) => '<article id="ride-'+index+'" class="card">'
+    + '<p class="meta">'+rideLengths[ride.length]+' · '+ride.km.toLocaleString('ru')+' км · набор '
+    + (ride.climb === null ? 'уточните по треку' : ride.climb+' м')+'</p>'
+    + '<h4>'+ride.title+'</h4><p><strong>Точки.</strong> '+ride.points+'</p><p>'+ride.detail+'</p>'
+    + '<div class="route-actions"><a href="'+ride.url+'">Карта или GPX</a>'
+    + '<a href="./selection.html?surface='+ride.category+'">Подобрать велосипед</a></div></article>';
+  routesGrid.innerHTML = Object.entries(rideCategories).map(([category,label]) =>
+    '<section class="route-category"><h3>'+label+'</h3><div class="grid enhancement-grid">'+
+    rideLibrary.map((ride,index) => ride.category === category ? rideCard(ride,index) : '').join('')+
+    '</div></section>').join('');
+  document.getElementById('routes-by-days').innerHTML = [[1,'На один день'],[3,'На три дня']].map(([days,label]) =>
+    '<section class="card"><h3>'+label+'</h3><ul>'+rideLibrary.map((ride,index) => ride.days === days
+      ? '<li><a href="#ride-'+index+'">'+ride.title+'</a></li>' : '').join('')+'</ul></section>').join('');
 }

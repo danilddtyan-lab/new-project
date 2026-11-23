@@ -66,7 +66,7 @@ const framePhotos = new Map([...dropbarPicks, {
 
 function renderFramePhoto(id) {
   const photo = framePhotos.get(id);
-  if (!photo) return '';
+  if (!photo) return '<figure class="frame-photo photo-unavailable">Фото рамы отсутствует</figure>';
   return `<figure class="frame-photo"><img src="${photo.image}" alt="Фреймсет ${id.replace('/',' ')}" loading="lazy" decoding="async" width="720" height="480" referrerpolicy="no-referrer"><figcaption>Фото: ${photo.credit}</figcaption></figure>`;
 }
 
