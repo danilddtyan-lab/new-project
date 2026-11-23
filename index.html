@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css?v=8">
+<link rel="stylesheet" href="./style.css?v=9">
 <script defer src="./catalog.js?v=8"></script>
 <script defer src="./market.js?v=8"></script>
 <script defer src="./gear.js?v=8"></script>
@@ -21,12 +21,13 @@
 <body>
 <header class="header">
   <a class="logo" href="#" aria-label="Велобюро, главная"><b class="mark" aria-hidden="true">△</b> ВЕЛОБЮРО<span>.</span></a>
-  <nav aria-label="Разделы"><a href="#selection">Подбор</a><a href="#route-day">Маршрут дня</a><a href="#catalog">Рамы</a><a href="#marketplace">Барахолка</a><a href="#dropbar">MTB дропбар</a><a href="#news">Газета</a><a href="#gallery">Галерея</a><a href="#bags">Сумки</a><a href="#wheels">Колёса</a><a href="#tires">Покрышки</a><a href="#drivetrains">Трансмиссии</a><a class="lev-link" href="#lev">Для Льва</a></nav>
+  <nav aria-label="Разделы"><a href="#selection">Подбор</a><a href="#route-day">Маршрут дня</a><a href="#builds">Сборки</a><a href="#catalog">Рамы</a><a href="#marketplace">Барахолка</a><a href="#dropbar">MTB дропбар</a><a href="#news">Газета</a><a href="#gallery">Галерея</a><a href="#bags">Сумки</a><a href="#wheels">Колёса</a><a href="#tires">Покрышки</a><a href="#drivetrains">Трансмиссии</a><a class="lev-link" href="#lev">Для Льва</a></nav>
   <button id="saved-toggle" class="outline" type="button" aria-pressed="false">♡ <span>Избранное</span> <strong id="saved-count">0</strong></button>
 </header>
 <a class="skip" href="#main-content">Перейти к содержимому</a>
 <main id="main-content" tabindex="-1">
   <div class="issue-line"><span>Сатирический веложурнал</span><span>О дальних дорогах и лишнем багаже</span></div>
+  <div class="front-page">
   <section class="hero">
     <div class="hero-copy">
       <h1>Товарищ,<br>седлай <em>маршрут!</em></h1>
@@ -37,6 +38,44 @@
       <img src="./mountain-print.webp" width="780" height="520" alt="Рисунок на газетной бумаге: велосипед с сумками на каменистой тропе Тянь-Шаня">
     </figure>
   </section>
+  <aside class="builds" id="builds" aria-labelledby="builds-title">
+    <h2 id="builds-title">Три сборки</h2>
+    <p class="builds-scope">Ориентиры в USD за раму, вилку и трансмиссию.</p>
+    <div class="build-list">
+      <details>
+        <summary><strong>Гравий без переплаты</strong><span>850–1 050 USD</span><span class="build-preview">Twitter G2 MAX · microSHIFT Sword</span></summary>
+        <dl>
+          <dt>Рама</dt><dd>Алюминиевая Twitter G2 MAX.</dd>
+          <dt>Вилка</dt><dd>Карбоновая из комплекта, 12×100. Задняя ось 12×142.</dd>
+          <dt>Трансмиссия</dt><dd>microSHIFT Sword 1×10, шатуны Sword 40T, кассета 11–48 и цепь на 10 скоростей.</dd>
+        </dl>
+        <p class="build-check">Нужны барабан HG, резьбовая каретка BSA 68 под вал 24 мм и механические тормоза Flat Mount под дорожную тягу. Фреймсет стоил 439 USD, комплект манеток, переключателя и кассеты — 299 USD.</p>
+        <p class="build-links"><a href="https://twitterbikeusa.com/products/twitter-g2max-alloy-gravel-frame-set-al6061-t6-frame-carbon-fork-700c-thru-axle-udh-700-50c">Фреймсет</a><a href="https://shop.microshift.com/products/sword-1x10-groupset">Трансмиссия</a></p>
+      </details>
+      <details>
+        <summary><strong>Gravel-plus для грейдеров</strong><span>1 150–1 600 USD</span><span class="build-preview">SPCycle G028 · Shimano GRX 1×12</span></summary>
+        <dl>
+          <dt>Рама</dt><dd>Карбоновая SPCycle G028. Заявленный клиренс до 700×57C.</dd>
+          <dt>Вилка</dt><dd>Карбоновая из комплекта, 12×100. Задняя ось 12×142.</dd>
+          <dt>Трансмиссия</dt><dd>Манетки GRX RX610, шатуны FC‑RX610‑1 с 38T, переключатель RD‑RX822‑SGS, кассета Shimano 10–51 и цепь HG 12 скоростей.</dd>
+        </dl>
+        <p class="build-check">Нужны барабан Micro Spline и каретка T47 под вал Shimano 24 мм. До заказа уточните у SPCycle точную ширину стакана вашей версии и зазор звезды 38T. Фреймсет стоил 608 USD.</p>
+        <p class="build-links"><a href="https://www.sp-cycle.com/Spcycle-G028-Carbon-Gravel-Bike-Frame-700x57C-UDH-Hanger-Full-Internal-Cable-Gravel-Bicycle-Carbon-Frameset-p6993835.html">Фреймсет</a><a href="https://bike.shimano.com/de-DE/stories/article/grx-upgrade.html">Трансмиссия</a></p>
+      </details>
+      <details>
+        <summary><strong>MTB-дропбар для гор</strong><span>2 250–2 850 USD</span><span class="build-preview">Salsa Fargo · GRX / Deore 1×12</span></summary>
+        <dl>
+          <dt>Рама</dt><dd>Стальная Salsa Fargo 2026 под руль-баран.</dd>
+          <dt>Вилка</dt><dd>Карбоновая Cutthroat Deluxe из комплекта. Оси Boost 15×110 и 12×148.</dd>
+          <dt>Трансмиссия</dt><dd>Манетки GRX RX610, переключатель RD‑RX822‑SGS, шатуны Shimano MT510 34T, кассета Deore M6100 10–51 и цепь M6100.</dd>
+        </dl>
+        <p class="build-check">Нужны барабан Micro Spline и каретка Shimano BB52 под BSA 73. Сочетание GRX и Deore взято за основу с серийной Fargo GRX 610. Фреймсет 2026 стоил 1 599 USD.</p>
+        <p class="build-links"><a href="https://www.salsacycles.com/products/2026-fargo-steel-frameset">Фреймсет</a><a href="https://www.salsacycles.com/products/2025-fargo-grx-610">Серийная комплектация</a></p>
+      </details>
+    </div>
+    <p class="builds-note">Цены для планирования, 23 ноября 2026. Колёса, тормоза, кокпит, доставка и пошлины считаются отдельно.</p>
+  </aside>
+  </div>
   <section class="news-box" id="news" aria-labelledby="news-title">
     <div>
       <p class="eyebrow">ВЫПУСК ОТ <time datetime="2026-11-23">23 НОЯБРЯ 2026</time></p>

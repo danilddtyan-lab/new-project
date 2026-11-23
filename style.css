@@ -108,3 +108,21 @@ body{background-color:var(--paper);background-image:radial-gradient(#4b301111 .6
 #board-form textarea{width:100%;min-width:0;resize:vertical;border:1.5px solid var(--ink);background:var(--cream);padding:.6rem .75rem;font:inherit}
 .board-description,#board-form button{grid-column:1/-1}#board-form button{justify-self:start}
 @media(max-width:530px){.marketplace{width:calc(100% - 26px);padding-block:30px}#board-form{grid-template-columns:1fr}.collections button{font-size:.86rem}}
+.front-page{width:min(1120px,calc(100% - 44px));margin:12px auto 0;display:grid;grid-template-columns:minmax(0,1fr) minmax(270px,.42fr);gap:16px;align-items:start}
+.front-page .hero{width:100%;margin:0;min-height:370px}
+.front-page .hero h1{font-size:clamp(2.45rem,5.2vw,4.45rem)}
+.front-page .hero-copy{padding:clamp(18px,3vw,32px)}
+.builds{min-width:0;border:2px solid var(--ink);background:var(--cream);padding:14px}
+.builds h2{font:800 clamp(1.7rem,3vw,2.25rem)/1 var(--serif);color:var(--darkred)}
+.builds-scope,.builds-note{font-size:.83rem;margin-top:6px}
+.build-list{margin-top:10px;border-top:3px double var(--ink)}
+.build-list details{border-bottom:1px solid var(--line);padding-block:8px}
+.build-list summary{cursor:pointer;padding:3px 2px;min-height:44px}
+.build-list summary strong{font-weight:800}.build-list summary>span{display:block}
+.build-list summary>span:first-of-type{color:var(--darkred);font:600 .89rem var(--mono);margin-top:2px}
+.build-preview{font-size:.84rem;color:var(--green);margin-top:4px}
+.build-list dl{margin:8px 0;font-size:.9rem}.build-list dt{font-weight:800}.build-list dd{margin:0 0 6px}
+.build-check,.build-links{font-size:.84rem;margin-top:8px}.build-links{display:flex;flex-wrap:wrap;gap:5px 12px;font-weight:700}
+@media(max-width:1000px){.front-page{grid-template-columns:1fr}.front-page .hero h1{font-size:clamp(2.45rem,7vw,5.25rem)}.build-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}}
+@media(max-width:680px){.build-list{grid-template-columns:1fr}.front-page .hero{min-height:0}}
+@media(max-width:530px){.front-page{width:calc(100% - 26px);gap:12px}}
