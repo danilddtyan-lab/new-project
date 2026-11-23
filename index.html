@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css?v=5">
+<link rel="stylesheet" href="./style.css?v=6">
 <script defer src="./catalog.js?v=5"></script>
 <script defer src="./market.js?v=5"></script>
 <script defer src="./gear.js?v=5"></script>
@@ -32,7 +32,7 @@
       <a class="solid" href="#selection">Подобрать сборку</a>
     </div>
     <figure class="cover-art mountain-cover">
-      <img src="./mountain-cover.webp" width="760" height="453" alt="Туристический велосипед с сумками на каменистой тропе в горах">
+      <img src="./mountain-print.webp" width="780" height="520" alt="Рисунок на газетной бумаге: велосипед с сумками на каменистой тропе Тянь-Шаня">
     </figure>
   </section>
   <section class="news-box" id="news" aria-labelledby="news-title">
@@ -40,7 +40,7 @@
       <p class="eyebrow">ВЫПУСК ОТ <time datetime="2026-11-23">23 НОЯБРЯ 2026</time></p>
       <h2 id="news-title">Велогазета</h2>
     </div>
-    <div class="news-brief"><strong>На первой полосе</strong><p>Дропбар для бездорожья, новый Polygon Tambora и сумки для первых выездов с ночёвкой.</p></div>
+    <div class="news-brief"><strong>На первой полосе</strong><p>Across Andes в Чили, Race the Nile в Уганде и история кыргызстанской пары на Silk Road Mountain Race.</p></div>
     <button class="solid" type="button" id="open-news">Читать выпуск</button>
   </section>
   <section class="route-day" id="route-day" aria-labelledby="route-day-title">
@@ -149,12 +149,58 @@
 <dialog id="compare-dialog" aria-labelledby="compare-title"><div class="dialog-head"><h2 id="compare-title">Сравнение рам</h2><form method="dialog"><button class="outline" aria-label="Закрыть">×</button></form></div><div id="compare-content"></div></dialog>
 <dialog id="news-dialog" aria-labelledby="news-modal-title">
   <div class="dialog-head"><div><p class="eyebrow">23 НОЯБРЯ 2026</p><h2 id="news-modal-title">Велогазета</h2></div><form method="dialog"><button class="outline" aria-label="Закрыть выпуск">×</button></form></div>
-  <div class="news-columns">
+  <section class="news-section" aria-labelledby="world-races-title">
+    <h3 id="world-races-title">Мировые гонки</h3>
+    <div class="news-columns">
+      <article>
+        <p class="meta">ЧИЛИ · 22–27 НОЯБРЯ 2026</p>
+        <h4>Across Andes: 800 км у вулканов</h4>
+        <p>Гонка стартовала 22 ноября из Пукона. В программе — около 800 км гравийных дорог в автономном формате. Положение участников показывает трекер гонки.</p>
+        <a href="https://www2.followmychallenge.com/live/across-andes-2026/">Онлайн-карта гонки</a>
+        <a href="https://municipalidadpucon.cl/?p=62150">Анонс Пукона</a>
+      </article>
+      <article>
+        <p class="meta">УГАНДА · НОЯБРЬ 2026</p>
+        <h4>Race the Nile: первое кольцо по Западному Нилу</h4>
+        <p>В календаре этой недели — первая в Уганде 800-километровая автономная гравийная гонка. Старт и финиш запланированы в городе Аруа.</p>
+        <a href="https://utb.go.ug/uganda-launches-race-the-nile-its-first-ever-800km-gravel-biking-race-across-west-nile/">Анонс Uganda Tourism Board</a>
+      </article>
+      <article>
+        <p class="meta">МАРОККО · 13 МАРТА 2027</p>
+        <h4>Atlas Mountain Race объявила дату</h4>
+        <p>Следующий старт марокканской гонки назначен на 13 марта. Организаторы опубликовали страницу следующего выпуска.</p>
+        <a href="https://themountainraces.eventrac.co.uk/e/atlas-mountain-race-13647">Страница организатора</a>
+      </article>
+    </div>
+  </section>
+  <section class="news-section" aria-labelledby="local-riders-title">
+    <h3 id="local-riders-title">Гонщики Кыргызстана</h3>
+    <div class="news-columns">
+      <article>
+        <p class="meta">SILK ROAD MOUNTAIN RACE · АВГУСТ 2026</p>
+        <h4>Влад Подофёдов и Сергей Черепанов</h4>
+        <p>Кыргызстанские ультравелогонщики первыми финишировали в парном зачёте Silk Road Mountain Race. Они прошли маршрут от Таласа до Чолпон-Аты за 10 дней, 12 часов и 14 минут. В 2025-м Влад финишировал шестым, Сергей — четырнадцатым.</p>
+        <a href="https://24.kg/en/article/386759">Результат и комментарий организаторов</a>
+        <a href="https://srmr2026.maprogress.com/">Карта и протокол гонки</a>
+      </article>
+      <article>
+        <p class="meta">БИШКЕК · ПРОФИЛЬ</p>
+        <h4>Малик Алымкулов</h4>
+        <p>Бишкекский велогонщик и автор маршрутов. Финишировал на Silk Road Mountain Race в 2019 году, вернулся на гонку в 2021 и 2022 годах. Основал Bikepacking Kyrgyzstan и разработал Bishkek Eastern Compass, горное велокольцо со стартом в столице.</p>
+        <a href="https://bikepackingkyrgyzstan.cc/about">О Малике и его проекте</a>
+        <a href="https://bikepackingkyrgyzstan.cc/bishkek_eastern_compass_route_en">Карта велокольца</a>
+      </article>
+    </div>
+  </section>
+  <details class="news-archive">
+    <summary>Из прошлого выпуска</summary>
+    <div class="news-columns">
     <article><h3>Шесть рам для дорог, которые закончились</h3><p>От стальной Salsa Fargo для походов с грузом до титановой Curve GMX+ для широких покрышек. В подборке у каждой модели есть фото и ссылка на спецификацию.</p><a href="#dropbar">К подборке</a></article>
     <article><h3>Polygon обновил Tambora</h3><p>В новой линейке Tambora есть отсек для инструментов внутри рамы. Polygon опубликовал комплектацию Tambora 4 модельного года 2027.</p><a href="https://www.polygonbikes.com/us/2027-tambora-4-gravel-bike/">Спецификация Polygon</a></article>
     <article><h3>Hudski Dualist получил сборку SRAM NX</h3><p>У универсального Dualist появилась комплектация с механической 12-скоростной трансмиссией SRAM NX Eagle.</p><a href="https://hudskibikes.com/products/dualist-sram-nx">Спецификация Hudski</a></article>
     <article><h3>Что класть в треугольник рамы</h3><p>В разделе сумок теперь есть Rhinowalk, Apidura Backcountry и мастерская Sarmatian. Сравните размеры своего треугольника с габаритами сумки.</p><a href="#bags">К сумкам</a></article>
   </div>
+  </details>
 </dialog>
 </body>
 </html>
