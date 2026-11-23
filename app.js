@@ -21,6 +21,7 @@ try {
 const compared = new Set();
 const collectionButtons = [...document.querySelectorAll('[data-collection]')];
 const catalogPriority = new Map(Object.keys(frameDetails).filter(id => frameDetails[id].pick).map((id,index) => [id,index]));
+let approvedFramePhotos = new Set();
 const frameSpec = frame => (frame.brand === 'Mondince' && framePhotos.get(frame.id)?.spec) || frameSpecs[frame.id]?.source || frameDetails[frame.id]?.spec || framePhotos.get(frame.id)?.spec || frame.url;
 
 get('photos-only').checked = new URLSearchParams(location.search).has('photos');
@@ -44,7 +45,7 @@ function frameWeight(spec) {
 function frameClearance(spec) {
   if (spec?.frontMm || spec?.rearMm) {
     const note = spec.clearanceNote ? ' · '+escapeHtml(spec.clearanceNote) : '';
-    return 'Перед '+(spec.frontMm ? spec.frontMm+' мм' : '—')+' · зад '+(spec.rearMm ? spec.rearMm+' мм' : '—')+note;
+    return [spec.frontMm && 'Спереди '+spec.frontMm+' мм',spec.rearMm && 'Сзади '+spec.rearMm+' мм'].filter(Boolean).join(' · ')+note;
   }
   return spec?.clearanceMm ? 'До '+spec.clearanceMm+' мм, общий допуск'+(spec.clearanceNote ? ' · '+escapeHtml(spec.clearanceNote) : '') : 'Нет данных';
 }
@@ -65,14 +66,14 @@ function render(event) {
     (!brand || brand === frame.brand) &&
     (!region || region === frame.region) &&
     (!savedOnly || saved.has(frame.id)) &&
-    (!photosOnly || framePhotos.has(frame.id)) &&
+    (!photosOnly || approvedFramePhotos.has(frame.id)) &&
     words.every(word => normalize(frame.brand+' '+frame.model).includes(word)));
   if (sort !== 'featured') matching.sort((left,right) =>
     collator.compare(left.brand+' '+left.model,right.brand+' '+right.model) * (sort === 'az' ? 1 : -1));
   else matching.sort((left,right) =>
     (frameSpecs[right.id]?.current === true ? 1 : frameSpecs[right.id]?.current === false ? -1 : 0) -
     (frameSpecs[left.id]?.current === true ? 1 : frameSpecs[left.id]?.current === false ? -1 : 0) ||
-    Number(framePhotos.has(right.id)) - Number(framePhotos.has(left.id)) ||
+    Number(approvedFramePhotos.has(right.id)) - Number(approvedFramePhotos.has(left.id)) ||
     (catalogPriority.get(left.id) ?? catalogPriority.size) - (catalogPriority.get(right.id) ?? catalogPriority.size));
   const visible = matching.slice(0,limit);
   get('count').textContent = 'Показано '+visible.length+' из '+matching.length;
@@ -99,15 +100,16 @@ function render(event) {
       <h3 tabindex="-1">${escapeHtml(frame.model)}</h3>
       <p>${material[frame.m]} · ${terrain[frame.t]}${regionNames[frame.region] ? ' · '+regionNames[frame.region] : ''}</p>
       <dl class="frame-facts">
-        <div><dt>Вес рамы</dt><dd>${frameWeight(spec)}</dd></div>
-        <div><dt>Покрышка 700C</dt><dd>${frameClearance(spec)}</dd></div>
+        ${spec?.weightG ? '<div><dt>Вес рамы</dt><dd>'+frameWeight(spec)+'</dd></div>' : ''}
+        ${(spec?.frontMm || spec?.rearMm || spec?.clearanceMm) ? '<div><dt>Покрышка 700C</dt><dd>'+frameClearance(spec)+'</dd></div>' : ''}
       </dl>
+      ${spec?.checked ? '<p class="meta">Сверено '+spec.checked.split('-').reverse().join('.')+'</p>' : ''}
       ${(spec?.note || details?.note) ? `<p>${escapeHtml(spec?.note || details.note)}</p>` : ''}
-      ${details?.price ? `<p class="catalog-price">${escapeHtml(details.price)} <span>по прайсу производителя</span></p>` : ''}
+      ${details?.price ? `<p class="catalog-price">${escapeHtml(details.price)} <span>архивная цена производителя</span></p>` : ''}
       <div class="card-actions">
         <button class="outline" type="button" data-action="save" data-frame="${id}" aria-label="В избранное: ${id}" aria-pressed="${starred}">${starred?'♥':'♡'}</button>
         <button class="outline" type="button" data-action="compare" data-frame="${id}" aria-label="В сравнение: ${id}" aria-pressed="${selected}" ${compared.size === 3 && !selected ? 'disabled' : ''}>${selected?'В сравнении':'Сравнить'}</button>
-        <a href="${escapeHtml(frameSpec(frame))}" aria-label="Сайт производителя ${escapeHtml(frame.brand)}">${(spec?.source || details?.spec || framePhotos.get(frame.id)?.spec) ? 'Характеристики' : 'Бренд'}</a>
+        <a href="${escapeHtml(frameSpec(frame))}" aria-label="Сайт производителя ${escapeHtml(frame.brand)}">Подробнее</a>
       </div>${renderMarketLink(frame.id)}</article>`;
     }).join('');
   }).join('');
@@ -198,3 +200,13 @@ get('compare-open').addEventListener('click',() => {
 });
 
 render();
+
+productMedia.then(records => {
+  approvedFramePhotos = new Set(Object.keys(records).filter(id => records[id].some(photo => photo.verified)));
+  const filter = get('photos-only');
+  filter.disabled = !approvedFramePhotos.size;
+  if (filter.disabled) filter.checked = false;
+  const label = get('photo-filter');
+  if (label) label.hidden = filter.disabled;
+  render();
+});

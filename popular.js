@@ -13,7 +13,7 @@ const frameDetails = {
   'Poseidon/X': {pick:'popular', spec:'https://www.poseidonbike.com/products/x-frameset', note:'Алюминиевый гравийный фреймсет. Проверьте актуальную комплектацию и условия доставки.'},
   'Poseidon/Redwood': {pick:'popular', spec:'https://www.poseidonbike.com/collections/the-redwood', note:'Дропбар с широкими покрышками. По ссылке серийные велосипеды Redwood.'},
   'VeloBuild/GF-003': {pick:'popular', spec:'https://www.velobuild.com/products/gf-003-carbon-fiber-gravel-frameset', note:'Карбоновый фреймсет под T47. Производитель указывает 700×45C или 27,5×2,1″.', price:'479 USD'},
-  'SPCycle/G056': {pick:'popular', spec:'https://www.sp-cycle.com/2023-new-t1000-carbon-gravel-frame-70047c-cyclocross-bike-frame-t47-disc-brake-gravel-bike-frameset-road-bike-frame-p4468945.html', note:'Карбон под T47 и покрышки до 700×47C по данным производителя.', price:'528 USD'},
+  'SPCycle/G056': {pick:'popular', spec:'https://www.sp-cycle.com/', note:'Карбон под T47 и архивный заявленный зазор до 700×47C.'},
   'SPCycle/G028': {pick:'popular', spec:'https://www.sp-cycle.com/Spcycle-G028-Carbon-Gravel-Bike-Frame-700x57C-UDH-Hanger-Full-Internal-Cable-Gravel-Bicycle-Carbon-Frameset-p6993835.html', note:'Широкий карбоновый гравийник. Заявлены клиренс 700×57C, T47 и UDH.', price:'608 USD'},
   'SPCycle/G058': {pick:'popular', spec:'https://www.sp-cycle.com/', note:'Гравийная платформа. У G058 несколько вариантов проводки, сверяйте конкретную версию.'},
   'Carbonda/CFR707': {pick:'rare', spec:'https://carbonda.com/road/cfr-707.html', note:'Карбон с BSA 68, UDH и заявленным клиренсом 700×50C.'},

@@ -1,5 +1,13 @@
 'use strict';
 
+const pageSize = 12;
+const slideInterval = 60_000;
+
+function newsPriority(item) {
+  if (item.category === 'запчасти') return 2;
+  return item.region === 'Кыргызстан' ? 0 : 1;
+}
+
 const formatter = new Intl.DateTimeFormat('ru',{dateStyle:'long',timeZone:'UTC'});
 const carousel = document.getElementById('headline-news');
 const archive = document.getElementById('news-list');
@@ -33,20 +41,20 @@ function createNewsCard(item,headline = false) {
   const summary = document.createElement('p');
   if (headline) summary.className = 'headline-summary';
   summary.textContent = item.summary;
-  if (!item.image) {
-    const placeholder = document.createElement('div');
-    placeholder.className = 'headline-placeholder';
-    placeholder.setAttribute('aria-hidden','true');
-    card.append(placeholder);
-  } else if (item.image) {
-    const image = document.createElement('img');
-    image.className = 'headline-image';
-    image.src = item.image;
-    image.alt = '';
-    card.append(image);
-  }
   card.append(meta,title,summary);
-  const link = sourceLink(item,headline ? 'Читать' : 'Источник',headline);
+  if (!item.verified) {
+    const badge = document.createElement('span');
+    badge.className = 'feed-unverified';
+    badge.textContent = 'Не проверено';
+    card.append(badge);
+  }
+  const link = sourceLink(item,headline ? 'Читать' : item.source_name,headline);
+  if (!link && !headline) {
+    const source = document.createElement('p');
+    source.className = 'meta';
+    source.textContent = item.source_name;
+    card.append(source);
+  }
   if (link) {
     if (headline) link.className = 'solid';
     card.append(link);
@@ -56,26 +64,54 @@ function createNewsCard(item,headline = false) {
 
 function showArchive(items) {
   const form = document.getElementById('news-filters');
+  const more = document.getElementById('news-more');
+  const {category,region,search} = form.elements;
   const query = new URLSearchParams(location.search);
+  const hash = location.hash.slice(1);
+  const id = hash === 'vlad-podofedov' ? 'srmr-2026-kyrgyz-pair-win' : hash;
   for (const name of ['category','region']) {
     const field = form.elements[name];
     const value = query.get(name);
     if ([...field.options].some(option => option.value === value)) field.value = value;
   }
-  function render() {
-    const {category,region} = form.elements;
-    const visible = items.filter(item =>
-      (!category.value || category.value === item.category) &&
-      (!region.value || region.value === item.region));
-    archive.replaceChildren(...visible.map(item => createNewsCard(item)));
-    newsStatus.textContent = visible.length ? 'Материалов: '+visible.length : 'По этим фильтрам новостей нет.';
+  search.value = query.get('q') || '';
+  let limit;
+  let filtered;
+
+  function appendPage() {
+    const offset = archive.children.length;
+    archive.append(...filtered.slice(offset,limit).map(item => createNewsCard(item)));
+    more.hidden = archive.children.length >= filtered.length;
+    newsStatus.textContent = filtered.length
+      ? 'Показано: '+archive.children.length+' из '+filtered.length
+      : 'По вашему запросу новостей нет.';
   }
-  form.addEventListener('change',render);
+
+  function render(target) {
+    const titleQuery = search.value.trim().toLocaleLowerCase('ru');
+    filtered = items.filter(item =>
+      (!category.value || category.value === item.category) &&
+      (!region.value || region.value === item.region) &&
+      item.title.toLocaleLowerCase('ru').includes(titleQuery));
+    const targetIndex = target ? filtered.findIndex(item => item.id === target) : -1;
+    limit = Math.max(1,Math.ceil((targetIndex+1)/pageSize))*pageSize;
+    archive.replaceChildren();
+    appendPage();
+  }
+
+  form.addEventListener('change',() => render());
+  search.addEventListener('input',() => render());
   form.addEventListener('submit',event => event.preventDefault());
+  more.addEventListener('click',() => {
+    const firstNew = archive.children.length;
+    limit += pageSize;
+    appendPage();
+    const card = archive.children[firstNew];
+    card.tabIndex = -1;
+    card.focus();
+  });
   form.hidden = false;
-  render();
-  const hash = location.hash.slice(1);
-  const id = hash === 'vlad-podofedov' ? 'srmr-2026-kyrgyz-pair-win' : hash;
+  render(id);
   if (id) document.getElementById(id)?.scrollIntoView();
 }
 
@@ -102,14 +138,19 @@ function showCarousel(items) {
   }
   function restart() {
     stop();
-    if (items.length >= 2 && !hovered && !focused && !manuallyPaused && !document.hidden) {
-      timer = setInterval(() => show(position+1),7_000);
+    if (items.length >= 2 && !hovered && !focused && !manuallyPaused && !document.hidden && carousel.isConnected) {
+      timer = setInterval(() => show(position+1),slideInterval);
     }
   }
   function show(index,announce = false) {
     position = (index+items.length)%items.length;
     slide.replaceChildren(createNewsCard(items[position],true));
-    [...dots.children].forEach((button,i) => button.setAttribute('aria-current',String(i === position)));
+    const start = Math.max(0,Math.min(position-2,items.length-5));
+    [...dots.children].forEach((button,i) => {
+      button.hidden = i < start || i >= start+5;
+      button.setAttribute('aria-current',String(i === position));
+    });
+    document.getElementById('headline-count').textContent = (position+1)+' / '+items.length;
     if (announce) {
       newsStatus.textContent = (position+1)+' из '+items.length+'. '+items[position].title;
       restart();
@@ -175,6 +216,15 @@ function showCarousel(items) {
     },true);
     document.addEventListener('visibilitychange',restart);
     window.addEventListener('pagehide',stop);
+    const removal = new MutationObserver(() => {
+      if (carousel.isConnected) return;
+      stop();
+      removal.disconnect();
+      document.removeEventListener('visibilitychange',restart);
+      window.removeEventListener('pagehide',stop);
+      window.removeEventListener('pageshow',restart);
+    });
+    removal.observe(document.body,{childList:true,subtree:true});
     window.addEventListener('pageshow',restart);
   }
   show(0);
@@ -187,7 +237,7 @@ fetch('./data/news.json', { cache: 'no-cache' })
     return response.json();
   })
   .then(items => {
-    items.sort((a,b) => b.date.localeCompare(a.date));
+    items.sort((a,b) => newsPriority(a)-newsPriority(b) || b.date.localeCompare(a.date));
     if (carousel) showCarousel(items);
     if (archive) showArchive(items);
   })

@@ -1,0 +1,686 @@
+{
+  "Salsa/Fargo": [
+    {
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-fargo-frame-2026-FM2804.png?v=1772576939&width=720",
+      "source": "Salsa Cycles",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Surly/Grappler": [
+    {
+      "image_url": "https://outflow.life/cdn/shop/files/surly-grappler-frameset-blue-FM2696-1200x800.jpg?v=1712784736&width=720",
+      "source": "Outflow",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Tumbleweed/Stargazer": [
+    {
+      "image_url": "https://tumbleweed.cc/cdn/shop/files/10_TumbleweedBikes-VKS-Product-ISO-Frame-Stargazer-Grey-350-June17-2021_WHITE.jpg?v=1769367487&width=720",
+      "source": "Tumbleweed",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Salsa/Cutthroat": [
+    {
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-cutthroat-2026-frameset-FM6932.png?v=1771516014&width=720",
+      "source": "Salsa Cycles",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Kona/Sutra LTD": [
+    {
+      "image_url": "https://konaworld.com/cdn/shop/files/my23_sutra_ltd_frame.jpg?v=1733100217&width=720",
+      "source": "Kona",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Curve/GMX+": [
+    {
+      "image_url": "https://omafiets.com.au/cdn/shop/files/mg-6251-6cfde375-07af-48a0-bf83-1571d33b93cc.jpg?v=1746563958&width=720",
+      "source": "Omafiets",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Tideace/FM-GV201": [
+    {
+      "image_url": "https://tideacebike.com/cdn/shop/files/T1000-carbon-gravel-frames.png?v=1723449554&width=720",
+      "source": "Tideace",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Tideace/FM-M039": [
+    {
+      "image_url": "https://tideacebike.com/cdn/shop/files/carbon-29er-boost-rigid-frame.jpg?v=1733904210&width=720",
+      "source": "Tideace",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "SPCycle/G068": [
+    {
+      "image_url": "https://usaimages.oss-us-west-1.aliyuncs.com/6230/product/20240702/Spcycle_G068_T1000_Carbon_Gravel_Bike_Frame_Semi_Internal_Cable_UDH_Hanger_Disc_Brake_Aero_Carbon_Gravel_Bicycle_Frameset_1719885879405_2.jpg_w2048.jpg",
+      "source": "SPCycle",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "SHULZ/The Lightning": [
+    {
+      "image_url": "https://shulzbikes.com/cdn/shop/files/bigproduct_209-1897-nevskiyvechernevaevenings-framesetthelightningframenevaeveningpt5255.webp?v=1770805403&width=720",
+      "source": "SHULZ",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Seaboard/GR02": [
+    {
+      "image_url": "https://www.mrbicycles.com/wp-content/uploads/2023/11/GR02-Gravel-Frameset-Silver-Gray-1.jpg",
+      "source": "Mr. Bicycles",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Twitter/G2 MAX": [
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0587/2982/4417/files/frameset-g2max-2026.jpg?v=1788461870&width=720",
+      "source": "Twitter Bikes USA",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "SPCycle/G028": [
+    {
+      "image_url": "https://usaimages.oss-us-west-1.aliyuncs.com/6230/product/20260515/Spcycle_G028_Carbon_Gravel_Bike_Frame_700x57C_UDH_Hanger_Full_Internal_Cable_Gravel_Bicycle_Carbon_Frameset_1778837682616_1.jpg_w720.jpg",
+      "source": "SPCycle",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "SHULZ/Boys Don’t Cry": [
+    {
+      "image_url": "https://static.tildacdn.com/stor6532-3961-4464-a139-616633393533/68085261.jpg",
+      "source": "Tour Bike Time",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "State Bicycle Co./4130 All-Road": [
+    {
+      "image_url": "https://www.statebicycle.com/cdn/shop/files/4130All-Road-Frameset_UDH_ExternalRouting_-SchoolyardYellow-1_large.jpg?width=720",
+      "source": "State Bicycle Co.",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Fairlight/Strael": [
+    {
+      "image_url": "https://media.fairlightcycles.com/wp-content/uploads/2025/01/Strael-4.0-56R-Stealth-DuraAce-1354x1016-Master.jpg",
+      "source": "Fairlight",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Fairlight/Faran": [
+    {
+      "image_url": "https://media.fairlightcycles.com/wp-content/uploads/2025/07/960-x-1280-Banner-Master-Faran-3.0-54T-Black-Custom-Build-scaled.jpg",
+      "source": "Fairlight",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Fairlight/Holt 2.0": [
+    {
+      "image_url": "https://media.fairlightcycles.com/wp-content/uploads/2026/06/FL-Product-Image-2560-x-2560-FS-Holt-2.0-Ochre-2048x2048.jpg",
+      "source": "Fairlight",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Fairlight/Holt": [
+    {
+      "image_url": "https://media.fairlightcycles.com/wp-content/uploads/2024/08/FL-Gallery-1354-x-1016-Header-Holt-1.0-Desert-Hope-Custom.jpg",
+      "source": "Fairlight",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Fairlight/Secan": [
+    {
+      "image_url": "https://media.fairlightcycles.com/wp-content/uploads/2026/09/FL-Product-Image-Master-2560-x-2560-New-copy.jpg",
+      "source": "Fairlight",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "GRIND Cycles/GR1ST": [
+    {
+      "image_url": "https://grindcycles.com/cdn/shop/files/GRIND_GR1ST_CARBON_GRAVEL_FRAMESET_UDH_BSA_CUSTOM_PAINTED.jpg?v=1726330603&width=720",
+      "source": "GRIND Cycles",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "GRIND Cycles/TRACE": [
+    {
+      "image_url": "https://grindcycles.com/cdn/shop/files/GRIND_TRACE.jpg?v=1774116073&width=720",
+      "source": "GRIND Cycles",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "GRIND Cycles/GRIT": [
+    {
+      "image_url": "https://grindcycles.com/cdn/shop/files/GRINDGRITPRODUCT.jpg?v=1768042063&width=533",
+      "source": "GRIND Cycles",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Mondince/FM366": [
+    {
+      "image_url": "https://www.mondincecycle.com/uploads/20260611/Premium-Carbon-Gravel-Frame.webp",
+      "source": "Mondince",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Mondince/FM376": [
+    {
+      "image_url": "https://www.mondincecycle.com/uploads/20261026/Mondince-FM376-Carbon-Racing-Gravel-Bike-Frame-57mm-Tire.webp",
+      "source": "Mondince",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Mondince/FM356": [
+    {
+      "image_url": "https://www.mondincecycle.com/uploads/20261026/mondince-fm356-carbon-bikepacking-gravel-bike-frame.webp",
+      "source": "Mondince",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Mondince/FM346": [
+    {
+      "image_url": "https://www.mondincecycle.com/uploads/20260928/China-new-gravel-bike-frame.jpg",
+      "source": "Mondince",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Mondince/FM336": [
+    {
+      "image_url": "https://www.mondincecycle.com/uploads/20260515/Aero-Gravel-Bike-Frame-50mm-Tire.webp",
+      "source": "Mondince",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Mondince/FM326": [
+    {
+      "image_url": "https://www.mondincecycle.com/uploads/20260515/Carbon-Aero-Gravel-Bike-Frame.webp",
+      "source": "Mondince",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Mondince/FM316": [
+    {
+      "image_url": "https://www.mondincecycle.com/uploads/20261026/Mondince-FM316-AERO-Bracket-Gravel-Bike-Frame-Design-T47.webp",
+      "source": "Mondince",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Mondince/FM306": [
+    {
+      "image_url": "https://www.mondincecycle.com/uploads/20261026/Mondince-FM306-Carbon-Gravel-Bike-Frame-Comfortable-Design.webp",
+      "source": "Mondince",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Mondince/FM296": [
+    {
+      "image_url": "https://www.mondincecycle.com/uploads/20261026/Mondince-FM296-Full-Carbon-Fiber-Gravel-Bike-Frame-2025-New-Designed-UDH-Hanger.webp",
+      "source": "Mondince",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Mondince/FM286": [
+    {
+      "image_url": "https://www.mondincecycle.com/uploads/20261026/Mondince-FM286-Carbon-Racing-Gravel-Bike-Frame.webp",
+      "source": "Mondince",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Mondince/FM266": [
+    {
+      "image_url": "https://www.mondincecycle.com/uploads/20261026/Mondince-FM266-T47-Bracket-Chinese-Gravel-Bike-Frame.webp",
+      "source": "Mondince",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Mondince/FM166": [
+    {
+      "image_url": "https://www.mondincecycle.com/uploads/20261026/Mondince-FM166-Max-42C-Tire-Carbon-Fiber-Cyclocross-Bike-Frameset.webp",
+      "source": "Mondince",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Salsa/Beargrease": [
+    {
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-beargrease-carbon-frameset-2026-FM5424.png?v=1788208455&width=720",
+      "source": "Salsa",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Salsa/Fargo 32 Ti": [
+    {
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/Fargo-32-ti-frame-FM4357.png?v=1784746104&width=720",
+      "source": "Salsa",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Salsa/Fargo 32 Steel": [
+    {
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/fargo-32-steel-frame-FM1907.png?v=1784746055&width=720",
+      "source": "Salsa",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Salsa/Spearfish C DLX": [
+    {
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-spearfish-dlx-frame-deep-orchid-carbon-FM2934.png?v=1775844988&width=720",
+      "source": "Salsa",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Salsa/Blackthorn 145 C": [
+    {
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-blackthorn-c-145-frame-2026-FM6981.png?v=1775016404&width=720",
+      "source": "Salsa",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Salsa/Blackthorn 145": [
+    {
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-blackthorn-145-al-frame-black-spruce-FM0520.png?v=1774924848&width=720",
+      "source": "Salsa",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Salsa/Timberjack": [
+    {
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-timberjack-frame-deep-orchid-FM2814.png?v=1774465087&width=720",
+      "source": "Salsa",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Salsa/Fargo Ti": [
+    {
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-fago-ti-frame-2026-FM3439.png?v=1772579506&width=720",
+      "source": "Salsa",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Salsa/Journeyer": [
+    {
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-journeyer-2026-frameset-FM3445.png?v=1771882966&width=720",
+      "source": "Salsa",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Salsa/Flyway C DLX": [
+    {
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-flyway-dlx-frameset-FM6938.png?v=1771392087&width=720",
+      "source": "Salsa",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Salsa/Vaya": [
+    {
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa_vaya_frame_black_FM1016.png?v=1750786221&width=720",
+      "source": "Salsa",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Salsa/Warroad": [
+    {
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-warroad-c-frameset-FM0924-2000x1316-uc-1.png?v=1739465068&width=720",
+      "source": "Salsa",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Salsa/Stormchaser": [
+    {
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-stormchaser-frameset-metallic-black-FM4616-1920x1080-uc-1.png?v=1739461716&width=720",
+      "source": "Salsa",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Salsa/Heyday! C": [
+    {
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-heyday-c-frameset-black-FM1477-1920x1080-uc-1.png?v=1739467196&width=720",
+      "source": "Salsa",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Bombtrack/Arise": [
+    {
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Arise_frameset_metallic_black_websquare_1_efe27436-68a9-4e7b-ada5-d2b54675e3d5_460x.jpg?v=1781861370",
+      "source": "Bombtrack",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Bombtrack/Audax AL": [
+    {
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Audax_AL_frameset_matt_black_websquare_1_a35726fc-aa52-4472-ba8f-1cc7e4e959b7_460x.jpg?v=1782739432",
+      "source": "Bombtrack",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Bombtrack/Audax": [
+    {
+      "image_url": "https://bombtrack.com/cdn/shop/files/Bombtrack_Audax_metallic_darkbrown__websquare_1_720x.jpg?v=1781861613",
+      "source": "Bombtrack",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Bombtrack/Beyond AL": [
+    {
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY26_Beyond_AL_frameset_metallic_black_websquare-1_b8550ae8-b072-4152-b5fa-30d3e3328fe5_720x.jpg?v=1782740304",
+      "source": "Bombtrack",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Bombtrack/Beyond": [
+    {
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Beyond_frameset_metallic_black_websquare_1_7b17899f-b943-4b58-8fcb-8a841b77c680_720x.jpg?v=1782739629",
+      "source": "Bombtrack",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Bombtrack/Beyond+": [
+    {
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY26__Beyond__29_frameset_matt_sage_websquare-1_134a436d-bc92-424b-9a83-99b376ea38a4_720x.jpg?v=1781867504",
+      "source": "Bombtrack",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Bombtrack/Hook AL": [
+    {
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_Hook_AL_metallic_mahogany_4055822549615_websquare_1_a1808a47-5b86-4503-b095-ee2f8917f609_720x.jpg?v=1782740239",
+      "source": "Bombtrack",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Bombtrack/Hook EXT C": [
+    {
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Hook_EXT_C_frameset_metallic_black_websquare_1_d3732872-8e15-48f9-8aed-85836af559b6_720x.jpg?v=1781865496",
+      "source": "Bombtrack",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Bombtrack/Hook EXT": [
+    {
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_HookEXT_frameset_matt_black_websquare_1_04ad7771-d046-4ec9-b58a-6f97c3f57552_720x.jpg?v=1782740365",
+      "source": "Bombtrack",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Bombtrack/Hook EXT Ti": [
+    {
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Hook_EXT_TI_frameset_titanium_black_websquare_1_b985f63e-3023-412c-a9e1-df2d7f134aad_720x.jpg?v=1782740435",
+      "source": "Bombtrack",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Bombtrack/Hook": [
+    {
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Hook_frameset_metallic_black_websquare_1_555944d9-ffc9-4250-8bff-3de3e8e284a6_720x.jpg?v=1781866036",
+      "source": "Bombtrack",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Apidura/Backcountry Frame Pack": [
+    {
+      "image_url": "https://medias.apidura.com/sHRQ6jzh/2025/09/apidura-backcountry-frame-pack-2l-on-bike-1.jpg",
+      "source": "Apidura",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Apidura/Expedition Frame Pack": [
+    {
+      "image_url": "https://medias.apidura.com/sHRQ6jzh/2026/02/apidura-expedition-frame-pack-4.3l-on-bike-1.jpg",
+      "source": "Apidura",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Apidura/Expedition Saddle Pack": [
+    {
+      "image_url": "https://medias.apidura.com/sHRQ6jzh/2026/02/apidura-expedition-saddle-pack-13l-on-bike-2.jpg",
+      "source": "Apidura",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Cedaero/Hot-to-Go Beargrease": [
+    {
+      "image_url": "https://cedaero.com/cdn/shop/files/IMG_0157.jpg?v=1794949135&width=640",
+      "source": "Cedaero",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Topeak/FrontLoader 8 л": [
+    {
+      "image_url": "https://www.topeak.com/storage/app/media/product/bikepacking/frontloader-2019/TBP-FL2B_main_2020-03%20(1).png",
+      "source": "Topeak",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Topeak/BarLoader": [
+    {
+      "image_url": "https://www.topeak.com/storage/app/media/product/bikepacking/barloader/TBP-BRL1B_main.png",
+      "source": "Topeak",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Rhinowalk/Вилочная сумка": [
+    {
+      "image_url": "https://freetour-sigma.vercel.app/05_c33d7afc-b279-483c-8d2c-bdd36ae4d002.webp",
+      "source": "FreeTour",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Rhinowalk/Нарульная сумка": [
+    {
+      "image_url": "https://freetour-sigma.vercel.app/71IhgfzfY-S.jpg",
+      "source": "FreeTour",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Apidura/Expedition Fork Pack": [
+    {
+      "image_url": "https://freetour-sigma.vercel.app/apidura-apidura-expedition-fork-pack-3l.jpg",
+      "source": "FreeTour",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "DT Swiss/GR 1600 SPLINE": [
+    {
+      "image_url": "https://d2a13k6araex7u.cloudfront.net/itc/00/00/00/00/00/00/00/00/70/00/23/40/6/42447/image-thumb__42447__model-finder_product-image/PHO_WGR1600NID9S023395_WEB_SHO_001.0f56bf04.jpg",
+      "source": "DT Swiss",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "DT Swiss/XM 1700 SPLINE": [
+    {
+      "image_url": "https://d2a13k6araex7u.cloudfront.net/itc/00/00/00/00/00/00/00/00/70/00/27/95/1/68576/image-thumb__68576__model-finder_product-image/PHO_WXM1700TED2SA27946_WEB_SHO_001.6844c20f.jpg",
+      "source": "DT Swiss",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Maxxis/Aspen": [
+    {
+      "image_url": "https://www.maxxis.com/int/wp-content/uploads/sites/17/2021/01/aspen.jpg",
+      "source": "Maxxis",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Maxxis/Rambler": [
+    {
+      "image_url": "https://www.maxxis.com/us/wp-content/uploads/sites/13/2021/01/RAMBLER_Camera_1.jpg",
+      "source": "Maxxis",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Maxxis/Rekon Race": [
+    {
+      "image_url": "https://www.maxxis.com/us/wp-content/uploads/sites/13/2021/01/REKON_Race_Camera_1.jpg",
+      "source": "Maxxis",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Maxxis/Rekon": [
+    {
+      "image_url": "https://www.maxxis.com/us/wp-content/uploads/sites/13/2021/01/REKON_Camera_1.jpg",
+      "source": "Maxxis",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Schwalbe/G-One Allround": [
+    {
+      "image_url": "https://s3-fsn.scale.sc/schwalbe.public/prod-sde/media/89/e7/62/1790245464/hs473_schwalbe_g-one-allround_57-622_reflex_standard.png_01a043321d1871649de277dc800a74c6.png?ts=1790245466",
+      "source": "Schwalbe",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Schwalbe/G-One RX Pro": [
+    {
+      "image_url": "https://s3-fsn.scale.sc/schwalbe.public/prod-sde/media/d7/70/5d/1790245182/hs637_schwalbe_g-one_rx_pro_transparent_totale.png_01a0d2ed82507209a62c14340e053413.png?ts=1790245184",
+      "source": "Schwalbe",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "WTB/Resolute TCS": [
+    {
+      "image_url": "https://www.wtb.com/cdn/shop/products/20200326_Resolute42_700_TCSLFR_tanwall_ISO.png?v=1742939652&width=640",
+      "source": "WTB",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "WTB/Macro 54": [
+    {
+      "image_url": "https://www.wtb.com/cdn/shop/files/W010-1134_Macro54x700_TCSLFR120tpiDualDNASG2tan_ISO.png?v=1787913143&width=640",
+      "source": "WTB",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "WTB/Raddler": [
+    {
+      "image_url": "https://www.wtb.com/cdn/shop/files/20200512_Raddler40_TCSLFR_tanwall_ISO.jpg?v=1762163881&width=640",
+      "source": "WTB",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Maxxis/Aspen ST": [
+    {
+      "image_url": "https://shop.maxxis.com/cdn/shop/files/AspenST-tread.jpg?v=1756908325&width=640",
+      "source": "Maxxis",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Maxxis/Minion DHF": [
+    {
+      "image_url": "https://www.maxxis.com/us/wp-content/uploads/sites/13/2021/01/MinionDHF_Camera_1.jpg",
+      "source": "Maxxis",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "Teravail/Rutland": [
+    {
+      "image_url": "https://www.teravail.com/cdn/shop/files/teravail-rutland-tire-3qtr-blk-TR2700-2000px-sq.jpg?v=1747160917&width=640",
+      "source": "Teravail",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "microSHIFT/Sword": [
+    {
+      "image_url": "https://www.microshift.com/wp-content/uploads/2023/07/SWORD-Release-5-683x1024.jpg",
+      "source": "microSHIFT",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "routes.html": [
+    {
+      "image_url": "./data/images/routes/bishkek-chuy-tandems.webp",
+      "source": "A.Savin, Wikipedia",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bishkek_03-2016_img10_Chuy_Prospekt.jpg",
+      "license": "Free Art License 1.3",
+      "license_url": "https://artlibre.org/licence/lal/en/",
+      "credit_note": "Бишкек, проспект Чуй · кадрировано",
+      "alt": "Прокатные велосипеды на проспекте Чуй в Бишкеке",
+      "verified": true
+    }
+  ]
+}

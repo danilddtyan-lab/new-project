@@ -65,17 +65,8 @@ const framePhotos = new Map([...dropbarPicks, {
 }, ...catalogPhotos].map(item => [item.id,item]));
 
 function renderFramePhoto(id) {
-  const photo = framePhotos.get(id);
-  if (!photo) return '<figure class="frame-photo photo-unavailable">Фото рамы отсутствует</figure>';
-  return `<figure class="frame-photo"><img src="${photo.image}" alt="${photo.built ? 'Велосипед' : 'Фреймсет'} ${id.replace('/',' ')}" loading="lazy" decoding="async" width="720" height="480" referrerpolicy="no-referrer"><figcaption>Фото: ${photo.credit}</figcaption></figure>`;
+  return photoPlaceholder(id,'Рамы').outerHTML;
 }
-
-document.addEventListener('error', event => {
-  if (!event.target.matches?.('.frame-photo img')) return;
-  const figure = event.target.closest('figure');
-  figure.textContent = 'Фото временно недоступно';
-  figure.classList.add('photo-unavailable');
-}, true);
 
 document.getElementById('dropbar-grid').innerHTML = dropbarPicks.map(({id,use,note,spec}) =>
   `<article class="card">

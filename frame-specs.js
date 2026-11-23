@@ -63,7 +63,7 @@ const frameSpecs = {
   'ENVE/MOG': {clearanceMm:50,current:true,source:'https://support.enve.com/hc/en-us/article_attachments/13112328880155'},
   'Canyon/Grizl CF': {clearanceMm:54,current:true,clearanceNote:'Поколение с допуском до 54 мм.',source:'https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/'},
   'Trek/Checkpoint ALR Gen 3': {clearanceMm:50,current:true,source:'https://www.trekbikes.com/emea/en_EM_DS/bikes/bikepacking-and-touring-bikes/checkpoint/checkpoint-alr/f/F224-2/checkpoint-alr-5-gen-3/49946/5332810/'},
-  'Moots/Routt 45': {clearanceMm:45,clearanceNote:'Архивная спецификация. Сверьте год рамы.',source:'https://moots.com/wp-content/uploads/2023/02/2018-WHATS-NEW.pdf'},
+  'Moots/Routt 45': {clearanceMm:45,clearanceNote:'Архивная спецификация. Сверьте год рамы.',source:'https://moots.com/products/routt-45'},
   'Moots/Routt RSL': {clearanceMm:50,current:true,source:'https://moots.com/products/routt-rsl'},
   'SPCycle/G028': {
     current:true, weightG:1100, toleranceG:60, weightBasis:'матовая чёрная рама',
@@ -71,9 +71,14 @@ const frameSpecs = {
     sizes:[[160,170,'S'],[171,179,'M'],[180,187,'L'],[188,196,'XL']],
     source:'https://www.sp-cycle.com/Spcycle-G028-Carbon-Gravel-Bike-Frame-700x57C-UDH-Hanger-Full-Integrated-Cable-Gravel-Bicycle-Frameset-With-HB-068-Handlebar-p7012723.html'
   },
+  'Tideace/FM-M039': {
+    current:true, weightG:960, toleranceG:30, weightBasis:'размер S',
+    rearMm:57, clearanceNote:'По данным производителя, 29 × 2,25″.',
+    source:'https://tideacebike.com/products/fm-m039-carbon-one-piece-boost-mtb-frame', checked:'2026-11-23'
+  },
   'Tideace/FM-GV201': {
     current:true, weightG:1150, toleranceG:40, weightBasis:'размер 52',
-    clearanceMm:50, kitUsd:799,
+    clearanceMm:50, kitUsd:799, checked:'2026-11-23',
     source:'https://tideacebike.com/products/fm-gv201-noah-carbon-gravel-bike-frame'
   },
   'Twitter/G2 MAX': {
@@ -91,7 +96,7 @@ const frameSpecs = {
   },
   'SPCycle/G056': {
     clearanceMm:47, kitUsd:528,
-    source:'https://www.sp-cycle.com/2023-new-t1000-carbon-gravel-frame-70047c-cyclocross-bike-frame-t47-disc-brake-gravel-bike-frameset-road-bike-frame-p4468945.html'
+    source:'https://www.sp-cycle.com/'
   },
   'Carbonda/CFR707': {
     clearanceMm:50, weightG:1300, toleranceG:50, weightBasis:'размер M, с металлическими деталями',

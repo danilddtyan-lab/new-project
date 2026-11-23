@@ -1,0 +1,222 @@
+{
+  "updated": "2026-11-23",
+  "priceDate": "2026-11-23",
+  "pricesVerified": false,
+  "usdRub": 82.1911,
+  "rateEffective": "2026-11-21",
+  "rateSource": "https://www.cbr.ru/scripts/XML_daily.asp?date_req=23/11/2026",
+  "extras": [
+    "Колёса и покрышки",
+    "Руль, вынос, седло и педали",
+    "Тормоза, если их нет в наборе",
+    "Доставка и пошлины"
+  ],
+  "builds": [
+    {
+      "id": "shulz-advent",
+      "title": "Бюджетный MTB-дропбар",
+      "model": "SHULZ Boys Don’t Cry · Advent X",
+      "category": "Сборка",
+      "price": [
+        45000,
+        65000
+      ],
+      "currency": "RUB",
+      "includes": [
+        {
+          "label": "Рама",
+          "description": "Стальная SHULZ Boys Don’t Cry, рассчитанная на руль-баран."
+        },
+        {
+          "label": "Вилка",
+          "description": "Стальная из комплекта, 15×100. Задняя ось 12×142."
+        },
+        {
+          "label": "Трансмиссия",
+          "description": "microSHIFT Advent X 1×10, манетка в торце руля BS‑M10‑R, переключатель RD‑M6205GM, шатуны Prowheel Charm FD04S‑TT 34T, кассета SHULZ 11–46 и цепь KMC X10."
+        }
+      ],
+      "compatibility": "Сверьте каретку шириной 73 мм с выбранными шатунами и кассету с барабаном HG.",
+      "links": [
+        {
+          "label": "Фреймсет",
+          "url": "https://shulz.ru/catalog/framesets/adventure-bikes-framesets/freimset-shulz-boys-dont-cry/1716"
+        },
+        {
+          "label": "Серийная сборка",
+          "url": "https://shulz.ru/catalog/bikes/mtb/shulz-boys-dont-cry/1726"
+        }
+      ]
+    },
+    {
+      "id": "twitter-sentyeh",
+      "title": "Гравийная сборка с электроникой",
+      "model": "Twitter G2 MAX · SENTYEH ECS PRO",
+      "category": "Сборка",
+      "price": [
+        900,
+        1200
+      ],
+      "currency": "USD",
+      "includes": [
+        {
+          "label": "Рама",
+          "description": "Алюминиевая Twitter G2 MAX."
+        },
+        {
+          "label": "Вилка",
+          "description": "Карбоновая из комплекта, 12×100. Задняя ось 12×142."
+        },
+        {
+          "label": "Трансмиссия",
+          "description": "SENTYEH ECS PRO Road 1×13. Манетки и задний переключатель ECS, кассета EVE 11–45, совместимая 13-скоростная цепь и шатуны под BSA 68 со звездой около 40T."
+        }
+      ],
+      "compatibility": "Проверьте состав набора, барабан под кассету и совместимость цепи со звездой. Для гидравлических ручек нужны совместимые тормоза Flat Mount.",
+      "links": [
+        {
+          "label": "Фреймсет",
+          "url": "https://twitterbikeusa.com/products/twitter-g2max-alloy-gravel-frame-set-al6061-t6-frame-carbon-fork-700c-thru-axle-udh-700-50c"
+        },
+        {
+          "label": "SENTYEH ECS PRO",
+          "url": "https://sentyehsmart.com/products"
+        },
+        {
+          "label": "Серийные варианты Twitter G2 Max",
+          "url": "https://twitterbikeusa.com/products/g2max-twitter-alloy-gravel-bike"
+        }
+      ]
+    },
+    {
+      "id": "salsa-fargo",
+      "title": "Трейл-дропбар для гор",
+      "model": "Salsa Fargo · GRX / Deore 1×12",
+      "category": "Сборка",
+      "price": [
+        2250,
+        2850
+      ],
+      "currency": "USD",
+      "includes": [
+        {
+          "label": "Рама",
+          "description": "Стальная Salsa Fargo 2026 под руль-баран."
+        },
+        {
+          "label": "Вилка",
+          "description": "Карбоновая Cutthroat Deluxe из комплекта. Оси Boost 15×110 и 12×148."
+        },
+        {
+          "label": "Трансмиссия",
+          "description": "Манетки GRX RX610, переключатель RD‑RX822‑SGS, шатуны Shimano MT510 34T, кассета Deore M6100 10–51 и цепь M6100."
+        }
+      ],
+      "compatibility": "Нужны барабан Micro Spline и каретка Shimano BB52 под BSA 73. Сочетание GRX и Deore взято за основу с серийной Fargo GRX 610.",
+      "links": [
+        {
+          "label": "Фреймсет",
+          "url": "https://www.salsacycles.com/products/2026-fargo-steel-frameset"
+        },
+        {
+          "label": "Серийная комплектация",
+          "url": "https://www.salsacycles.com/products/2025-fargo-grx-610"
+        }
+      ]
+    },
+    {
+      "id": "state-sword",
+      "title": "Стальной дропбар для разных дорог",
+      "model": "State 4130 All-Road · Sword 1×10",
+      "category": "Сборка",
+      "price": [
+        900,
+        1150
+      ],
+      "currency": "USD",
+      "includes": [
+        {
+          "label": "Рама",
+          "description": "State 4130 All-Road UDH с наружной проводкой. Монстр-гравий для лесных дорог и несложных троп."
+        },
+        {
+          "label": "Вилка",
+          "description": "Стальная из комплекта. Оси 12×100 и 12×142. Заявленный клиренс фреймсета — 700×2,25″ или 650b×2,4″."
+        },
+        {
+          "label": "Трансмиссия",
+          "description": "microSHIFT Sword 1×10, шатуны Sword 40T, кассета 11–48 и цепь на 10 скоростей."
+        }
+      ],
+      "compatibility": "Нужны барабан HG, каретка BSA 68 под вал 24 мм и тормоза Flat Mount под дорожную тягу.",
+      "links": [
+        {
+          "label": "Фреймсет",
+          "url": "https://www.statebicycle.com/collections/4130-all-road/products/4130-all-road-frameset-udh-external-routing-schoolyard-yellow"
+        },
+        {
+          "label": "Трансмиссия",
+          "url": "https://shop.microshift.com/products/sword-1x10-groupset"
+        },
+        {
+          "label": "Серийные варианты State 4130 All-Road",
+          "url": "https://www.statebicycle.com/collections/4130-all-road"
+        }
+      ]
+    },
+    {
+      "id": "spcycle-grx",
+      "title": "Гравийная сборка для грейдеров",
+      "model": "SPCycle G028 · Shimano GRX 1×12",
+      "category": "Сборка",
+      "price": [
+        1150,
+        1600
+      ],
+      "currency": "USD",
+      "includes": [
+        {
+          "label": "Рама",
+          "description": "Карбоновая SPCycle G028. Заявленный клиренс до 700×57C."
+        },
+        {
+          "label": "Вилка",
+          "description": "Карбоновая из комплекта, 12×100. Задняя ось 12×142."
+        },
+        {
+          "label": "Трансмиссия",
+          "description": "Манетки GRX RX610, шатуны FC‑RX610‑1 с 38T, переключатель RD‑RX822‑SGS, кассета Shimano 10–51 и цепь HG 12 скоростей."
+        }
+      ],
+      "compatibility": "Нужны барабан Micro Spline и каретка T47 под вал Shimano 24 мм. До заказа уточните у SPCycle точную ширину стакана вашей версии и зазор звезды 38T.",
+      "links": [
+        {
+          "label": "Фреймсет",
+          "url": "https://www.sp-cycle.com/Spcycle-G028-Carbon-Gravel-Bike-Frame-700x57C-UDH-Hanger-Full-Internal-Cable-Gravel-Bicycle-Carbon-Frameset-p6993835.html"
+        },
+        {
+          "label": "Трансмиссия",
+          "url": "https://bike.shimano.com/de-DE/stories/article/grx-upgrade.html"
+        }
+      ]
+    }
+  ],
+  "tideace": [
+    {
+      "id": "Tideace/FM-GV201",
+      "title": "Tideace FM-GV201",
+      "spec": "Карбоновая гравийная рама. Вес 1 150 ± 40 г (52 см). Покрышки до 700 × 50 мм. T47, UDH.",
+      "url": "https://tideacebike.com/products/fm-gv201-noah-carbon-gravel-bike-frame",
+      "credit": "tideacebike.com",
+      "checked": "2026-11-23"
+    },
+    {
+      "id": "Tideace/FM-M039",
+      "title": "Tideace FM-M039",
+      "spec": "Карбоновая рама для MTB. Вес 960 ± 30 г (S). Задняя покрышка до 29 × 2,25″ (около 57 мм). Boost 12 × 148 мм, UDH.",
+      "url": "https://tideacebike.com/products/fm-m039-carbon-one-piece-boost-mtb-frame",
+      "credit": "tideacebike.com",
+      "checked": "2026-11-23"
+    }
+  ]
+}

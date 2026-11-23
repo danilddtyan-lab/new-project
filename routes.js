@@ -33,17 +33,6 @@ const kyrgyzRoutes = {
   }
 };
 
-const dayRoutes = [
-  {...kyrgyzRoutes.road, surface:'road', start:'Бишкек, Октябрьский район'},
-  {
-    surface:'gravel', start:'Бишкек, вокзал Бишкек‑2',
-    title:'Кольцо к смотровой у флагштока',
-    meta:'38,4 км · набор 490 м · асфальт и грунт',
-    detail:'Из города к предгорьям и обратно. Это более сложное кольцо с крутым участком. На отмеченном участке велосипед нужно вести пешком.',
-    url:'https://www.komoot.com/smarttour/20163204', link:'Карта Komoot'
-  }
-];
-
 const surface = document.querySelector('#fit-form select[name="surface"]');
 const surfaceExample = document.getElementById('surface-example');
 const surfacePlaceholder = surfaceExample?.innerHTML;
@@ -62,29 +51,41 @@ const timeZone = 'Asia/Bishkek';
 const parts = new Intl.DateTimeFormat('en',{timeZone,year:'numeric',month:'numeric',day:'numeric'}).formatToParts(now);
 const date = Object.fromEntries(parts.map(({type,value}) => [type,value]));
 const bishkekDay = Date.UTC(Number(date.year),Number(date.month)-1,Number(date.day)) / 86400000;
-const featuredRoute = dayRoutes[bishkekDay % dayRoutes.length];
-
+const routeQuery = new URLSearchParams(location.search);
 if (surface) {
   surface.addEventListener('change',() => showSurfaceExample());
-  if (new URLSearchParams(location.search).has('day')) {
-    surface.value = featuredRoute.surface;
-    showSurfaceExample(featuredRoute);
-  } else {
-    const requestedSurface = new URLSearchParams(location.search).get('surface');
-    if (Object.hasOwn(kyrgyzRoutes, requestedSurface)) surface.value = requestedSurface;
-    if (surface.value) showSurfaceExample();
-  }
+  const requestedSurface = routeQuery.get('surface');
+  if (Object.hasOwn(kyrgyzRoutes,requestedSurface)) surface.value = requestedSurface;
+  if (surface.value) showSurfaceExample();
 }
 
 const routeDayContent = document.getElementById('route-day-content');
-if (routeDayContent) {
-  document.getElementById('route-day-date').textContent = new Intl.DateTimeFormat('ru',{timeZone,day:'numeric',month:'long'}).format(now);
-  routeDayContent.innerHTML = `<h3>${featuredRoute.title}</h3>
-    <p class="route-meta">Старт: ${featuredRoute.start} · ${featuredRoute.meta}</p>
-    <p>${featuredRoute.detail}</p>
-    <p class="route-conditions">Перед выездом проверьте погоду и состояние дороги.</p>
-    <div class="route-actions"><a href="${featuredRoute.url}">${featuredRoute.link}</a>
-    <a class="outline" href="./selection.html?day=1">Подобрать велосипед</a></div>`;
+if (routeDayContent || (surface && routeQuery.has('day'))) {
+  fetch('./data/routes.json',{cache:'no-cache'})
+    .then(response => {
+      if (!response.ok) throw new Error('Routes unavailable');
+      return response.json();
+    })
+    .then(routes => {
+      const featuredRoute = routes[bishkekDay % routes.length];
+      if (routeDayContent) {
+        document.getElementById('route-day-date').textContent = new Intl.DateTimeFormat('ru',{timeZone,day:'numeric',month:'long'}).format(now);
+        routeDayContent.innerHTML = `<h3>${featuredRoute.title}</h3>
+          <p class="route-meta">Старт: ${featuredRoute.start} · ${featuredRoute.meta}</p>
+          <p>${featuredRoute.detail}</p>
+          <div class="route-actions"><a href="${featuredRoute.url}">${featuredRoute.link}</a>
+          <a class="outline" href="./selection.html?surface=${featuredRoute.surface}">Подобрать велосипед</a></div>`;
+        if (featuredRoute.photo_id && typeof photoPlaceholder === 'function') {
+          routeDayContent.prepend(photoPlaceholder(featuredRoute.photo_id,'Маршруты'));
+        }
+      } else if (!selectedRouteExample) {
+        surface.value = featuredRoute.surface;
+        showSurfaceExample(featuredRoute);
+      }
+    })
+    .catch(() => {
+      if (routeDayContent) routeDayContent.textContent = 'Маршрут дня не загрузился. Все маршруты доступны по ссылке выше.';
+    });
 }
 
 const routesGrid = document.getElementById('routes-grid');
