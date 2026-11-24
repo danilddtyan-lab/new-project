@@ -601,6 +601,16 @@
   ],
   "Schwalbe/G-One Allround": [
     {
+      "image_url": "./data/images/editorial/schwalbe-g-one-allround-first-generation-side.webp",
+      "source": "Glory Cycles",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Schwalbe_G-One_gravel_bicycle_tire.jpg",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "credit_note": "Раннее исполнение G-One, 2016 · конвертировано в WebP",
+      "alt": "Покрышка Schwalbe G-One раннего поколения с округлым протектором",
+      "verified": true
+    },
+    {
       "image_url": "https://s3-fsn.scale.sc/schwalbe.public/prod-sde/media/89/e7/62/1790245464/hs473_schwalbe_g-one-allround_57-622_reflex_standard.png_01a043321d1871649de277dc800a74c6.png?ts=1790245466",
       "source": "Schwalbe",
       "license": "разрешение не подтверждено",
@@ -704,6 +714,16 @@
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
       "credit_note": "Протектор Schwalbe Marathon Plus · кадрировано",
       "alt": "Протектор Schwalbe Marathon Plus",
+      "verified": true
+    },
+    {
+      "image_url": "./data/images/editorial/schwalbe-marathon-plus-sidewall.webp",
+      "source": "LoKiLeCh",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Schwalbe_Marathon_plus_%282%29.jpg",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "credit_note": "Боковина покрышки Schwalbe Marathon Plus · адаптировано для сайта",
+      "alt": "Боковина покрышки Schwalbe Marathon Plus",
       "verified": true
     }
   ],

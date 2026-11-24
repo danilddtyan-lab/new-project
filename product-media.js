@@ -49,7 +49,10 @@ productMedia.then(records => {
         } else if (!prefix) caption.append(name);
       }
       if (photo.credit_note) caption.append(' · ',photo.credit_note);
-      image.alt = photo.alt || fallback.textContent;
+      const subject = photo.alt || fallback.textContent.replace(/^Схема · /,'');
+      const site = photo.source_url ? new URL(photo.source_url,document.baseURI).hostname : '';
+      const photoSource = [photo.source,site].filter(Boolean).join(', ');
+      image.alt = photoSource ? subject+' — источник: '+photoSource : subject;
       image.src = photo.image_url;
       for (const dot of controls.querySelectorAll('[data-photo-index]')) {
         dot.setAttribute('aria-current',String(Number(dot.dataset.photoIndex) === current));

@@ -3,7 +3,8 @@
 function createGalleryCard(post) {
   return new Promise(resolve => {
     const image = new Image();
-    image.alt = post.alt;
+    const sourceSite = new URL(post.url,document.baseURI).hostname;
+    image.alt = post.alt+' — источник: '+post.author+', '+sourceSite;
     image.decoding = 'async';
     let fallback = post.original;
     function retryOrSkip() {
