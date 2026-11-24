@@ -576,3 +576,13 @@ body[data-page=home] .header nav { grid-template-columns: repeat(3,minmax(0,1fr)
 @media (min-width: 720px) {
   .ride-highlight { grid-template-columns: minmax(0,1fr) minmax(0,45%); }
 }
+
+.header .logo { display: inline-flex; align-items: center; gap: .5rem; }
+.header .logo::before {
+  content: '';
+  flex: 0 0 clamp(2rem, 5vw, 2.75rem);
+  width: clamp(2rem, 5vw, 2.75rem);
+  aspect-ratio: 1;
+  background: var(--header) url('./data/images/brand/veloburo-logo.webp') center / contain no-repeat;
+  border-radius: var(--control-radius);
+}
