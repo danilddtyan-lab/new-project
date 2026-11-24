@@ -29,7 +29,8 @@ productMedia.then(records => {
     figure.dataset.photoReady = 'true';
     const photos = (records[figure.dataset.photo] || [])
       .filter(isDisplayablePhoto)
-      .sort((left,right) => Number(right.verified)-Number(left.verified));
+      .sort((left,right) => Number(Boolean(left.contextual))-Number(Boolean(right.contextual)) ||
+        Number(right.verified)-Number(left.verified));
     if (!photos.length) return;
     const fallback = figure.firstElementChild;
     const image = new Image();

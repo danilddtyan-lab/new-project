@@ -217,6 +217,22 @@
       "url": "https://tideacebike.com/products/fm-m039-carbon-one-piece-boost-mtb-frame",
       "credit": "tideacebike.com",
       "checked": "2026-11-23"
+    },
+    {
+      "id": "Tideace/FM-CX072",
+      "title": "Tideace FM-CX072",
+      "spec": "Гравийная карбоновая рама. Вес 1 020 ± 50 г (52 см). Покрышки до 700 × 40 мм или 27,5 × 2,1″. Каретка BB386.",
+      "url": "https://tideacebike.com/products/fm-cx072-gravel-bike-frame",
+      "credit": "tideacebike.com",
+      "checked": "2026-11-24"
+    },
+    {
+      "id": "Tideace/FM-CR060",
+      "title": "Tideace FM-CR060",
+      "spec": "Карбоновая рама для гравия. Вес 890 ± 40 г (49 см). Покрышки до 700 × 47 мм. Каретка T47, держатель переключателя UDH.",
+      "url": "https://tideacebike.com/products/t1000-carbon-gravel-bike-frames-700-47c-super-light",
+      "credit": "tideacebike.com",
+      "checked": "2026-11-24"
     }
   ]
 }

@@ -49,18 +49,22 @@
   ],
   "Tideace/FM-GV201": [
     {
-      "image_url": "https://tideacebike.com/cdn/shop/files/T1000-carbon-gravel-frames.png?v=1723449554&width=720",
-      "source": "Tideace",
-      "license": "разрешение не подтверждено",
-      "verified": false
+      "image_url": "./data/images/tideace/tideace-fm-gv201-side.webp",
+      "source": "tideacebike.com",
+      "source_url": "https://tideacebike.com/products/fm-gv201-noah-carbon-gravel-bike-frame",
+      "license": "Разрешение получено владельцем сайта",
+      "alt": "Карбоновая рама Tideace FM-GV201",
+      "verified": true
     }
   ],
   "Tideace/FM-M039": [
     {
-      "image_url": "https://tideacebike.com/cdn/shop/files/carbon-29er-boost-rigid-frame.jpg?v=1733904210&width=720",
-      "source": "Tideace",
-      "license": "разрешение не подтверждено",
-      "verified": false
+      "image_url": "./data/images/tideace/tideace-fm-m039-side.webp",
+      "source": "tideacebike.com",
+      "source_url": "https://tideacebike.com/products/fm-m039-carbon-one-piece-boost-mtb-frame",
+      "license": "Разрешение получено владельцем сайта",
+      "alt": "Карбоновая рама Tideace FM-M039",
+      "verified": true
     }
   ],
   "SPCycle/G068": [
@@ -702,7 +706,17 @@
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "credit_note": "Место события · Балыкчы и озеро Иссык-Куль с высоты · кадрировано",
       "alt": "Балыкчы и озеро Иссык-Куль с высоты",
-      "verified": true
+      "verified": true,
+      "contextual": true
+    },
+    {
+      "image_url": "https://time.kg/uploads/posts/2026-04/1776096932-11776096025-1xl.webp",
+      "source": "time.kg",
+      "source_url": "https://time.kg/todaynews/obschestvo/329883-na-issyk-kule-proshla-mezhdunarodnaja-velogonka-gran-pri-issyk-kul-2026.html",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Гран-при Иссык-Куль 2026»",
+      "credit_note": "Из материала источника",
+      "verified": false
     }
   ],
   "Schwalbe/Marathon Plus": [
@@ -736,7 +750,17 @@
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
       "credit_note": "Место события · Вулкан Вильяррика из Пукóна · кадрировано",
       "alt": "Вулкан Вильяррика из Пукóна",
-      "verified": true
+      "verified": true,
+      "contextual": true
+    },
+    {
+      "image_url": "https://acrossandes.cc/images/portada_web.jpg",
+      "source": "Across Andes",
+      "source_url": "https://acrossandes.cc/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Across Andes 2026»",
+      "credit_note": "Из материала источника",
+      "verified": false
     }
   ],
   "news:kollegin-seven-rivers": [
@@ -748,7 +772,8 @@
       "license_url": "https://creativecommons.org/licenses/by/2.0/",
       "credit_note": "Место события · Алматы с холма Кок-Тобе · кадрировано",
       "alt": "Алматы с холма Кок-Тобе",
-      "verified": true
+      "verified": true,
+      "contextual": true
     }
   ],
   "news:srmr-2026-start": [
@@ -760,7 +785,17 @@
       "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
       "credit_note": "Окрестности Иссык-Куля · кадрировано",
       "alt": "Дорога к Иссык-Кулю",
-      "verified": true
+      "verified": true,
+      "contextual": true
+    },
+    {
+      "image_url": "https://sport.kg/uploads/posts/2026-08/1787053658_talas-gonka.jpg",
+      "source": "sport.kg",
+      "source_url": "https://sport.kg/main_news/94368-v-talase-startovala-mezhdunarodnaja-velogonka-silk-road-mountain-race-2026.html",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «В Таласе стартовала Silk Road Mountain Race 2026»",
+      "credit_note": "Из материала источника",
+      "verified": false
     }
   ],
   "Ortlieb/Back-Roller": [
@@ -784,7 +819,17 @@
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
       "credit_note": "Место события · Мост через Теннесси в Чаттануге · кадрировано",
       "alt": "Мост через Теннесси в Чаттануге",
-      "verified": true
+      "verified": true,
+      "contextual": true
+    },
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/02/Bike-Camp-2026_1.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/bike-camp-2026-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Bike Camp 2026 в Чаттануге»",
+      "credit_note": "Из материала источника",
+      "verified": false
     }
   ],
   "news:alex-schultz-wins-2026-arizona-trail-race": [
@@ -796,7 +841,17 @@
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "credit_note": "Место события · Тропа Arizona Trail · кадрировано",
       "alt": "Тропа Arizona Trail",
-      "verified": true
+      "verified": true,
+      "contextual": true
+    },
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/alex-schultz-2026-aztr-win_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/alex-schultz-wins-2026-arizona-trail-race/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Алекс Шульц выиграл Arizona Trail Race»",
+      "credit_note": "Из материала источника",
+      "verified": false
     }
   ],
   "Surly/Disc Trucker": [
@@ -841,6 +896,1071 @@
       "license": "разрешение не подтверждено",
       "alt": "TanTan Seraph GR048",
       "verified": false
+    }
+  ],
+  "news:srmr-2026-kyrgyz-pair-win": [
+    {
+      "image_url": "https://24kgr2.bemint.pro/files/media/466/466514.jpg",
+      "source": "24.kg",
+      "source_url": "https://24.kg/article/386724",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Кыргызстанцы выиграли парный зачёт Silk Road Mountain Race»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:srmr-2026-vlad-podofedov-progress": [
+    {
+      "image_url": "https://open.kg/uploads/posts/2026-08/1787761595-1466514.webp",
+      "source": "open.kg",
+      "source_url": "https://open.kg/news/sports-news/118028-kyrgyzstancy-stali-pobediteljami-silk-road-mountain-race-2026.html",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Владислав Подофёдов: от 11-го места до победы в паре»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:ortosai-race-2026": [
+    {
+      "image_url": "https://static.tildacdn.one/tild3437-3735-4166-b364-633563373464/__ORTOSAI_RACE___-.png",
+      "source": "VeloMesto",
+      "source_url": "https://velomesto.kg/ortosairace/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «ORTOSAI RACE 2026: велогонка у Бишкека»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:friday-debrief-248": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/Debrief-148_Main.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/friday-debrief-248/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Friday Debrief 248»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:foldee-folding-cargo-bike": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/Foldee-Cargo-Bike-Intro_1.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/foldee-folding-cargo-bike/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Складной грузовой велосипед FOLDEE»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:neuhaus-hummingbird-titanium-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/neuhaus-hummingbird-ti32-ti29_intro.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/neuhaus-hummingbird-titanium-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Neuhaus выпустила титановые Hummingbird»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:edgware-mile-0-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/edgware-mile-0_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/edgware-mile-0-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Edgware представила Mile 0»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:nordest-arisco-ti-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/nordest-Arisco-ti-32-intro_13.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/nordest-arisco-ti-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Nordest Arisco Ti под колёса 32 дюйма»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:thomson-in-house-framebuilding": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/thomson-framebuilding-episode-one_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/thomson-in-house-framebuilding/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Thomson запускает производство стальных рам»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:45nrth-leather-wolvhammer-ragnarok-boots-update": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/2026-2027-45nrth-boots_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/45nrth-leather-wolvhammer-ragnarok-boots-update/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «45NRTH обновила зимнюю велообувь»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:exposure-joystick-19-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/exposure-joystick-19_4.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/exposure-joystick-19-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Фонарь Exposure Joystick 19 для грунтовых заездов»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:strangers-bikepack-patagonia-video": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/Strangers-Bikepack-Patagonia-Vide-Share_1.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/strangers-bikepack-patagonia-video/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Велопутешествие по Патагонии в фильме Штефана Визера»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:ramble-rides-return": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/Steamboat-Ramble-Ride-2018_3.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/ramble-rides-return/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Ramble Rides возвращается в Колорадо»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:bikepacking-overnight-in-catalonia-video": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/Bikepacking-Overnight-Catalonia-Video_1.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/bikepacking-overnight-in-catalonia-video/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Из Барселоны на ночёвку в каталонские холмы»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:eichkatz-bumper-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/Eichkatz-bumper_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/eichkatz-bumper-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Eichkatz Bumper поддерживает нарульную сумку»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:2027-pedaled-odyssey-collection-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/2027-pedaled-odyssey-collection_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/2027-pedaled-odyssey-collection-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «PEdALED представила зимнюю коллекцию Odyssey»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:2027-reeb-sst-update": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/2027-REEB-SST_10.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/2027-reeb-sst-update/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «REEB переработала стальной SST»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:clorofilla-arcadia-cradle-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/arcadia-cradle-new_5.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/clorofilla-arcadia-cradle-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Clorofilla Arcadia Cradle для багажа на руле»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:take-your-bike-sleep-outside-video": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/Take-Your-Bike-Sleep-Outside-Video_1.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/take-your-bike-sleep-outside-video/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Бельгийская велоночёвка на Хэллоуин»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:state-4130-trail-rigid-forks": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/state-4130-trail-rigid-forks_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/state-4130-trail-rigid-forks/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «State 4130 Trail получил варианты жёсткой вилки»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:bike-camp-co-op-nov-2026": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/Bike-Camp-Co-Op-Finds_main.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/bike-camp-co-op-finds-november-4th-2026/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Bike Camp Co-op Finds»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:coros-dura-2-available": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/coros-dura-2-solar-review_6.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/coros-dura-2-available/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «COROS DURA 2 Solar поступил в продажу»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:rawland-fara-return": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/rawland-cycles-fara-new_1.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/rawland-fara-return/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Rawland показала модель Fara»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:rediscovering-taiwan-through-bikes-video": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/rediscovering-taiwan-through-bikes-video_2.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/rediscovering-taiwan-through-bikes-video/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Kyoot Bikes проехала по Тайваню»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:fizik-nanuq-2-gtx-new": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/fizik-Nanuq-2_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/fizik-nanuq-2-gtx-new/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Fizik обновила зимние велотуфли Nanuq»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:hudski-dualist-sram-builds": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/hudski-dualist-sram_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/hudski-dualist-sram-builds/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Hudski предложила сборку Dualist на SRAM»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:2026-endless-mountains-recap": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/2026-endless-mountains-recap_29.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/2026-endless-mountains-recap/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Николь Маньез первой среди женщин закончила Endless Mountains 430»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:san-util-whirlpool-mkii-hip-pack": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/san-util-whirlpool-mkii-new_17.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/san-util-whirlpool-mkii-hip-pack/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «San Util обновила поясную сумку Whirlpool»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:abe-kaufman-2026-mountaineer-monster-win": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/abe-mountaineer-monster_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/abe-kaufman-2026-mountaineer-monster-win/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Эйб Кауфман выиграл Mountaineer Monster»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:curve-big-kev-32-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/curve-big-kev-32_3.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/curve-big-kev-32-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Curve собрала выставочный Big Kev 32»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:collective-rewards-fall-2026": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/CRR-245-258-Main_1.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/fall-2026-collective-reward-winners/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Итоги осеннего розыгрыша Bikepacking Collective»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:2026-wilde-rambler-restock": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/2026-wilde-rambler-sl-Elven_1-2.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/2026-wilde-rambler-restock/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Wilde Rambler вернулся в двух цветах»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:bikepacking-mongolia-mini-velo-video": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/bikepacking-mongolia-on-a-mini-velo_0.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/bikepacking-mongolia-mini-velo-video/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Мини-велосипед на маршруте по Хангаю»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:ratking-chull-pre-orders": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/ratking-chull_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/ratking-chull-pre-orders/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «RatKing открыла предзаказ на грузовой Chull»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:outer-shell-qr-tote-new": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/outer-shell-qr-tote_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/outer-shell-qr-tote-new/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Outer Shell представила быстросъёмную сумку QR Tote»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:geoffrey-wong-singlespeed-triple-crown-challenge": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/wong-2026-singlespeed-crown_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/geoffrey-wong-singlespeed-triple-crown-challenge/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Джеффри Вонг завершил Triple Crown на синглспиде»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:viral-wanderer-32-pre-order": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/viral-wanderer-32_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/viral-wanderer-32-pre-order/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Viral начала приём заказов на Wanderer 32»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:new-jones-titanium-framesets": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/jones-ti-udh-new_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/new-jones-titanium-framesets/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Jones обновила титановые рамы»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:omm-axle-pack-v2-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/omm-axle-pack-v2_1.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/omm-axle-pack-v2-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Old Man Mountain обновила крепление Axle Pack»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:sombra-cervus-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/sombra-cervus_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/sombra-cervus-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Sombra показала стальной Cervus»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:tailfin-singular-peregrine-slow-bikepacking-kit": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/Tailfin-Slow-Bikepacking-Kit-Singular-Peregrine_11.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/tailfin-singular-peregrine-slow-bikepacking-kit/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Tailfin показала комплект сумок из вощёного холста»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:liz-ryen-wins-2026-arizona-trail-race-800": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/Liz-Ryen-AZTR800-Win_6.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/liz-ryen-wins-2026-arizona-trail-race-800/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Лиз Райен выиграла женский зачёт Arizona Trail 800»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:knipex-twingrip-xs-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/knipex-twingrip-xs_1.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/knipex-twingrip-xs-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «KNIPEX представила компактные клещи TwinGrip XS»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:sonder-rubicon-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/Sonder-Rubicon-Intro-Share_.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/sonder-rubicon-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Sonder выпустила титановый Rubicon»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:state-6061-trail-fat-bike-v2-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/state-6061-trail-fat-bike-v2_1.jpeg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/state-6061-trail-fat-bike-v2-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «State обновила алюминиевый фэтбайк 6061 Trail»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:2026-revel-ranger-ti-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/2026-revel-ranger-ti_5.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/2026-revel-ranger-ti-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Revel показала титановый двухподвес Ranger Ti»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:meaghan-hackinens-taurus-mountain-race-bike-check-video": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/Meaghan-Hackinen-Taurus-Bike-Check_5.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/meaghan-hackinens-taurus-mountain-race-bike-check-video/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Первый Taurus Mountain Race стартовал в Турции»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:paper-roads-traverse-panniers-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/paper-roads-traverse-panniers_share-scaled.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/paper-roads-traverse-panniers-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Paper Roads выпустила сумки Traverse Panniers»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:love-letter-bikepacking-oregon-video": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/Love-Letter-Bikepacking-Oregon-Video-David-Lamb_1.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/love-letter-bikepacking-oregon-video/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Дэвид Лэмб снял заезд по вулканическому Орегону»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:michelle-roth-wins-2026-ahcr": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/Michelle-Roth-2026-AHCR-Win_11.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/michelle-roth-wins-2026-ahcr/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Мишель Рот выиграла женский зачёт Arkansas High Country Race»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:tout-terrain-catalina-hardtail-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/Tout-Terrain-Catalina_10.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/tout-terrain-catalina-hardtail-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Tout Terrain представила хардтейл Catalina»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:ted-king-wins-2026-arkansas-high-country-race": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/ted-king-2026-ahcr-win_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/ted-king-wins-2026-arkansas-high-country-race/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Тед Кинг выиграл Arkansas High Country Race»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:revel-el-jefe-grande-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/Revel-El-Jefe-Grande-Share-LW_1.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/revel-el-jefe-grande-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Revel выпустила El Jefe Grande под 32-дюймовые колёса»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:leigh-foster-driftless-video": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/Leigh-Foster-Driftless-Video_6.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/leigh-foster-driftless-video/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Велопоездка по холмам Висконсина»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:built-with-purpose-2026": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/2026-built-with-purpose-sale_share-scaled.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/2026-built-with-purpose-sale/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Built With Purpose Sale 2026»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:2026-sklar-supersomething-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/2026-sklar-supersomething_9.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/2026-sklar-supersomething-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Sklar добавила карбоновую вилку в базовый SuperSomething»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:kyoot-flat-pack-pizza-rack-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/kyoot-flat-pack-pizza-rack_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/kyoot-flat-pack-pizza-rack-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Kyoot выпустила передний багажник Flat Pack Pizza Rack»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:2026-ahcr-northwest-loop-winners": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/2026-ahcr-northwest-loop-winners_main.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/2026-ahcr-northwest-loop-winners/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Новые рекорды на Northwest Loop в Арканзасе»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:alex-schultz-wins-2026-azt300": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/alex-schults-2026-aztr300-win_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/alex-schultz-wins-2026-azt300/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Алекс Шульц первым финишировал на Arizona Trail 300»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:cory-ostertag-wins-2026-golden-horseshoe-race": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/cory-2026-golden-horseshoe-race_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/cory-ostertag-wins-2026-golden-horseshoe-race/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Кори Остертаг выиграл Golden Horseshoe Race»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:golden-horseshoe-2026": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/09/golden-horseshoe-2026-update_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/2026-golden-horseshoe-race-update/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Golden Horseshoe Race 2026: новости с дистанции»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:jennifer-biodio-2026-smoke-n-fire-win": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/09/jen-smoke-n-fire-2026_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/jennifer-biodio-2026-smoke-n-fire-win/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Дженнифер Бьонди выиграла женский зачёт Smoke ’n’ Fire»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:three-days-at-pedaleo-2026": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/09/Pedaleo-2026-recap_27.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/three-days-at-pedaleo-2026/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Фестиваль Pedaleo прошёл в Швейцарии»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:alex-schultz-wins-2026-oregon-timber-trail-race": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/07/alex-schultz-2026-ott-win_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/alex-schultz-wins-2026-oregon-timber-trail-race/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Алекс Шульц выиграл Oregon Timber Trail Race»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:leah-goldstein-torin-lackmann-finish-tour-divide": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/07/2026-tour-divide-lackmann-goldstein_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/leah-goldstein-torin-lackmann-finish-tour-divide/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Лиа Голдстейн и Торин Лакманн на подиуме Tour Divide»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:genesis-2026": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/04/2026-genesis-bikes-updates_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/2026-genesis-bikes-updates/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Genesis обновила линейки Vagabond, Croix de Fer и Tour de Fer»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:cinelli-tutto-mini-2026": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2025/12/cinelli-tutto-mini-2026_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/2026-cinelli-tutto-mini/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Cinelli Tutto Mini в цвете Mutant Silver»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:tumbleweed-prospector-2026": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2025/12/2026-tumbleweed-prospector_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/2026-tumbleweed-prospector/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Два новых цвета Tumbleweed Prospector»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:cinelli-hobootleg-geo-2026": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2025/12/cinelli-hobootleg-geo-2026_share.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/2026-cinelli-hobootleg-geo/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Cinelli HoBootleg Geo модельного года 2026»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:canyon-grizl-2026": [
+    {
+      "image_url": "https://substackcdn.com/image/fetch/$s_!NZQm!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe995fab5-4966-44bf-a0d8-88b0b3c5b545_3000x1690.jpeg",
+      "source": "n−1 bikes",
+      "source_url": "https://nminus1bikes.substack.com/p/2026-canyon-grizl-cf-gravel-bike-review",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Обзор Canyon Grizl CF модельного года 2026»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:wzrd-double-top-tube-handlebar": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/wzrd-double-top-bar_4.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/wzrd-double-top-tube-handlebar/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «WZRD выпустила руль с двумя поперечинами»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:stinner-stoic-wheels-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/stinner-stoic-wheels_main.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/stinner-stoic-wheels-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Stinner представила колёса Stoic»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:allygn-drust-titanium-taillight-and-mount": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/11/Titanium-Edelmu-Drust-Rear-Light-Mount_6.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/allygn-drust-titanium-taillight-and-mount/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Allygn и Drust выпустили титановый фонарь»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:velo-orange-gravel-cranks-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/velo-orange-gravel-cranks_1.jpeg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/velo-orange-gravel-cranks-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Velo Orange выпустила гравийные шатуны»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:paul-x-simworks-sunset-collection-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/Paul-SimWorks-Sunset-Share_2.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/paul-x-simworks-sunset-collection-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Paul и SimWorks выпустили серию Sunset»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:reserve-32-xc-wheels": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/Reserve-32-Wheels-Share_3.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/reserve-32-xc-wheels/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Reserve выпустила 32-дюймовые обода и колёса»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:rene-herse-indiana-pass-tires-intro": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/RH_Indiana-Pass-32-inch_2.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/rene-herse-indiana-pass-tires-intro/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Rene Herse выпустила покрышки Indiana Pass»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:rogue-panda-bamboo-shoots-short-king": [
+    {
+      "image_url": "https://bikepacking.com/wp-content/uploads/2026/10/rogue-panda-bamboo-shoots-short-king_1.jpg",
+      "source": "BIKEPACKING.com",
+      "source_url": "https://bikepacking.com/news/rogue-panda-bamboo-shoots-short-king/",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Rogue Panda укоротила внутренние грипсы Bamboo Shoots»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:stablead-eurobike": [
+    {
+      "image_url": "https://www.bikeradar.com/resources/content/32337f2f-7841-4ef6-a233-d1f001580530/b12cf553-e054-40a5-bc20-e0cb31bab7be/0fcce609-dea2-4c1e-9359-06aa567aa75d/IMG_9618-Large.jpeg?preview=false&platform=WEB&deviceId=206d9f70-6119-4e88-9c91-fd7007d93cf9&w=1200",
+      "source": "BikeRadar",
+      "source_url": "https://www.bikeradar.com/news/stablead-futuristic-3d-printed-brakes-and-suspension",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Stablead показала прототипы тормозов на Eurobike»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:bosch-hub-line": [
+    {
+      "image_url": "https://www.bosch-presse.de/pressportal/de/media/dam_images/pi12105/bosch-ebike_hub_line_pressebild_8_img_w1280.jpg",
+      "source": "Bosch",
+      "source_url": "https://www.bosch-presse.de/pressportal/de/en/hub-line-and-perfectly-integrated-innovations-define-the-next-generation-of-urban-ebikes-283395.html",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Bosch представила Hub Line и обновила Active Line Plus»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:brembo-gr-pro": [
+    {
+      "image_url": "https://brem-p-001.sitecorecontenthub.cloud/api/public/content/99ba4173cadd461887d2acf1c19c669f?v=43d60f64",
+      "source": "Brembo",
+      "source_url": "https://www.brembogroup.com/en/media/news/brembo-launches-gr-pro-for-mountain-bikes",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Brembo представила тормоза GR‑PRO»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:kyrgyz-pro-teams": [
+    {
+      "image_url": "https://velosport.kg/upload/000/u1/e/8/7cffb2be.jpg",
+      "source": "Федерация велоспорта Кыргызстана",
+      "source_url": "https://velosport.kg/news/88-professionalnye-velokomandy-kyrgyzstana-v-sezone-2027-goda.html",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Профессиональные велокоманды Кыргызстана в сезоне 2027 года»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:goncharov-fornasiero": [
+    {
+      "image_url": "https://velosport.kg/upload/000/u1/8/5/62cffe5f.jpg",
+      "source": "Федерация велоспорта Кыргызстана",
+      "source_url": "https://velosport.kg/news/77-vladimir-goncharov-vyigral-prestizhnyi-memorial-fornasiero-v-italii.html",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Владимир Гончаров выиграл престижный Memorial Fornasiero в Италии»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:shichkin-italy": [
+    {
+      "image_url": "https://velosport.kg/upload/000/u1/4/2/5a25ad70.jpg",
+      "source": "Федерация велоспорта Кыргызстана",
+      "source_url": "https://velosport.kg/news/73-pobeda-lokomotiv-manas-v-italii.html",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Победа Lokomotiv Manas в Италии!»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:tiutiunnikov-korea": [
+    {
+      "image_url": "https://velosport.kg/upload/000/u1/b/2/artur-tyutyunnikov-vystupit-na-chempionate-respubliki-koreja-v-sostave-komandy-wcc-korea-photo-normal.jpg",
+      "source": "Федерация велоспорта Кыргызстана",
+      "source_url": "https://velosport.kg/news/72-artur-tyutyunnikov-vystupit-na-chempionate-respubliki-koreja-v-sostave-komandy-wcc-korea.html",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Артур Тютюнников выступит на чемпионате Республики Корея в составе команды WCC Korea»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:kyrgyz-asia-downhill": [
+    {
+      "image_url": "https://velosport.kg/upload/000/u1/d/8/kyrgyzstan-vpervye-vystupit-v-daunhille-na-chempionate-azii-po-mauntinbaiku-photo-normal.jpg",
+      "source": "Федерация велоспорта Кыргызстана",
+      "source_url": "https://velosport.kg/news/70-kyrgyzstan-vpervye-vystupit-v-daunhille-na-chempionate-azii-po-mauntinbaiku.html",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Кыргызстан впервые выступит в даунхилле на Чемпионате Азии по маунтинбайку»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:lokomotiv-slovenia": [
+    {
+      "image_url": "https://velosport.kg/upload/000/u1/8/7/serebrjanyi-uspeh-lokomotiv-manas-v-slovenii-photo-normal.jpg",
+      "source": "Федерация велоспорта Кыргызстана",
+      "source_url": "https://velosport.kg/news/68-serebrjanyi-uspeh-lokomotiv-manas-v-slovenii.html",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «Серебряный успех «Локомотив Манас» в Словении!»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:kyrgyz-road-championship-2025": [
+    {
+      "image_url": "https://velosport.kg/upload/000/u1/7/9/v-kyrgyzstane-proshyol-pervyi-s-1992-goda-polnomasshtabnyi-chempionat-strany-po-shosseinomu-velosportu-photo-normal.jpg",
+      "source": "Федерация велоспорта Кыргызстана",
+      "source_url": "https://velosport.kg/en/news/42-v-kyrgyzstane-proshyol-pervyi-s-1992-goda-polnomasshtabnyi-chempionat-strany-po-shosseinomu-velos.html",
+      "license": "разрешение не подтверждено",
+      "alt": "Фото к публикации «В Кыргызстане прошёл первый с 1992 года полномасштабный чемпионат страны по шоссейному велоспорту»",
+      "credit_note": "Из материала источника",
+      "verified": false
+    }
+  ],
+  "news:lev-broken-brakes-hype-67": [
+    {
+      "image_url": "https://lewisbike.com.au/cdn/shop/files/LH4_Black_Hero.webp?v=1750822441",
+      "source": "Lewis Bike Australia",
+      "source_url": "https://lewisbike.com.au/products/lewis-lh4-4-piston-hydraulic-bicycle-disc-brake-kit",
+      "alt": "Тормоза Lewis LH4",
+      "credit_note": "Пример тормозов Lewis. Модель из новости не указана",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "news:iliyasov-rope-spokes": [
+    {
+      "image_url": "https://berdspokes.com/cdn/shop/products/240s_close_up_e3c421e4-f003-4f05-9b19-020a199bf5c4_1200x1200.jpg?v=1602971794",
+      "source": "Berd Spokes",
+      "source_url": "https://berdspokes.com/products/custom-wheel-building",
+      "alt": "Колесо с волоконными спицами Berd",
+      "credit_note": "Пример волоконных спиц",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "news:hammerhead-flight-attendant": [
+    {
+      "image_url": "https://www.sram.com/globalassets/publicsites/03_learn/r/fa--karoo-welcome-guide/rockshox_flight_attendant_karoo_integration.jpg",
+      "source": "SRAM / RockShox",
+      "source_url": "https://www.sram.com/en/rockshox/learn/flight-attendant-karoo",
+      "alt": "Интеграция RockShox Flight Attendant и Hammerhead Karoo",
+      "credit_note": "Фото производителя",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "news:cane-creek-invert-enduro": [
+    {
+      "image_url": "https://www.canecreek.com/cdn/shop/files/Invert_Enduro_Studio_-_MM-1.png?v=1791838526&width=2048",
+      "source": "Cane Creek",
+      "source_url": "https://www.canecreek.com/products/invert-enduro",
+      "alt": "Вилка Cane Creek Invert Enduro",
+      "credit_note": "Фото производителя",
+      "license": "разрешение не подтверждено",
+      "verified": false
+    }
+  ],
+  "news:specialized-demo-11": [
+    {
+      "image_url": "https://enduro-mtb.com/wp-content/uploads/2026/04/Specialized_Demo_11_News_WEB-2.jpg.webp",
+      "source": "ENDURO Mountainbike Magazine",
+      "source_url": "https://enduro-mtb.com/en/specialized-s-works-demo-11-news/",
+      "license": "разрешение не подтверждено",
+      "alt": "Гоночный велосипед Specialized Demo 11",
+      "credit_note": "Фото модели из новости",
+      "verified": false
+    }
+  ],
+  "news:sram-xx-dh": [
+    {
+      "image_url": "https://www.sram.com/globalassets/image-hierarchy/sram-product-root-images/derailleurs---rear/derailleurs---rear/rd-xx-down-hill-e-a1/productassets_rd-xx-dhe-a1_fg/a-3-am-rd-xx-dh-t-type-axs.png?h=960",
+      "source": "SRAM",
+      "source_url": "https://www.sram.com/en/sram/models/rd-xx-dhe-a1",
+      "license": "разрешение не подтверждено",
+      "alt": "Переключатель SRAM XX DH Transmission",
+      "credit_note": "Фото модели из новости",
+      "verified": false
+    }
+  ],
+  "news:fast-dc3": [
+    {
+      "image_url": "https://www.fast-suspension.com/896-large_default/dc3-compression-kit-for-rock-shox-lyrik-select-pike-select-and-zeb-charger-r-and-charger-rc-forks.jpg",
+      "source": "Fast Suspension",
+      "source_url": "https://www.fast-suspension.com/en/dc3-compression-kit/272-dc3-compression-kit-for-rock-shox-lyrik-select-pike-select-and-zeb-charger-r-and-charger-rc-forks.html",
+      "license": "разрешение не подтверждено",
+      "alt": "Демпфер Fast Suspension DC3",
+      "credit_note": "Фото модели из новости",
+      "verified": false
+    }
+  ],
+  "Tideace/FM-CX072": [
+    {
+      "image_url": "./data/images/tideace/tideace-fm-cx072-side.webp",
+      "source": "tideacebike.com",
+      "source_url": "https://tideacebike.com/products/fm-cx072-gravel-bike-frame",
+      "license": "Разрешение получено владельцем сайта",
+      "alt": "Карбоновая рама Tideace FM-CX072",
+      "verified": true
+    }
+  ],
+  "Tideace/FM-CR060": [
+    {
+      "image_url": "./data/images/tideace/tideace-fm-cr060-side.webp",
+      "source": "tideacebike.com",
+      "source_url": "https://tideacebike.com/products/t1000-carbon-gravel-bike-frames-700-47c-super-light",
+      "license": "Разрешение получено владельцем сайта",
+      "alt": "Карбоновая рама Tideace FM-CR060",
+      "verified": true
     }
   ]
 }
