@@ -27,6 +27,6 @@
   .rider-gallery-grid{grid-template-columns:1fr}
   .rider-gallery-heading .outline{display:flex;width:100%;justify-content:center;text-align:center}
 }
-.gallery-verified .travel-card img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.gallery-verified .travel-card img{width:100%;height:auto;aspect-ratio:4/5;object-fit:scale-down}
 .gallery-verified .travel-card{display:grid;align-content:start}
 .gallery-verified .rider-caption{display:grid;gap:.25rem}

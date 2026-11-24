@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent
 CATEGORIES = {"гонки", "гонщики", "снаряжение", "маршруты", "события", "новинки", "запчасти"}
 REGIONS = {"Кыргызстан", "международные"}
 NEWS_FIELDS = {"id", "date", "title", "summary", "category", "region", "url", "source_name", "verified"}
-STATIC_EXTENSIONS = {".html", ".css", ".js", ".json", ".jpg", ".jpeg", ".webp", ".png", ".svg", ".ico"}
+STATIC_EXTENSIONS = {".html", ".css", ".js", ".json", ".jpg", ".jpeg", ".webp", ".png", ".svg", ".ico", ".mp4"}
 
 
 def load_json(name):

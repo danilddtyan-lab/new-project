@@ -42,9 +42,11 @@ productMedia.then(records => {
     controls.className = 'product-photo-controls';
     let current = 0;
     let touchX;
+    let triedPreview = false;
 
     function show(index) {
       current = (index + photos.length) % photos.length;
+      triedPreview = false;
       const photo = photos[current];
       caption.replaceChildren('Фото: ');
       const sourceUrl = photo.source_url || (photo.image_url.startsWith('https://') ? photo.image_url : '');
@@ -97,6 +99,12 @@ productMedia.then(records => {
       figure.replaceChildren(...(valid ? [image,caption] : [fallback]),controls);
     });
     image.addEventListener('error',() => {
+      const preview = photos[current].fallback_url;
+      if (!triedPreview && preview && isDisplayablePhoto({image_url:preview,source:photos[current].source})) {
+        triedPreview = true;
+        image.src = preview;
+        return;
+      }
       figure.classList.add('photo-unavailable');
       figure.replaceChildren(fallback,controls);
     });

@@ -1,50 +1,56 @@
 {
   "Salsa/Fargo": [
     {
-      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-fargo-frame-2026-FM2804.png?v=1772576939&width=720",
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-fargo-frame-2026-FM2804.png?v=1772576939&width=1600",
       "source": "Salsa Cycles",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.salsacycles.com/cdn/shop/files/salsa-fargo-frame-2026-FM2804.png?v=1772576939&width=720"
     }
   ],
   "Surly/Grappler": [
     {
-      "image_url": "https://outflow.life/cdn/shop/files/surly-grappler-frameset-blue-FM2696-1200x800.jpg?v=1712784736&width=720",
+      "image_url": "https://outflow.life/cdn/shop/files/surly-grappler-frameset-blue-FM2696-1200x800.jpg?v=1712784736&width=1600",
       "source": "Outflow",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://outflow.life/cdn/shop/files/surly-grappler-frameset-blue-FM2696-1200x800.jpg?v=1712784736&width=720"
     }
   ],
   "Tumbleweed/Stargazer": [
     {
-      "image_url": "https://tumbleweed.cc/cdn/shop/files/10_TumbleweedBikes-VKS-Product-ISO-Frame-Stargazer-Grey-350-June17-2021_WHITE.jpg?v=1769367487&width=720",
+      "image_url": "https://tumbleweed.cc/cdn/shop/files/10_TumbleweedBikes-VKS-Product-ISO-Frame-Stargazer-Grey-350-June17-2021_WHITE.jpg?v=1769367487&width=1600",
       "source": "Tumbleweed",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://tumbleweed.cc/cdn/shop/files/10_TumbleweedBikes-VKS-Product-ISO-Frame-Stargazer-Grey-350-June17-2021_WHITE.jpg?v=1769367487&width=720"
     }
   ],
   "Salsa/Cutthroat": [
     {
-      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-cutthroat-2026-frameset-FM6932.png?v=1771516014&width=720",
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-cutthroat-2026-frameset-FM6932.png?v=1771516014&width=1600",
       "source": "Salsa Cycles",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.salsacycles.com/cdn/shop/files/salsa-cutthroat-2026-frameset-FM6932.png?v=1771516014&width=720"
     }
   ],
   "Kona/Sutra LTD": [
     {
-      "image_url": "https://konaworld.com/cdn/shop/files/my23_sutra_ltd_frame.jpg?v=1733100217&width=720",
+      "image_url": "https://konaworld.com/cdn/shop/files/my23_sutra_ltd_frame.jpg?v=1733100217&width=1600",
       "source": "Kona",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://konaworld.com/cdn/shop/files/my23_sutra_ltd_frame.jpg?v=1733100217&width=720"
     }
   ],
   "Curve/GMX+": [
     {
-      "image_url": "https://omafiets.com.au/cdn/shop/files/mg-6251-6cfde375-07af-48a0-bf83-1571d33b93cc.jpg?v=1746563958&width=720",
+      "image_url": "https://omafiets.com.au/cdn/shop/files/mg-6251-6cfde375-07af-48a0-bf83-1571d33b93cc.jpg?v=1746563958&width=1600",
       "source": "Omafiets",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://omafiets.com.au/cdn/shop/files/mg-6251-6cfde375-07af-48a0-bf83-1571d33b93cc.jpg?v=1746563958&width=720"
     }
   ],
   "Tideace/FM-GV201": [
@@ -85,10 +91,11 @@
   ],
   "SHULZ/The Lightning": [
     {
-      "image_url": "https://shulzbikes.com/cdn/shop/files/bigproduct_209-1897-nevskiyvechernevaevenings-framesetthelightningframenevaeveningpt5255.webp?v=1770805403&width=720",
+      "image_url": "https://shulzbikes.com/cdn/shop/files/bigproduct_209-1897-nevskiyvechernevaevenings-framesetthelightningframenevaeveningpt5255.webp?v=1770805403&width=1600",
       "source": "SHULZ",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://shulzbikes.com/cdn/shop/files/bigproduct_209-1897-nevskiyvechernevaevenings-framesetthelightningframenevaeveningpt5255.webp?v=1770805403&width=720"
     }
   ],
   "Seaboard/GR02": [
@@ -101,18 +108,20 @@
   ],
   "Twitter/G2 MAX": [
     {
-      "image_url": "https://cdn.shopify.com/s/files/1/0587/2982/4417/files/frameset-g2max-2026.jpg?v=1788461870&width=720",
+      "image_url": "https://cdn.shopify.com/s/files/1/0587/2982/4417/files/frameset-g2max-2026.jpg?v=1788461870&width=1600",
       "source": "Twitter Bikes USA",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://cdn.shopify.com/s/files/1/0587/2982/4417/files/frameset-g2max-2026.jpg?v=1788461870&width=720"
     }
   ],
   "SPCycle/G028": [
     {
-      "image_url": "https://usaimages.oss-us-west-1.aliyuncs.com/6230/product/20260515/Spcycle_G028_Carbon_Gravel_Bike_Frame_700x57C_UDH_Hanger_Full_Internal_Cable_Gravel_Bicycle_Carbon_Frameset_1778837682616_1.jpg_w720.jpg",
+      "image_url": "https://usaimages.oss-us-west-1.aliyuncs.com/6230/product/20260515/Spcycle_G028_Carbon_Gravel_Bike_Frame_700x57C_UDH_Hanger_Full_Internal_Cable_Gravel_Bicycle_Carbon_Frameset_1778837682616_1.jpg",
       "source": "SPCycle",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://usaimages.oss-us-west-1.aliyuncs.com/6230/product/20260515/Spcycle_G028_Carbon_Gravel_Bike_Frame_700x57C_UDH_Hanger_Full_Internal_Cable_Gravel_Bicycle_Carbon_Frameset_1778837682616_1.jpg_w720.jpg"
     }
   ],
   "SHULZ/Boys Don’t Cry": [
@@ -125,10 +134,11 @@
   ],
   "State Bicycle Co./4130 All-Road": [
     {
-      "image_url": "https://www.statebicycle.com/cdn/shop/files/4130All-Road-Frameset_UDH_ExternalRouting_-SchoolyardYellow-1_large.jpg?width=720",
+      "image_url": "https://www.statebicycle.com/cdn/shop/files/4130All-Road-Frameset_UDH_ExternalRouting_-SchoolyardYellow-1.jpg?width=1600",
       "source": "State Bicycle Co.",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.statebicycle.com/cdn/shop/files/4130All-Road-Frameset_UDH_ExternalRouting_-SchoolyardYellow-1_large.jpg?width=720"
     }
   ],
   "Fairlight/Strael": [
@@ -173,26 +183,29 @@
   ],
   "GRIND Cycles/GR1ST": [
     {
-      "image_url": "https://grindcycles.com/cdn/shop/files/GRIND_GR1ST_CARBON_GRAVEL_FRAMESET_UDH_BSA_CUSTOM_PAINTED.jpg?v=1726330603&width=720",
+      "image_url": "https://grindcycles.com/cdn/shop/files/GRIND_GR1ST_CARBON_GRAVEL_FRAMESET_UDH_BSA_CUSTOM_PAINTED.jpg?v=1726330603&width=1600",
       "source": "GRIND Cycles",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://grindcycles.com/cdn/shop/files/GRIND_GR1ST_CARBON_GRAVEL_FRAMESET_UDH_BSA_CUSTOM_PAINTED.jpg?v=1726330603&width=720"
     }
   ],
   "GRIND Cycles/TRACE": [
     {
-      "image_url": "https://grindcycles.com/cdn/shop/files/GRIND_TRACE.jpg?v=1774116073&width=720",
+      "image_url": "https://grindcycles.com/cdn/shop/files/GRIND_TRACE.jpg?v=1774116073&width=1600",
       "source": "GRIND Cycles",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://grindcycles.com/cdn/shop/files/GRIND_TRACE.jpg?v=1774116073&width=720"
     }
   ],
   "GRIND Cycles/GRIT": [
     {
-      "image_url": "https://grindcycles.com/cdn/shop/files/GRINDGRITPRODUCT.jpg?v=1768042063&width=533",
+      "image_url": "https://grindcycles.com/cdn/shop/files/GRINDGRITPRODUCT.jpg?v=1768042063&width=1600",
       "source": "GRIND Cycles",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://grindcycles.com/cdn/shop/files/GRINDGRITPRODUCT.jpg?v=1768042063&width=533"
     }
   ],
   "Mondince/FM366": [
@@ -293,202 +306,227 @@
   ],
   "Salsa/Beargrease": [
     {
-      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-beargrease-carbon-frameset-2026-FM5424.png?v=1788208455&width=720",
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-beargrease-carbon-frameset-2026-FM5424.png?v=1788208455&width=1600",
       "source": "Salsa",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.salsacycles.com/cdn/shop/files/salsa-beargrease-carbon-frameset-2026-FM5424.png?v=1788208455&width=720"
     }
   ],
   "Salsa/Fargo 32 Ti": [
     {
-      "image_url": "https://www.salsacycles.com/cdn/shop/files/Fargo-32-ti-frame-FM4357.png?v=1784746104&width=720",
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/Fargo-32-ti-frame-FM4357.png?v=1784746104&width=1600",
       "source": "Salsa",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.salsacycles.com/cdn/shop/files/Fargo-32-ti-frame-FM4357.png?v=1784746104&width=720"
     }
   ],
   "Salsa/Fargo 32 Steel": [
     {
-      "image_url": "https://www.salsacycles.com/cdn/shop/files/fargo-32-steel-frame-FM1907.png?v=1784746055&width=720",
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/fargo-32-steel-frame-FM1907.png?v=1784746055&width=1600",
       "source": "Salsa",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.salsacycles.com/cdn/shop/files/fargo-32-steel-frame-FM1907.png?v=1784746055&width=720"
     }
   ],
   "Salsa/Spearfish C DLX": [
     {
-      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-spearfish-dlx-frame-deep-orchid-carbon-FM2934.png?v=1775844988&width=720",
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-spearfish-dlx-frame-deep-orchid-carbon-FM2934.png?v=1775844988&width=1600",
       "source": "Salsa",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.salsacycles.com/cdn/shop/files/salsa-spearfish-dlx-frame-deep-orchid-carbon-FM2934.png?v=1775844988&width=720"
     }
   ],
   "Salsa/Blackthorn 145 C": [
     {
-      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-blackthorn-c-145-frame-2026-FM6981.png?v=1775016404&width=720",
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-blackthorn-c-145-frame-2026-FM6981.png?v=1775016404&width=1600",
       "source": "Salsa",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.salsacycles.com/cdn/shop/files/salsa-blackthorn-c-145-frame-2026-FM6981.png?v=1775016404&width=720"
     }
   ],
   "Salsa/Blackthorn 145": [
     {
-      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-blackthorn-145-al-frame-black-spruce-FM0520.png?v=1774924848&width=720",
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-blackthorn-145-al-frame-black-spruce-FM0520.png?v=1774924848&width=1600",
       "source": "Salsa",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.salsacycles.com/cdn/shop/files/salsa-blackthorn-145-al-frame-black-spruce-FM0520.png?v=1774924848&width=720"
     }
   ],
   "Salsa/Timberjack": [
     {
-      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-timberjack-frame-deep-orchid-FM2814.png?v=1774465087&width=720",
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-timberjack-frame-deep-orchid-FM2814.png?v=1774465087&width=1600",
       "source": "Salsa",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.salsacycles.com/cdn/shop/files/salsa-timberjack-frame-deep-orchid-FM2814.png?v=1774465087&width=720"
     }
   ],
   "Salsa/Fargo Ti": [
     {
-      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-fago-ti-frame-2026-FM3439.png?v=1772579506&width=720",
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-fago-ti-frame-2026-FM3439.png?v=1772579506&width=1600",
       "source": "Salsa",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.salsacycles.com/cdn/shop/files/salsa-fago-ti-frame-2026-FM3439.png?v=1772579506&width=720"
     }
   ],
   "Salsa/Journeyer": [
     {
-      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-journeyer-2026-frameset-FM3445.png?v=1771882966&width=720",
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-journeyer-2026-frameset-FM3445.png?v=1771882966&width=1600",
       "source": "Salsa",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.salsacycles.com/cdn/shop/files/salsa-journeyer-2026-frameset-FM3445.png?v=1771882966&width=720"
     }
   ],
   "Salsa/Flyway C DLX": [
     {
-      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-flyway-dlx-frameset-FM6938.png?v=1771392087&width=720",
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-flyway-dlx-frameset-FM6938.png?v=1771392087&width=1600",
       "source": "Salsa",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.salsacycles.com/cdn/shop/files/salsa-flyway-dlx-frameset-FM6938.png?v=1771392087&width=720"
     }
   ],
   "Salsa/Vaya": [
     {
-      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa_vaya_frame_black_FM1016.png?v=1750786221&width=720",
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa_vaya_frame_black_FM1016.png?v=1750786221&width=1600",
       "source": "Salsa",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.salsacycles.com/cdn/shop/files/salsa_vaya_frame_black_FM1016.png?v=1750786221&width=720"
     }
   ],
   "Salsa/Warroad": [
     {
-      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-warroad-c-frameset-FM0924-2000x1316-uc-1.png?v=1739465068&width=720",
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-warroad-c-frameset-FM0924-2000x1316-uc-1.png?v=1739465068&width=1600",
       "source": "Salsa",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.salsacycles.com/cdn/shop/files/salsa-warroad-c-frameset-FM0924-2000x1316-uc-1.png?v=1739465068&width=720"
     }
   ],
   "Salsa/Stormchaser": [
     {
-      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-stormchaser-frameset-metallic-black-FM4616-1920x1080-uc-1.png?v=1739461716&width=720",
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-stormchaser-frameset-metallic-black-FM4616-1920x1080-uc-1.png?v=1739461716&width=1600",
       "source": "Salsa",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.salsacycles.com/cdn/shop/files/salsa-stormchaser-frameset-metallic-black-FM4616-1920x1080-uc-1.png?v=1739461716&width=720"
     }
   ],
   "Salsa/Heyday! C": [
     {
-      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-heyday-c-frameset-black-FM1477-1920x1080-uc-1.png?v=1739467196&width=720",
+      "image_url": "https://www.salsacycles.com/cdn/shop/files/salsa-heyday-c-frameset-black-FM1477-1920x1080-uc-1.png?v=1739467196&width=1600",
       "source": "Salsa",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.salsacycles.com/cdn/shop/files/salsa-heyday-c-frameset-black-FM1477-1920x1080-uc-1.png?v=1739467196&width=720"
     }
   ],
   "Bombtrack/Arise": [
     {
-      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Arise_frameset_metallic_black_websquare_1_efe27436-68a9-4e7b-ada5-d2b54675e3d5_460x.jpg?v=1781861370",
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Arise_frameset_metallic_black_websquare_1_efe27436-68a9-4e7b-ada5-d2b54675e3d5.jpg?v=1781861370&width=1600",
       "source": "Bombtrack",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Arise_frameset_metallic_black_websquare_1_efe27436-68a9-4e7b-ada5-d2b54675e3d5_460x.jpg?v=1781861370"
     }
   ],
   "Bombtrack/Audax AL": [
     {
-      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Audax_AL_frameset_matt_black_websquare_1_a35726fc-aa52-4472-ba8f-1cc7e4e959b7_460x.jpg?v=1782739432",
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Audax_AL_frameset_matt_black_websquare_1_a35726fc-aa52-4472-ba8f-1cc7e4e959b7.jpg?v=1782739432&width=1600",
       "source": "Bombtrack",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Audax_AL_frameset_matt_black_websquare_1_a35726fc-aa52-4472-ba8f-1cc7e4e959b7_460x.jpg?v=1782739432"
     }
   ],
   "Bombtrack/Audax": [
     {
-      "image_url": "https://bombtrack.com/cdn/shop/files/Bombtrack_Audax_metallic_darkbrown__websquare_1_720x.jpg?v=1781861613",
+      "image_url": "https://bombtrack.com/cdn/shop/files/Bombtrack_Audax_metallic_darkbrown__websquare_1.jpg?v=1781861613&width=1600",
       "source": "Bombtrack",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://bombtrack.com/cdn/shop/files/Bombtrack_Audax_metallic_darkbrown__websquare_1_720x.jpg?v=1781861613"
     }
   ],
   "Bombtrack/Beyond AL": [
     {
-      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY26_Beyond_AL_frameset_metallic_black_websquare-1_b8550ae8-b072-4152-b5fa-30d3e3328fe5_720x.jpg?v=1782740304",
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY26_Beyond_AL_frameset_metallic_black_websquare-1_b8550ae8-b072-4152-b5fa-30d3e3328fe5.jpg?v=1782740304&width=1600",
       "source": "Bombtrack",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://bombtrack.com/cdn/shop/files/BT_MY26_Beyond_AL_frameset_metallic_black_websquare-1_b8550ae8-b072-4152-b5fa-30d3e3328fe5_720x.jpg?v=1782740304"
     }
   ],
   "Bombtrack/Beyond": [
     {
-      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Beyond_frameset_metallic_black_websquare_1_7b17899f-b943-4b58-8fcb-8a841b77c680_720x.jpg?v=1782739629",
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Beyond_frameset_metallic_black_websquare_1_7b17899f-b943-4b58-8fcb-8a841b77c680.jpg?v=1782739629&width=1600",
       "source": "Bombtrack",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Beyond_frameset_metallic_black_websquare_1_7b17899f-b943-4b58-8fcb-8a841b77c680_720x.jpg?v=1782739629"
     }
   ],
   "Bombtrack/Beyond+": [
     {
-      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY26__Beyond__29_frameset_matt_sage_websquare-1_134a436d-bc92-424b-9a83-99b376ea38a4_720x.jpg?v=1781867504",
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY26__Beyond__29_frameset_matt_sage_websquare-1_134a436d-bc92-424b-9a83-99b376ea38a4.jpg?v=1781867504&width=1600",
       "source": "Bombtrack",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://bombtrack.com/cdn/shop/files/BT_MY26__Beyond__29_frameset_matt_sage_websquare-1_134a436d-bc92-424b-9a83-99b376ea38a4_720x.jpg?v=1781867504"
     }
   ],
   "Bombtrack/Hook AL": [
     {
-      "image_url": "https://bombtrack.com/cdn/shop/files/BT_Hook_AL_metallic_mahogany_4055822549615_websquare_1_a1808a47-5b86-4503-b095-ee2f8917f609_720x.jpg?v=1782740239",
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_Hook_AL_metallic_mahogany_4055822549615_websquare_1_a1808a47-5b86-4503-b095-ee2f8917f609.jpg?v=1782740239&width=1600",
       "source": "Bombtrack",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://bombtrack.com/cdn/shop/files/BT_Hook_AL_metallic_mahogany_4055822549615_websquare_1_a1808a47-5b86-4503-b095-ee2f8917f609_720x.jpg?v=1782740239"
     }
   ],
   "Bombtrack/Hook EXT C": [
     {
-      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Hook_EXT_C_frameset_metallic_black_websquare_1_d3732872-8e15-48f9-8aed-85836af559b6_720x.jpg?v=1781865496",
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Hook_EXT_C_frameset_metallic_black_websquare_1_d3732872-8e15-48f9-8aed-85836af559b6.jpg?v=1781865496&width=1600",
       "source": "Bombtrack",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Hook_EXT_C_frameset_metallic_black_websquare_1_d3732872-8e15-48f9-8aed-85836af559b6_720x.jpg?v=1781865496"
     }
   ],
   "Bombtrack/Hook EXT": [
     {
-      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_HookEXT_frameset_matt_black_websquare_1_04ad7771-d046-4ec9-b58a-6f97c3f57552_720x.jpg?v=1782740365",
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_HookEXT_frameset_matt_black_websquare_1_04ad7771-d046-4ec9-b58a-6f97c3f57552.jpg?v=1782740365&width=1600",
       "source": "Bombtrack",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_HookEXT_frameset_matt_black_websquare_1_04ad7771-d046-4ec9-b58a-6f97c3f57552_720x.jpg?v=1782740365"
     }
   ],
   "Bombtrack/Hook EXT Ti": [
     {
-      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Hook_EXT_TI_frameset_titanium_black_websquare_1_b985f63e-3023-412c-a9e1-df2d7f134aad_720x.jpg?v=1782740435",
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Hook_EXT_TI_frameset_titanium_black_websquare_1_b985f63e-3023-412c-a9e1-df2d7f134aad.jpg?v=1782740435&width=1600",
       "source": "Bombtrack",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Hook_EXT_TI_frameset_titanium_black_websquare_1_b985f63e-3023-412c-a9e1-df2d7f134aad_720x.jpg?v=1782740435"
     }
   ],
   "Bombtrack/Hook": [
     {
-      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Hook_frameset_metallic_black_websquare_1_555944d9-ffc9-4250-8bff-3de3e8e284a6_720x.jpg?v=1781866036",
+      "image_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Hook_frameset_metallic_black_websquare_1_555944d9-ffc9-4250-8bff-3de3e8e284a6.jpg?v=1781866036&width=1600",
       "source": "Bombtrack",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://bombtrack.com/cdn/shop/files/BT_MY24_Hook_frameset_metallic_black_websquare_1_555944d9-ffc9-4250-8bff-3de3e8e284a6_720x.jpg?v=1781866036"
     }
   ],
   "Apidura/Backcountry Frame Pack": [
@@ -517,10 +555,11 @@
   ],
   "Cedaero/Hot-to-Go Beargrease": [
     {
-      "image_url": "https://cedaero.com/cdn/shop/files/IMG_0157.jpg?v=1794949135&width=640",
+      "image_url": "https://cedaero.com/cdn/shop/files/IMG_0157.jpg?v=1794949135&width=1600",
       "source": "Cedaero",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://cedaero.com/cdn/shop/files/IMG_0157.jpg?v=1794949135&width=640"
     }
   ],
   "Topeak/FrontLoader 8 л": [
@@ -565,18 +604,24 @@
   ],
   "DT Swiss/GR 1600 SPLINE": [
     {
-      "image_url": "https://d2a13k6araex7u.cloudfront.net/itc/00/00/00/00/00/00/00/00/70/00/23/40/6/42447/image-thumb__42447__model-finder_product-image/PHO_WGR1600NID9S023395_WEB_SHO_001.0f56bf04.jpg",
+      "image_url": "https://d2a13k6araex7u.cloudfront.net/dam/00/00/00/00/00/00/00/10/00/00/05/33/1/42449/image-thumb__42449__product-stage/PHO_AATBSX_GR1600_WEB_SHO_001.423317d5.jpg",
       "source": "DT Swiss",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://d2a13k6araex7u.cloudfront.net/itc/00/00/00/00/00/00/00/00/70/00/23/40/6/42447/image-thumb__42447__model-finder_product-image/PHO_WGR1600NID9S023395_WEB_SHO_001.0f56bf04.jpg",
+      "source_url": "https://www.dtswiss.com/en/wheels/wheels-road/gravel/gr-1600-spline",
+      "alt": "DT Swiss GR 1600 SPLINE"
     }
   ],
   "DT Swiss/XM 1700 SPLINE": [
     {
-      "image_url": "https://d2a13k6araex7u.cloudfront.net/itc/00/00/00/00/00/00/00/00/70/00/27/95/1/68576/image-thumb__68576__model-finder_product-image/PHO_WXM1700TED2SA27946_WEB_SHO_001.6844c20f.jpg",
+      "image_url": "https://d2a13k6araex7u.cloudfront.net/dam/00/00/00/00/00/00/00/10/00/00/07/15/1/68637/image-thumb__68637__product-stage/PHO_AABEU_XM1700_WEB_SHO_001.93b1e783.jpg",
       "source": "DT Swiss",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://d2a13k6araex7u.cloudfront.net/itc/00/00/00/00/00/00/00/00/70/00/27/95/1/68576/image-thumb__68576__model-finder_product-image/PHO_WXM1700TED2SA27946_WEB_SHO_001.6844c20f.jpg",
+      "source_url": "https://www.dtswiss.com/en/wheels/wheels-mtb/all-mountain/xm-1700-spline",
+      "alt": "DT Swiss XM 1700 SPLINE"
     }
   ],
   "Maxxis/Aspen": [
@@ -639,34 +684,38 @@
   ],
   "WTB/Resolute TCS": [
     {
-      "image_url": "https://www.wtb.com/cdn/shop/products/20200326_Resolute42_700_TCSLFR_tanwall_ISO.png?v=1742939652&width=640",
+      "image_url": "https://www.wtb.com/cdn/shop/products/20200326_Resolute42_700_TCSLFR_tanwall_ISO.png?v=1742939652&width=1600",
       "source": "WTB",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.wtb.com/cdn/shop/products/20200326_Resolute42_700_TCSLFR_tanwall_ISO.png?v=1742939652&width=640"
     }
   ],
   "WTB/Macro 54": [
     {
-      "image_url": "https://www.wtb.com/cdn/shop/files/W010-1134_Macro54x700_TCSLFR120tpiDualDNASG2tan_ISO.png?v=1787913143&width=640",
+      "image_url": "https://www.wtb.com/cdn/shop/files/W010-1134_Macro54x700_TCSLFR120tpiDualDNASG2tan_ISO.png?v=1787913143&width=1600",
       "source": "WTB",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.wtb.com/cdn/shop/files/W010-1134_Macro54x700_TCSLFR120tpiDualDNASG2tan_ISO.png?v=1787913143&width=640"
     }
   ],
   "WTB/Raddler": [
     {
-      "image_url": "https://www.wtb.com/cdn/shop/files/20200512_Raddler40_TCSLFR_tanwall_ISO.jpg?v=1762163881&width=640",
+      "image_url": "https://www.wtb.com/cdn/shop/files/20200512_Raddler40_TCSLFR_tanwall_ISO.jpg?v=1762163881&width=1600",
       "source": "WTB",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.wtb.com/cdn/shop/files/20200512_Raddler40_TCSLFR_tanwall_ISO.jpg?v=1762163881&width=640"
     }
   ],
   "Maxxis/Aspen ST": [
     {
-      "image_url": "https://shop.maxxis.com/cdn/shop/files/AspenST-tread.jpg?v=1756908325&width=640",
+      "image_url": "https://shop.maxxis.com/cdn/shop/files/AspenST-tread.jpg?v=1756908325&width=1600",
       "source": "Maxxis",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://shop.maxxis.com/cdn/shop/files/AspenST-tread.jpg?v=1756908325&width=640"
     }
   ],
   "Maxxis/Minion DHF": [
@@ -679,18 +728,20 @@
   ],
   "Teravail/Rutland": [
     {
-      "image_url": "https://www.teravail.com/cdn/shop/files/teravail-rutland-tire-3qtr-blk-TR2700-2000px-sq.jpg?v=1747160917&width=640",
+      "image_url": "https://www.teravail.com/cdn/shop/files/teravail-rutland-tire-3qtr-blk-TR2700-2000px-sq.jpg?v=1747160917&width=1600",
       "source": "Teravail",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.teravail.com/cdn/shop/files/teravail-rutland-tire-3qtr-blk-TR2700-2000px-sq.jpg?v=1747160917&width=640"
     }
   ],
   "microSHIFT/Sword": [
     {
-      "image_url": "https://www.microshift.com/wp-content/uploads/2023/07/SWORD-Release-5-683x1024.jpg",
+      "image_url": "https://www.microshift.com/wp-content/uploads/2023/07/SWORD-Release-5.jpg",
       "source": "microSHIFT",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.microshift.com/wp-content/uploads/2023/07/SWORD-Release-5-683x1024.jpg"
     }
   ],
   "routes.html": [
@@ -888,12 +939,13 @@
   ],
   "State Bicycle Co./4130 Trail": [
     {
-      "image_url": "https://www.statebicycle.com/cdn/shop/files/4130Trail-MountainBike-FrameSet-HammeredTobaccoPowdercoat-2_large.jpg?v=1792441613",
+      "image_url": "https://www.statebicycle.com/cdn/shop/files/4130Trail-MountainBike-FrameSet-HammeredTobaccoPowdercoat-2.jpg?v=1792441613&width=1600",
       "source": "State Bicycle Co.",
       "source_url": "https://www.statebicycle.com/collections/frames/products/4130-trail-mountain-bike-frame-set-hammered-tobacco-powdercoat",
       "license": "разрешение не подтверждено",
       "alt": "State Bicycle Co. 4130 Trail",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://www.statebicycle.com/cdn/shop/files/4130Trail-MountainBike-FrameSet-HammeredTobaccoPowdercoat-2_large.jpg?v=1792441613"
     }
   ],
   "TanTan Seraph/GR048": [
@@ -1832,13 +1884,14 @@
   ],
   "news:tiutiunnikov-korea": [
     {
-      "image_url": "https://velosport.kg/upload/000/u1/b/2/artur-tyutyunnikov-vystupit-na-chempionate-respubliki-koreja-v-sostave-komandy-wcc-korea-photo-normal.jpg",
+      "image_url": "https://velosport.kg/upload/000/u1/b/2/artur-tyutyunnikov-vystupit-na-chempionate-respubliki-koreja-v-sostave-komandy-wcc-korea-photo-big.jpg",
       "source": "Федерация велоспорта Кыргызстана",
       "source_url": "https://velosport.kg/news/72-artur-tyutyunnikov-vystupit-na-chempionate-respubliki-koreja-v-sostave-komandy-wcc-korea.html",
       "license": "разрешение не подтверждено",
       "alt": "Фото к публикации «Артур Тютюнников выступит на чемпионате Республики Корея в составе команды WCC Korea»",
       "credit_note": "Из материала источника",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://velosport.kg/upload/000/u1/b/2/artur-tyutyunnikov-vystupit-na-chempionate-respubliki-koreja-v-sostave-komandy-wcc-korea-photo-normal.jpg"
     }
   ],
   "news:kyrgyz-asia-downhill": [
@@ -1887,13 +1940,14 @@
   ],
   "news:iliyasov-rope-spokes": [
     {
-      "image_url": "https://berdspokes.com/cdn/shop/products/240s_close_up_e3c421e4-f003-4f05-9b19-020a199bf5c4_1200x1200.jpg?v=1602971794",
+      "image_url": "https://berdspokes.com/cdn/shop/products/240s_close_up_e3c421e4-f003-4f05-9b19-020a199bf5c4.jpg?v=1602971794&width=1600",
       "source": "Berd Spokes",
       "source_url": "https://berdspokes.com/products/custom-wheel-building",
       "alt": "Колесо с волоконными спицами Berd",
       "credit_note": "Пример волоконных спиц",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://berdspokes.com/cdn/shop/products/240s_close_up_e3c421e4-f003-4f05-9b19-020a199bf5c4_1200x1200.jpg?v=1602971794"
     }
   ],
   "news:hammerhead-flight-attendant": [
@@ -2894,10 +2948,10 @@
   ],
   "Tout Terrain/Blueridge": [
     {
-      "image_url": "https://tout-terrain.de/static/images/favicon-150x150.png",
+      "image_url": "https://shopware.tout-terrain.de/media/85/a6/38/1739979194/EPDP_TT_Blueridge-GT-side-custom.png?ts=1739979194",
       "source": "Tout Terrain",
-      "source_url": "https://tout-terrain.de/blueridge-gt-custom/0305100101",
-      "alt": "Blueridge GT Custom",
+      "source_url": "https://tout-terrain.de/en/blueridge-gt-custom/0305100101",
+      "alt": "Tout Terrain Blueridge",
       "credit_note": "Фото из каталога производителя",
       "license": "разрешение не подтверждено",
       "verified": false
@@ -2927,24 +2981,26 @@
   ],
   "Vitus/Substance CRS": [
     {
-      "image_url": "https://vitusbikes.com/cdn/shop/products/prod185489_Blue-Ice_NE_01_1200x1200.jpg?v=1588152844",
+      "image_url": "https://vitusbikes.com/cdn/shop/products/prod185489_Blue-Ice_NE_01.jpg?v=1588152844&width=1600",
       "source": "Vitus",
       "source_url": "https://vitusbikes.com/products/substance-crs-1-adventure-road-bike",
       "alt": "Substance CRS 1 Adventure Road Bike",
       "credit_note": "Фото из каталога производителя",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://vitusbikes.com/cdn/shop/products/prod185489_Blue-Ice_NE_01_1200x1200.jpg?v=1588152844"
     }
   ],
   "Vitus/Substance VRS": [
     {
-      "image_url": "https://vitusbikes.com/cdn/shop/products/prod185543_Blue-Ice_NE_01_1200x1200.jpg?v=1588152989",
+      "image_url": "https://vitusbikes.com/cdn/shop/products/prod185543_Blue-Ice_NE_01.jpg?v=1588152989&width=1600",
       "source": "Vitus",
       "source_url": "https://vitusbikes.com/products/substance-vrs-1-adventure-road-bike",
       "alt": "Substance VRS 1 Adventure Road Bike",
       "credit_note": "Фото из каталога производителя",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://vitusbikes.com/cdn/shop/products/prod185543_Blue-Ice_NE_01_1200x1200.jpg?v=1588152989"
     }
   ],
   "Seaboard/CX01": [
@@ -3026,13 +3082,14 @@
   ],
   "Stanforth/Skyelander": [
     {
-      "image_url": "https://static.wixstatic.com/media/638e13_2292538130b3412abb766ab8d11eff18~mv2.jpeg/v1/fit/w_500,h_500,q_90/file.jpg",
+      "image_url": "https://static.wixstatic.com/media/638e13_2292538130b3412abb766ab8d11eff18~mv2.jpeg/v1/fit/w_1600,h_1600,q_90/file.jpg",
       "source": "Stanforth",
       "source_url": "https://www.stanforthbikes.co.uk/product-page/skyelander-disc",
-      "alt": "SKYELANDER DISC | kibo3",
+      "alt": "Stanforth Skyelander",
       "credit_note": "Фото из каталога производителя",
       "license": "разрешение не подтверждено",
-      "verified": false
+      "verified": false,
+      "fallback_url": "https://static.wixstatic.com/media/638e13_2292538130b3412abb766ab8d11eff18~mv2.jpeg/v1/fit/w_500,h_500,q_90/file.jpg"
     }
   ],
   "Cinelli/Hobootleg": [

@@ -8,10 +8,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css?v=26">
+<link rel="stylesheet" href="./style.css?v=27">
 <script defer src="./site.js?v=11"></script>
 <script defer src="./routes.js?v=14"></script>
-<script defer src="./product-media.js?v=6"></script>
+<script defer src="./product-media.js?v=7"></script>
 <script defer src="./prices.js"></script>
 <script defer src="./home-data.js?v=2"></script>
 <script defer src="./news-feed.js?v=7"></script>
@@ -61,6 +61,17 @@
     </div>
     <p id="feed-status" class="feed-sr-only" role="status"></p>
     <a href="./news.html">Все новости</a>
+  </section>
+  <section class="ride-highlight" aria-labelledby="home-ride-title">
+    <div>
+      <h2 id="home-ride-title">Кадры майской поездки</h2>
+      <p>Горная река, грунтовая дорога и переправа. В ролике сохранён звук с камеры.</p>
+      <a class="outline" href="./gallery.html#ride-highlights">Все видео поездки</a>
+    </div>
+    <video controls playsinline preload="none" width="704" height="396" poster="./data/videos/may-ride-river.webp" aria-label="Майская велопоездка, река и переправа">
+  <source src="./data/videos/may-ride-river.mp4" type="video/mp4">
+  <a href="./data/videos/may-ride-river.mp4">Открыть видео</a>
+</video>
   </section>
   <div class="grid home-section-grid">
     <article class="card"><figure class="product-photo photo-unavailable" data-photo="selection.html" data-illustration="bike"><figcaption>Схема · Подбор</figcaption></figure><h2><a href="./selection.html">Подбор</a></h2><p>Сборка под ваш рост, покрытие и бюджет.</p></article>
