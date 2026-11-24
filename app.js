@@ -202,7 +202,7 @@ get('compare-open').addEventListener('click',() => {
 render();
 
 productMedia.then(records => {
-  approvedFramePhotos = new Set(Object.keys(records).filter(id => records[id].some(photo => photo.verified)));
+  approvedFramePhotos = new Set(Object.keys(records).filter(id => byId.has(id) && records[id].some(photo => photo.verified)));
   const filter = get('photos-only');
   filter.disabled = !approvedFramePhotos.size;
   if (filter.disabled) filter.checked = false;

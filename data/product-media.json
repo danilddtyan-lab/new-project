@@ -682,5 +682,125 @@
       "alt": "Прокатные велосипеды на проспекте Чуй в Бишкеке",
       "verified": true
     }
+  ],
+  "news:grand-prix-issyk-kul-2026": [
+    {
+      "image_url": "./data/images/editorial/balykchy-issyk-kul-context.webp",
+      "source": "Nikolai Bulykin",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%B0%D0%BB%D1%8B%D0%BA%D1%87%D1%8B%2C_%D0%98%D1%81%D1%81%D1%8B%D0%BA-%D0%9A%D1%83%D0%BB%D1%8C_%D1%81%D0%B2%D0%B5%D1%80%D1%85%D1%83.jpg",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "credit_note": "Место события · Балыкчы и озеро Иссык-Куль с высоты · кадрировано",
+      "alt": "Балыкчы и озеро Иссык-Куль с высоты",
+      "verified": true
+    }
+  ],
+  "Schwalbe/Marathon Plus": [
+    {
+      "image_url": "./data/images/editorial/schwalbe-marathon-plus-tread.webp",
+      "source": "LoKiLeCh",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Schwalbe_Marathon_plus_%281%29.jpg",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "credit_note": "Протектор Schwalbe Marathon Plus · кадрировано",
+      "alt": "Протектор Schwalbe Marathon Plus",
+      "verified": true
+    }
+  ],
+  "news:across-andes-2026": [
+    {
+      "image_url": "./data/images/editorial/pucon-villarrica-context.webp",
+      "source": "AndyiH",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pucon_Villarrica.JPG",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "credit_note": "Место события · Вулкан Вильяррика из Пукóна · кадрировано",
+      "alt": "Вулкан Вильяррика из Пукóна",
+      "verified": true
+    }
+  ],
+  "news:kollegin-seven-rivers": [
+    {
+      "image_url": "./data/images/editorial/almaty-kok-tobe-context.webp",
+      "source": "irene2005",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Almaty_Kok_Tobe.jpg",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "credit_note": "Место события · Алматы с холма Кок-Тобе · кадрировано",
+      "alt": "Алматы с холма Кок-Тобе",
+      "verified": true
+    }
+  ],
+  "news:srmr-2026-start": [
+    {
+      "image_url": "./data/images/editorial/issyk-kul-road-context.webp",
+      "source": "Mzximvs VdB from Brussels, belgium",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Silk_Road_to_Issyk-Kul_%2814939388970%29.jpg",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "credit_note": "Окрестности Иссык-Куля · кадрировано",
+      "alt": "Дорога к Иссык-Кулю",
+      "verified": true
+    }
+  ],
+  "Ortlieb/Back-Roller": [
+    {
+      "image_url": "./data/images/editorial/ortlieb-back-roller-rear.webp",
+      "source": "Sipalius",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ortlieb_Backroller_Fahrradtasche_mit_Tragehalterung_fur_den_Rucken.jpg",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "credit_note": "Сумка Ortlieb Back-Roller с креплением для переноски · кадрировано",
+      "alt": "Сумка Ortlieb Back-Roller с креплением для переноски",
+      "verified": true
+    }
+  ],
+  "news:bike-camp-2026": [
+    {
+      "image_url": "./data/images/editorial/chattanooga-walnut-bridge-context.webp",
+      "source": "Snickersnack30",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Walnut_Street_Bridge%2C_Chattanooga%2C_Tennessee.JPG",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "credit_note": "Место события · Мост через Теннесси в Чаттануге · кадрировано",
+      "alt": "Мост через Теннесси в Чаттануге",
+      "verified": true
+    }
+  ],
+  "news:alex-schultz-wins-2026-arizona-trail-race": [
+    {
+      "image_url": "./data/images/editorial/arizona-trail-context.webp",
+      "source": "Sonoradocent",
+      "source_url": "https://commons.wikimedia.org/wiki/File:ArizonaTrail-01.jpg",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "credit_note": "Место события · Тропа Arizona Trail · кадрировано",
+      "alt": "Тропа Arizona Trail",
+      "verified": true
+    }
+  ],
+  "Surly/Disc Trucker": [
+    {
+      "image_url": "./data/images/editorial/surly-disc-trucker-complete-side.webp",
+      "source": "Paul Parker",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Surly_Disc_Trucker_in_Cromac_Street_Belfast_-_geograph.org.uk_-_7722920.jpg",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "credit_note": "Велосипед Surly Disc Trucker в сборе · кадрировано",
+      "alt": "Велосипед Surly Disc Trucker в сборе",
+      "verified": true
+    }
+  ],
+  "Surly/Straggler": [
+    {
+      "image_url": "./data/images/editorial/surly-straggler-complete-side.webp",
+      "source": "Savszymura",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Purple_bicycle_leaning_against_a_stone_wall.jpg",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "credit_note": "Велосипед Surly Straggler в сборе · кадрировано",
+      "alt": "Фиолетовый велосипед Surly Straggler в сборе",
+      "verified": true
+    }
   ]
 }

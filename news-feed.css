@@ -103,3 +103,17 @@
 .headline-card > .meta, .headline-card > h3 { grid-column: 1; }
 .headline-card > .headline-summary { grid-column: 1 / -1; }
 .feed-card { grid-template-rows: auto auto auto 1fr; }
+
+.feed-card .news-illustration { aspect-ratio: 1; }
+.headline-card .news-illustration { align-self: start; }
+.headline-card:has(.news-illustration:not(.photo-unavailable)) .news-illustration {
+  grid-row: 1 / span 2;
+  width: clamp(4.6rem, 17vw, 10rem);
+  aspect-ratio: auto;
+}
+.headline-card .news-illustration figcaption { font-size: .7rem; }
+.headline-card .news-illustration:not(.photo-unavailable) figcaption {
+  position: static;
+  text-align: start;
+}
+.headline-card .news-illustration img { aspect-ratio: 1; height: auto; }
