@@ -822,5 +822,25 @@
       "alt": "Фиолетовый велосипед Surly Straggler в сборе",
       "verified": true
     }
+  ],
+  "State Bicycle Co./4130 Trail": [
+    {
+      "image_url": "https://www.statebicycle.com/cdn/shop/files/4130Trail-MountainBike-FrameSet-HammeredTobaccoPowdercoat-2_large.jpg?v=1792441613",
+      "source": "State Bicycle Co.",
+      "source_url": "https://www.statebicycle.com/collections/frames/products/4130-trail-mountain-bike-frame-set-hammered-tobacco-powdercoat",
+      "license": "разрешение не подтверждено",
+      "alt": "State Bicycle Co. 4130 Trail",
+      "verified": false
+    }
+  ],
+  "TanTan Seraph/GR048": [
+    {
+      "image_url": "https://usaimages.oss-us-west-1.aliyuncs.com/15845/product/20241025/20241025170106900025.jpg",
+      "source": "TanTan Seraph",
+      "source_url": "https://tantanbikes.com/Carbon-Fiber-Gravel-Bike-Frame-GR048-Gray-White-Speckled-Design-T47-Bottom-Bracket-p5841774.html",
+      "license": "разрешение не подтверждено",
+      "alt": "TanTan Seraph GR048",
+      "verified": false
+    }
   ]
 }

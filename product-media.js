@@ -4,6 +4,10 @@ const productMedia = fetch('./data/product-media.json',{cache:'no-cache'})
   .then(response => response.ok ? response.json() : {})
   .catch(() => ({}));
 
+function isDisplayablePhoto(photo) {
+  return Boolean(photo.source && /^(?:https:\/\/[^\s]+|\.\/data\/images\/[\w/.–-]+\.(?:webp|jpe?g))$/i.test(photo.image_url || ''));
+}
+
 function photoPlaceholder(id,category,label) {
   const figure = document.createElement('figure');
   figure.className = 'product-photo photo-unavailable';
@@ -23,13 +27,15 @@ productMedia.then(records => {
   function loadFigure(figure) {
     if (figure.dataset.photoReady) return;
     figure.dataset.photoReady = 'true';
-    const photos = (records[figure.dataset.photo] || []).filter(photo =>
-      photo.verified && photo.license && /^\.\/data\/images\/[\w/.–-]+\.(webp|jpe?g)$/i.test(photo.image_url || ''));
+    const photos = (records[figure.dataset.photo] || [])
+      .filter(isDisplayablePhoto)
+      .sort((left,right) => Number(right.verified)-Number(left.verified));
     if (!photos.length) return;
     const fallback = figure.firstElementChild;
     const image = new Image();
     image.loading = 'eager';
     image.decoding = 'async';
+    image.referrerPolicy = 'no-referrer';
     const caption = document.createElement('figcaption');
     const controls = document.createElement('div');
     controls.className = 'product-photo-controls';
@@ -40,7 +46,8 @@ productMedia.then(records => {
       current = (index + photos.length) % photos.length;
       const photo = photos[current];
       caption.replaceChildren('Фото: ');
-      for (const [name,url,prefix] of [[photo.source,photo.source_url,''],[photo.license,photo.license_url,' · ']]) {
+      const sourceUrl = photo.source_url || (photo.image_url.startsWith('https://') ? photo.image_url : '');
+      for (const [name,url,prefix] of [[photo.source,sourceUrl,''],[photo.license,photo.license_url,' · ']]) {
         if (url) {
           const link = document.createElement('a');
           link.href = url;
@@ -50,7 +57,7 @@ productMedia.then(records => {
       }
       if (photo.credit_note) caption.append(' · ',photo.credit_note);
       const subject = photo.alt || fallback.textContent.replace(/^Схема · /,'');
-      const site = photo.source_url ? new URL(photo.source_url,document.baseURI).hostname : '';
+      const site = sourceUrl ? new URL(sourceUrl,document.baseURI).hostname : '';
       const photoSource = [photo.source,site].filter(Boolean).join(', ');
       image.alt = photoSource ? subject+' — источник: '+photoSource : subject;
       image.src = photo.image_url;
@@ -84,7 +91,7 @@ productMedia.then(records => {
       });
     }
     image.addEventListener('load',() => {
-      const valid = Math.min(image.naturalWidth,image.naturalHeight) >= 1080;
+      const valid = image.naturalWidth > 0 && image.naturalHeight > 0;
       figure.classList.toggle('photo-unavailable',!valid);
       figure.replaceChildren(...(valid ? [image,caption] : [fallback]),controls);
     });

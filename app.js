@@ -21,7 +21,7 @@ try {
 const compared = new Set();
 const collectionButtons = [...document.querySelectorAll('[data-collection]')];
 const catalogPriority = new Map(Object.keys(frameDetails).filter(id => frameDetails[id].pick).map((id,index) => [id,index]));
-let approvedFramePhotos = new Set();
+let availableFramePhotos = new Set();
 const frameSpec = frame => (frame.brand === 'Mondince' && framePhotos.get(frame.id)?.spec) || frameSpecs[frame.id]?.source || frameDetails[frame.id]?.spec || framePhotos.get(frame.id)?.spec || frame.url;
 
 get('photos-only').checked = new URLSearchParams(location.search).has('photos');
@@ -66,14 +66,14 @@ function render(event) {
     (!brand || brand === frame.brand) &&
     (!region || region === frame.region) &&
     (!savedOnly || saved.has(frame.id)) &&
-    (!photosOnly || approvedFramePhotos.has(frame.id)) &&
+    (!photosOnly || availableFramePhotos.has(frame.id)) &&
     words.every(word => normalize(frame.brand+' '+frame.model).includes(word)));
   if (sort !== 'featured') matching.sort((left,right) =>
     collator.compare(left.brand+' '+left.model,right.brand+' '+right.model) * (sort === 'az' ? 1 : -1));
   else matching.sort((left,right) =>
     (frameSpecs[right.id]?.current === true ? 1 : frameSpecs[right.id]?.current === false ? -1 : 0) -
     (frameSpecs[left.id]?.current === true ? 1 : frameSpecs[left.id]?.current === false ? -1 : 0) ||
-    Number(approvedFramePhotos.has(right.id)) - Number(approvedFramePhotos.has(left.id)) ||
+    Number(availableFramePhotos.has(right.id)) - Number(availableFramePhotos.has(left.id)) ||
     (catalogPriority.get(left.id) ?? catalogPriority.size) - (catalogPriority.get(right.id) ?? catalogPriority.size));
   const visible = matching.slice(0,limit);
   get('count').textContent = 'Показано '+visible.length+' из '+matching.length;
@@ -202,9 +202,9 @@ get('compare-open').addEventListener('click',() => {
 render();
 
 productMedia.then(records => {
-  approvedFramePhotos = new Set(Object.keys(records).filter(id => byId.has(id) && records[id].some(photo => photo.verified)));
+  availableFramePhotos = new Set(Object.keys(records).filter(id => byId.has(id) && records[id].some(isDisplayablePhoto)));
   const filter = get('photos-only');
-  filter.disabled = !approvedFramePhotos.size;
+  filter.disabled = !availableFramePhotos.size;
   if (filter.disabled) filter.checked = false;
   const label = get('photo-filter');
   if (label) label.hidden = filter.disabled;
