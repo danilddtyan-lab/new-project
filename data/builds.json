@@ -2,9 +2,6 @@
   "updated": "2026-11-23",
   "priceDate": "2026-11-23",
   "pricesVerified": false,
-  "usdRub": 82.1911,
-  "rateEffective": "2026-11-21",
-  "rateSource": "https://www.cbr.ru/scripts/XML_daily.asp?date_req=23/11/2026",
   "extras": [
     "Колёса и покрышки",
     "Руль, вынос, седло и педали",
@@ -203,12 +200,28 @@
   ],
   "tideace": [
     {
+      "id": "Tideace/FM-GV208",
+      "title": "Tideace FM-GV208",
+      "spec": "Карбоновая гравийная рама. Вес 1 050 ± 50 г. Покрышки до 700 × 57 мм или 29 × 2,25″. Каретка T47, UDH, отсек в нижней трубе.",
+      "url": "https://tideacebike.com/products/700-57c-carbon-gravel-bicycle-frameset-gv-028",
+      "credit": "tideacebike.com",
+      "checked": "2026-11-24",
+      "priceUsd": [
+        599,
+        699
+      ]
+    },
+    {
       "id": "Tideace/FM-GV201",
       "title": "Tideace FM-GV201",
       "spec": "Карбоновая гравийная рама. Вес 1 150 ± 40 г (52 см). Покрышки до 700 × 50 мм. T47, UDH.",
       "url": "https://tideacebike.com/products/fm-gv201-noah-carbon-gravel-bike-frame",
       "credit": "tideacebike.com",
-      "checked": "2026-11-23"
+      "checked": "2026-11-23",
+      "priceUsd": [
+        650,
+        750
+      ]
     },
     {
       "id": "Tideace/FM-M039",
@@ -216,7 +229,11 @@
       "spec": "Карбоновая рама для MTB. Вес 960 ± 30 г (S). Задняя покрышка до 29 × 2,25″ (около 57 мм). Boost 12 × 148 мм, UDH.",
       "url": "https://tideacebike.com/products/fm-m039-carbon-one-piece-boost-mtb-frame",
       "credit": "tideacebike.com",
-      "checked": "2026-11-23"
+      "checked": "2026-11-23",
+      "priceUsd": [
+        450,
+        550
+      ]
     },
     {
       "id": "Tideace/FM-CX072",
@@ -224,7 +241,11 @@
       "spec": "Гравийная карбоновая рама. Вес 1 020 ± 50 г (52 см). Покрышки до 700 × 40 мм или 27,5 × 2,1″. Каретка BB386.",
       "url": "https://tideacebike.com/products/fm-cx072-gravel-bike-frame",
       "credit": "tideacebike.com",
-      "checked": "2026-11-24"
+      "checked": "2026-11-24",
+      "priceUsd": [
+        540,
+        640
+      ]
     },
     {
       "id": "Tideace/FM-CR060",
@@ -232,7 +253,11 @@
       "spec": "Карбоновая рама для гравия. Вес 890 ± 40 г (49 см). Покрышки до 700 × 47 мм. Каретка T47, держатель переключателя UDH.",
       "url": "https://tideacebike.com/products/t1000-carbon-gravel-bike-frames-700-47c-super-light",
       "credit": "tideacebike.com",
-      "checked": "2026-11-24"
+      "checked": "2026-11-24",
+      "priceUsd": [
+        799,
+        899
+      ]
     }
   ]
 }

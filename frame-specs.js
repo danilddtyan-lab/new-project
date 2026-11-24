@@ -71,14 +71,17 @@ const frameSpecs = {
     sizes:[[160,170,'S'],[171,179,'M'],[180,187,'L'],[188,196,'XL']],
     source:'https://www.sp-cycle.com/Spcycle-G028-Carbon-Gravel-Bike-Frame-700x57C-UDH-Hanger-Full-Integrated-Cable-Gravel-Bicycle-Frameset-With-HB-068-Handlebar-p7012723.html'
   },
-  'Tideace/FM-M039': {
+  'Tideace/FM-M039': {priceUsd:[450,550], kitUsd:450,
     current:true, weightG:960, toleranceG:30, weightBasis:'размер S',
     rearMm:57, clearanceNote:'По данным производителя, 29 × 2,25″.',
     source:'https://tideacebike.com/products/fm-m039-carbon-one-piece-boost-mtb-frame', checked:'2026-11-23'
   },
-  'Tideace/FM-GV201': {
+  'Tideace/FM-CX072': {priceUsd:[540,640], kitUsd:540, current:true, weightG:1020, toleranceG:50, weightBasis:"размер 52", clearanceMm:40, checked:'2026-11-24', source:'https://tideacebike.com/products/fm-cx072-gravel-bike-frame'},
+  'Tideace/FM-CR060': {priceUsd:[799,899], kitUsd:799, current:true, weightG:890, toleranceG:40, weightBasis:"размер 49", clearanceMm:47, checked:'2026-11-24', source:'https://tideacebike.com/products/t1000-carbon-gravel-bike-frames-700-47c-super-light'},
+  'Tideace/FM-GV208': {priceUsd:[599,699], kitUsd:599, current:true, weightG:1050, toleranceG:50, clearanceMm:57, source:'https://tideacebike.com/products/700-57c-carbon-gravel-bicycle-frameset-gv-028', checked:'2026-11-24'},
+  'Tideace/FM-GV201': {priceUsd:[650,750], kitUsd:650,
     current:true, weightG:1150, toleranceG:40, weightBasis:'размер 52',
-    clearanceMm:50, kitUsd:799, checked:'2026-11-23',
+    clearanceMm:50, checked:'2026-11-23',
     source:'https://tideacebike.com/products/fm-gv201-noah-carbon-gravel-bike-frame'
   },
   'Twitter/G2 MAX': {

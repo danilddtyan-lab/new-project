@@ -77,12 +77,12 @@ bikeFitForm.addEventListener('submit',event => {
     const spec = frameSpecs[id];
     const sizeMatches = !spec?.sizes || spec.sizes.some(([min,max]) => height >= min && height <= max);
     return sizeMatches && (!input.tire || (spec?.clearanceMm ?? 0) >= Number(input.tire))
-      && (!input.budget || (spec?.kitUsd ?? Infinity) <= Number(input.budget));
+      && (!input.budget || (spec?.kitUsd ?? Infinity) <= Number(input.budget)*(input.budgetCurrency === 'KGS' ? 1/priceRates.USD : 1));
   }).map(id => {
     const frame = byId.get(id);
     const spec = frameSpecs[id];
     const size = spec?.sizes?.find(([min,max]) => height >= min && height <= max);
-    const facts = [size && 'ростовка '+size[2],spec?.clearanceMm && 'до '+spec.clearanceMm+' мм (700C)',spec?.kitUsd && spec.kitUsd+' USD по источнику'].filter(Boolean);
+    const facts = [size && 'ростовка '+size[2],spec?.clearanceMm && 'до '+spec.clearanceMm+' мм (700C)',spec?.kitUsd && dualPrice([spec.kitUsd],'USD')+' по источнику'].filter(Boolean);
     return '<li><a href="'+escapeHtml(spec?.source || frameSpec(frame))+'">'+escapeHtml(frame.brand+' '+frame.model)+'</a>'+ (facts.length ? ' · '+facts.join(' · ') : '') +'</li>';
   }).join('') || '<li>Среди моделей с известными параметрами совпадений нет. Проверьте допуски и цену у производителя.</li>';
   const distanceTip = Number(input.distance) >= 100 ? 'Для 100 км и больше проверьте удобство нескольких хватов и доступ к воде с багажом.' : '';

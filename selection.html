@@ -8,14 +8,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css?v=25">
+<link rel="stylesheet" href="./style.css?v=26">
 <script defer src="./site.js?v=11"></script>
-<script defer src="./catalog.js?v=21"></script>
+<script defer src="./catalog.js?v=29"></script>
 <script defer src="./popular.js?v=12"></script>
 <script defer src="./routes.js?v=13"></script>
-<script defer src="./frame-specs.js?v=6"></script>
+<script defer src="./frame-specs.js?v=7"></script>
 <script defer src="./fit-presets.js"></script>
-<script defer src="./fit.js?v=14"></script>
+<script defer src="./prices.js"></script>
+<script defer src="./fit.js?v=15"></script>
+<link rel="icon" type="image/png" sizes="64x64" href="./favicon.png">
 </head>
 <body data-page="selection">
 <a class="skip" href="#main-content">Перейти к содержимому</a>
@@ -58,7 +60,8 @@
 <label>Стиль езды<select name="style"><option value="">Любой</option><option value="touring">Велопоход с багажом</option><option value="endurance">Длинные поездки</option><option value="enduro">Эндуро / трейл</option><option value="commute">Поездки по городу</option></select></label>
 <label>Дистанция за день, км<input name="distance" type="number" min="1" max="500"></label>
 <label>Ширина покрышки, мм<input name="tire" type="number" min="25" max="130"></label>
-<label>Бюджет на фреймсет, USD<input name="budget" type="number" min="1" max="20000"></label>
+<label>Бюджет на фреймсет<input name="budget" type="number" min="1" max="1750000"></label>
+<label>Валюта бюджета<select name="budgetCurrency"><option value="USD">USD</option><option value="KGS">Сом</option></select></label>
 <label>Длина ноги по внутренней стороне, см <small>Измерьте босиком от пола до промежности</small><input name="inseam" type="number" min="50" max="115"></label>
 <div aria-live="polite" class="surface-example" id="surface-example">
 <p>Выберите, где ездите чаще всего, чтобы увидеть пример маршрута в Кыргызстане.</p>

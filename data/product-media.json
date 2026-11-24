@@ -55,6 +55,14 @@
       "license": "Разрешение получено владельцем сайта",
       "alt": "Карбоновая рама Tideace FM-GV201",
       "verified": true
+    },
+    {
+      "image_url": "./data/images/tideace/tideace-gv201-angle.webp",
+      "source": "tideacebike.com",
+      "source_url": "https://tideacebike.com/products/fm-gv201-noah-carbon-gravel-bike-frame",
+      "license": "Разрешение получено владельцем сайта",
+      "alt": "Рама Tideace FM-GV201",
+      "verified": true
     }
   ],
   "Tideace/FM-M039": [
@@ -1961,6 +1969,14 @@
       "license": "Разрешение получено владельцем сайта",
       "alt": "Карбоновая рама Tideace FM-CR060",
       "verified": true
+    },
+    {
+      "image_url": "./data/images/tideace/tideace-cr060-angle.webp",
+      "source": "tideacebike.com",
+      "source_url": "https://tideacebike.com/products/t1000-carbon-gravel-bike-frames-700-47c-super-light",
+      "license": "Разрешение получено владельцем сайта",
+      "alt": "Рама Tideace FM-CR060",
+      "verified": true
     }
   ],
   "Curve/Kevin of Steel": [
@@ -3182,6 +3198,46 @@
       "alt": "Canyon Grizl CF модельного года 2026",
       "credit_note": "Велосипед в сборе, фото из обзора",
       "verified": false
+    }
+  ],
+  "Tideace/FM-GV208": [
+    {
+      "image_url": "./data/images/tideace/tideace-gv208-front.webp",
+      "source": "tideacebike.com",
+      "source_url": "https://tideacebike.com/products/700-57c-carbon-gravel-bicycle-frameset-gv-028",
+      "license": "Разрешение получено владельцем сайта",
+      "alt": "Рама Tideace FM-GV208",
+      "verified": true
+    },
+    {
+      "image_url": "./data/images/tideace/tideace-gv208-detail.webp",
+      "source": "tideacebike.com",
+      "source_url": "https://tideacebike.com/products/700-57c-carbon-gravel-bicycle-frameset-gv-028",
+      "license": "Разрешение получено владельцем сайта",
+      "alt": "Рама Tideace FM-GV208",
+      "verified": true
+    }
+  ],
+  "news:tideace-november-frame-roundup": [
+    {
+      "image_url": "./data/images/tideace/tideace-gv208-detail.webp",
+      "source": "tideacebike.com",
+      "source_url": "https://tideacebike.com/products/700-57c-carbon-gravel-bicycle-frameset-gv-028",
+      "license": "Разрешение получено владельцем сайта",
+      "alt": "Рама Tideace FM-GV208",
+      "verified": true,
+      "credit_note": "На фото Tideace FM-GV208"
+    }
+  ],
+  "news:tideace-cr060-2026-update": [
+    {
+      "image_url": "./data/images/tideace/tideace-cr060-angle.webp",
+      "source": "tideacebike.com",
+      "source_url": "https://tideacebike.com/products/t1000-carbon-gravel-bike-frames-700-47c-super-light",
+      "license": "Разрешение получено владельцем сайта",
+      "alt": "Рама Tideace FM-CR060",
+      "verified": true,
+      "credit_note": "На фото Tideace FM-CR060"
     }
   ]
 }

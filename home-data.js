@@ -1,6 +1,5 @@
 'use strict';
 
-const homeMoney = new Intl.NumberFormat('ru',{maximumFractionDigits:0});
 const homeDate = new Intl.DateTimeFormat('ru',{timeZone:'UTC'});
 const homeTerms = {
   UDH:'Универсальный сменный держатель заднего переключателя.',
@@ -49,14 +48,11 @@ function homeList(values) {
   return list;
 }
 
-function homeBuildCard(build,rate) {
+function homeBuildCard(build) {
   const article = homeElement('article','', 'card build-card');
-  const price = build.price.map(value => build.currency === 'USD' ? Math.round(value*rate/100)*100 : value);
-  const displayRange = values => values.map(value => homeMoney.format(value)).join('–');
   article.append(photoPlaceholder(build.id,build.category,build.title),
     homeElement('h3',build.title),homeElement('p',build.model,'meta'),
-    homeElement('strong',displayRange(price)+' ₽'));
-  if (build.currency === 'USD') article.append(homeElement('small',displayRange(build.price)+' USD'));
+    homeElement('strong',dualPrice(build.price,build.currency)));
   article.append(homeElement('h4','Что входит'));
   const includes = homeElement('ul');
   for (const component of build.includes) {
@@ -82,18 +78,18 @@ fetch('./data/builds.json',{cache:'no-cache'})
     const date = iso => homeDate.format(new Date(iso+'T00:00:00Z'));
     const prices = 'Цены на '+date(data.priceDate)+(data.pricesVerified ? ', проверены вручную.' : ', ориентировочные.');
     document.getElementById('home-trust').textContent = prices+' Данные обновлены '+date(data.updated)+'.';
-    const rate = homeExternal(data.rateSource,'Курс Банка России');
+    const rate = homeExternal(priceRates.source,'Курс НБКР');
     const note = homeElement('p','','meta');
-    note.append(rate,' · '+data.usdRub.toLocaleString('ru')+' ₽ за 1 USD, действует с '+date(data.rateEffective)+'.');
+    note.append(rate,' · '+priceRates.USD.toLocaleString('ru')+' сом за 1 USD на '+priceRates.date+'.');
     const grid = homeElement('div','','build-card-grid');
-    grid.append(...data.builds.map(build => homeBuildCard(build,data.usdRub)));
+    grid.append(...data.builds.map(homeBuildCard));
     document.getElementById('builds-content').replaceChildren(
       homeElement('h3','Что докупить'),homeList(data.extras),note,grid);
     const frames = data.tideace.map(frame => {
       const card = homeElement('article','','card');
       const specs = homeElement('p');
       homeTechText(specs,frame.spec);
-      card.append(photoPlaceholder(frame.id,'Рамы'),homeElement('h3',frame.title),specs,homeElement('p','Характеристики сверены '+date(frame.checked),'meta'),homeExternal(frame.url,'Подробнее'));
+      card.append(photoPlaceholder(frame.id,'Рамы'),homeElement('h3',frame.title),specs,homeElement('strong',dualPrice(frame.priceUsd,'USD')),homeElement('p','Характеристики сверены '+date(frame.checked),'meta'),homeExternal(frame.url,'Подробнее'));
       return card;
     });
     document.getElementById('tideace-grid').replaceChildren(...frames);

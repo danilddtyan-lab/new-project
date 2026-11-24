@@ -105,7 +105,7 @@ function render(event) {
       </dl>
       ${spec?.checked ? '<p class="meta">Сверено '+spec.checked.split('-').reverse().join('.')+'</p>' : ''}
       ${(spec?.note || details?.note) ? `<p>${escapeHtml(spec?.note || details.note)}</p>` : ''}
-      ${details?.price ? `<p class="catalog-price">${escapeHtml(details.price)} <span>архивная цена производителя</span></p>` : ''}
+      ${spec?.priceUsd ? `<p class="catalog-price">${dualPrice(spec.priceUsd,'USD')} <span>по данным производителя на ${priceRates.date}</span></p>` : details?.price ? `<p class="catalog-price">${escapeHtml(archivePrice(details.price))} <span>архивная цена производителя</span></p>` : ''}
       <div class="card-actions">
         <button class="outline" type="button" data-action="save" data-frame="${id}" aria-label="В избранное: ${id}" aria-pressed="${starred}">${starred?'♥':'♡'}</button>
         <button class="outline" type="button" data-action="compare" data-frame="${id}" aria-label="В сравнение: ${id}" aria-pressed="${selected}" ${compared.size === 3 && !selected ? 'disabled' : ''}>${selected?'В сравнении':'Сравнить'}</button>

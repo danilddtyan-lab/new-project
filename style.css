@@ -519,3 +519,27 @@ body[data-page=home] .header nav { grid-template-columns: repeat(3,minmax(0,1fr)
 [data-illustration="drivetrain"] { --category-art: url('./data/images/illustrations/drivetrain.webp'); }
 [data-illustration="training"] { --category-art: url('./data/images/illustrations/training.webp'); }
 [data-illustration="route"] { --category-art: url('./data/images/illustrations/route.webp'); }
+
+.tideace-spotlight {
+  display: grid;
+  align-items: center;
+  grid-template-columns: minmax(0,1fr) minmax(8rem,35%);
+  gap: var(--layout-gap);
+  padding: var(--card-padding);
+  background: var(--surface);
+  border: 1px solid var(--soft-border);
+  border-radius: var(--panel-radius);
+}
+.tideace-spotlight h2 { font-size: clamp(1.5rem, 3vw, 2.6rem); }
+.tideace-spotlight p { margin-block: .5rem .85rem; }
+.tideace-visual { margin: 0; min-width: 0; }
+.tideace-visual img { display: block; width: 100%; aspect-ratio: 1; height: auto; object-fit: contain; background: var(--cream); border-radius: var(--control-radius); }
+.tideace-visual figcaption { font-size: .8rem; color: var(--muted); margin-top: .25rem; }
+.tideace-links a { display: inline-flex; align-items: center; min-height: 44px; }
+.tideace-editorial { display: grid; gap: 1.4rem; }
+.tideace-editorial section { scroll-margin-top: 1rem; }
+.tideace-editorial section > h2 { margin-bottom: .75rem; }
+@media (max-width: 520px) {
+  .tideace-spotlight { grid-template-columns: minmax(0,1fr) minmax(6rem,31%); gap: .6rem; }
+  .tideace-editorial .tideace-spotlight { grid-template-columns: 1fr; }
+}
