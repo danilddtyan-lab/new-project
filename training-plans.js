@@ -19,6 +19,7 @@ const workouts = [
 ];
 
 const trainingCommunities = [
+  {name:'Open Ride KG', description:'Анонсы велотренировок и совместных заездов в Кыргызстане.', url:'https://t.me/open_ride_kg'},
   {name:'KOMON', description:'Русскоязычный чат о домашних тренировках, велостанках и заездах в Zwift.', url:'https://t.me/komon_zwift'}
 ];
 const workoutGoals = {recovery:'easy-35', endurance:'base-50', tempo:'tempo-55'};
