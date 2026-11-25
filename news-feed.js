@@ -41,13 +41,23 @@ function createNewsCard(item,headline = false) {
   const summary = document.createElement('p');
   if (headline) summary.className = 'headline-summary';
   summary.textContent = item.summary;
-  const illustration = photoPlaceholder('news:'+item.id,item.category);
-  illustration.classList.add('news-illustration');
-  illustration.dataset.illustration = {
-    'гонки':'route','гонщики':'bike','снаряжение':'bag','маршруты':'route',
-    'события':'bike','новинки':'bike','запчасти':'drivetrain'
-  }[item.category] || 'bike';
-  if (item.id === 'lev-broken-brakes-hype-67') illustration.dataset.illustration = 'wheel';
+  let illustration;
+  if (item.image_url) {
+    illustration = document.createElement('img');
+    illustration.className = 'news-illustration news-photo';
+    illustration.src = item.image_url;
+    illustration.alt = item.image_alt;
+    illustration.loading = headline ? 'eager' : 'lazy';
+    illustration.decoding = 'async';
+  } else {
+    illustration = photoPlaceholder('news:'+item.id,item.category);
+    illustration.classList.add('news-illustration');
+    illustration.dataset.illustration = {
+      'гонки':'route','гонщики':'bike','снаряжение':'bag','маршруты':'route',
+      'события':'bike','новинки':'bike','запчасти':'drivetrain'
+    }[item.category] || 'bike';
+    if (item.id === 'lev-broken-brakes-hype-67') illustration.dataset.illustration = 'wheel';
+  }
   card.append(illustration,meta,title,summary);
   if (!item.verified) {
     const badge = document.createElement('span');

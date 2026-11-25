@@ -9,7 +9,9 @@
     "url": "https://www.instagram.com/p/DgIklBqiER0/",
     "source_name": "Велобюро в Instagram",
     "verified": true,
-    "article_path": "./spinta-osh.html"
+    "article_path": "./spinta-osh.html",
+    "image_url": "./data/images/editorial/spinta-cover.webp",
+    "image_alt": "Обложка «Spinta в Оше»"
   },
   {
     "id": "meet-veloburo",
@@ -21,7 +23,9 @@
     "url": "https://www.instagram.com/p/DgHvblitZDC/",
     "source_name": "Велобюро в Instagram",
     "verified": true,
-    "article_path": "./meet-veloburo.html"
+    "article_path": "./meet-veloburo.html",
+    "image_url": "./data/images/editorial/veloburo-cover.webp",
+    "image_alt": "Обложка «Велобюро» с велосипедистом в горах"
   },
   {
     "id": "kollegin-seven-rivers",
@@ -32,7 +36,9 @@
     "region": "Кыргызстан",
     "url": null,
     "source_name": "проверено владельцем сайта",
-    "verified": true
+    "verified": true,
+    "image_url": "./data/images/editorial/seven-rivers-route.webp",
+    "image_alt": "Карта маршрута Seven Rivers Ultra и параметры дистанции"
   },
   {
     "id": "lev-broken-brakes-hype-67",
@@ -198,7 +204,9 @@
     "url": "https://www.instagram.com/p/DgIe037iAs9/",
     "source_name": "Велобюро в Instagram",
     "verified": true,
-    "article_path": "./seven-rivers-ultra-2027.html"
+    "article_path": "./seven-rivers-ultra-2027.html",
+    "image_url": "./data/images/editorial/seven-rivers-cover.webp",
+    "image_alt": "Обложка Seven Rivers Ultra с велосипедистом"
   },
   {
     "id": "across-andes-2026",
@@ -253,7 +261,9 @@
     "region": "международные",
     "url": "https://tideacebike.com/blogs/news/black-friday-2026-cycling-deals-upgrade-your-ride-with-tideacebike-carbon-frames",
     "source_name": "Tideace",
-    "verified": true
+    "verified": true,
+    "image_url": "./data/images/editorial/tideace-gv208-cover.webp",
+    "image_alt": "Обложка с рамой Tideace FM-GV208"
   },
   {
     "id": "edgware-mile-0-intro",

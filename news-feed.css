@@ -117,3 +117,27 @@
   text-align: start;
 }
 .headline-card .news-illustration img { aspect-ratio: 1; height: auto; }
+
+.news-illustration.news-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: var(--panel);
+}
+
+.article-photos {
+  margin-block: 1.25rem;
+}
+
+.article-photos a {
+  display: block;
+  align-self: start;
+}
+
+.article-photos img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--control-radius);
+}
