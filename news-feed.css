@@ -89,55 +89,71 @@
 .home-quick-links a { min-height: 44px; }
 
 .news-illustration {
-  background: var(--panel) var(--category-art) center / cover no-repeat;
-  border-radius: var(--control-radius);
-  aspect-ratio: 2.4;
-}
-.headline-card .news-illustration {
-  width: clamp(3.5rem, 12vw, 7rem);
-  aspect-ratio: 1;
-  grid-column: 2;
-  grid-row: 1 / span 2;
-}
-.headline-card { grid-template-columns: minmax(0, 1fr) auto; }
-.headline-card > .meta, .headline-card > h3 { grid-column: 1; }
-.headline-card > .headline-summary { grid-column: 1 / -1; }
-.feed-card { grid-template-rows: auto auto auto 1fr; }
-
-.feed-card .news-illustration { aspect-ratio: 1; }
-.headline-card .news-illustration { align-self: start; }
-.headline-card:has(.news-illustration:not(.photo-unavailable)) .news-illustration {
-  grid-row: 1 / span 2;
-  width: clamp(4.6rem, 17vw, 10rem);
-  aspect-ratio: auto;
-}
-.headline-card .news-illustration figcaption { font-size: .7rem; }
-.headline-card .news-illustration:not(.photo-unavailable) figcaption {
-  position: static;
-  text-align: start;
-}
-.headline-card .news-illustration img { aspect-ratio: 1; height: auto; }
-
-.news-illustration.news-photo {
   display: block;
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  aspect-ratio: 1;
+  border-radius: var(--control-radius);
   background: var(--panel);
 }
 
+.product-photo.news-illustration.photo-unavailable[data-illustration] {
+  background-size: contain;
+}
+
+.news-illustration.news-photo {
+  height: auto;
+  object-fit: contain;
+}
+
+.headline-card {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.headline-card > .meta, .headline-card > h3 {
+  grid-column: 1;
+}
+
+.headline-card .news-illustration {
+  width: clamp(4rem, 15vw, 8rem);
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: start;
+}
+
+.headline-card .news-illustration figcaption {
+  font-size: .7rem;
+}
+
+.feed-card {
+  grid-template-rows: auto auto auto 1fr;
+}
+
+.feed-card .news-illustration {
+  align-self: start;
+}
+
 .article-photos {
+  grid-template-columns: minmax(0, 21rem);
   margin-block: 1.25rem;
 }
 
-.article-photos a {
+@media (min-width: 560px) {
+  .article-photos {
+    grid-template-columns: repeat(2, minmax(0, 21rem));
+  }
+}
+
+.article-photos > a {
   display: block;
-  align-self: start;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--control-radius);
+  background: var(--panel);
+  overflow: hidden;
 }
 
 .article-photos img {
   display: block;
   width: 100%;
-  height: auto;
-  border-radius: var(--control-radius);
+  height: 100%;
+  object-fit: contain;
 }
