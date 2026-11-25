@@ -55,7 +55,10 @@ function createNewsCard(item,headline = false) {
     badge.textContent = 'Не проверено';
     card.append(badge);
   }
-  const link = sourceLink(item,headline ? 'Читать' : item.source_name,headline);
+  const link = item.article_path
+    ? sourceLink({url: item.article_path},'Читать статью')
+    : sourceLink(item,headline ? 'Читать' : item.source_name,headline);
+  if (item.article_path) link.setAttribute('aria-label','Читать статью: '+item.title);
   if (!link && !headline) {
     const source = document.createElement('p');
     source.className = 'meta';
