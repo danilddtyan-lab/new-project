@@ -10,8 +10,8 @@
     "source_name": "Велобюро в Instagram",
     "verified": true,
     "article_path": "./spinta-osh.html",
-    "image_url": "./data/images/editorial/spinta-cover.webp",
-    "image_alt": "Обложка «Spinta в Оше»"
+    "image_url": "./data/images/editorial/spinta-workshop-cover.webp",
+    "image_alt": "Обложка «Spinta в Оше» с мастером у верстака"
   },
   {
     "id": "meet-veloburo",
@@ -93,7 +93,9 @@
     "category": "гонщики",
     "region": "Кыргызстан",
     "source_name": "open.kg",
-    "verified": true
+    "verified": true,
+    "image_url": "./data/images/editorial/vlad-podofedov-mountain.webp",
+    "image_alt": "Владислав Подофёдов ведёт велосипед по горной дороге"
   },
   {
     "id": "srmr-2026-start",
