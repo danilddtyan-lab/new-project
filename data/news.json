@@ -1,5 +1,29 @@
 [
   {
+    "id": "spinta-osh",
+    "date": "2026-11-24",
+    "title": "Spinta в Оше — веломастерская на юге Кыргызстана",
+    "summary": "В мастерской Никиты в Оше ремонтируют детские, гоночные и туристические велосипеды. Велопутешественники отмечают помощь с ремонтом на Памирском тракте.",
+    "category": "события",
+    "region": "Кыргызстан",
+    "url": "https://www.instagram.com/p/DgIklBqiER0/",
+    "source_name": "Велобюро в Instagram",
+    "verified": true,
+    "article_path": "./spinta-osh.html"
+  },
+  {
+    "id": "meet-veloburo",
+    "date": "2026-11-24",
+    "title": "Знакомьтесь, Велобюро",
+    "summary": "Велобюро собирает веломаршруты по Кыргызстану, рамы для байкпакинга и идеи для сборок.",
+    "category": "события",
+    "region": "Кыргызстан",
+    "url": "https://www.instagram.com/p/DgHvblitZDC/",
+    "source_name": "Велобюро в Instagram",
+    "verified": true,
+    "article_path": "./meet-veloburo.html"
+  },
+  {
     "id": "kollegin-seven-rivers",
     "date": "2026-11-23",
     "title": "Антон Коллегин примет участие в Seven Rivers Ultra",
@@ -163,6 +187,18 @@
     "url": "https://velosport.kg/en/news/42-v-kyrgyzstane-proshyol-pervyi-s-1992-goda-polnomasshtabnyi-chempionat-strany-po-shosseinomu-velos.html",
     "source_name": "Федерация велоспорта Кыргызстана",
     "verified": true
+  },
+  {
+    "id": "seven-rivers-ultra-2027",
+    "date": "2026-11-24",
+    "title": "Seven Rivers Ultra 2027 — автономная велогонка по Семиречью",
+    "summary": "Гонка стартует в Алматы 26 июня 2027 года. Участникам предстоит проехать 1 075 км до Конаева и набрать более 14 000 м высоты.",
+    "category": "гонки",
+    "region": "международные",
+    "url": "https://www.instagram.com/p/DgIe037iAs9/",
+    "source_name": "Велобюро в Instagram",
+    "verified": true,
+    "article_path": "./seven-rivers-ultra-2027.html"
   },
   {
     "id": "across-andes-2026",
